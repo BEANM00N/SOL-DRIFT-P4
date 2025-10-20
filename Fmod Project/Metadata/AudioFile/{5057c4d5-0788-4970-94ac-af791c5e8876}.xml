@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5057c4d5-0788-4970-94ac-af791c5e8876}">
+		<property name="assetPath">
+			<value>Foxcat/Weapons/Machine Gun/Loop/01-Print_Bus-250717_0006.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>9.1986666666666661</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b88b94f9-c11e-4d97-932c-1b1bdf3e4d5e}</destination>
+		</relationship>
+	</object>
+</objects>

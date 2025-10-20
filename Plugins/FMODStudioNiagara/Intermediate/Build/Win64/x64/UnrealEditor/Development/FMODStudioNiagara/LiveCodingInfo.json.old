@@ -1,0 +1,12 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.FMODStudioNiagara.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
+			"FMODNiagaraEventPlayer.cpp.obj",
+			"FMODStudioNiagara.cpp.obj",
+			"FMODNiagaraEventPlayer.gen.cpp.obj",
+			"FMODStudioNiagara.init.gen.cpp.obj"
+		]
+	}
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{42589b93-d6e6-4a12-aa5e-5cc855f67864}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
+		<property name="name">
+			<value>BOOST</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{7655cedd-71b6-4335-b69d-0f41c0cc3c4e}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{7f7c3f6a-2ae7-4579-9a12-a507b8f031e1}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{89c15725-a6c9-4bdc-b31e-e50dc6e6833a}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{7655cedd-71b6-4335-b69d-0f41c0cc3c4e}">
+		<relationship name="effects">
+			<destination>{657e9aa1-0311-4580-8a37-bef7aa7c6677}</destination>
+			<destination>{7f2e1a8c-7d4e-4443-8141-c80a0f4fcc0f}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{7f7c3f6a-2ae7-4579-9a12-a507b8f031e1}" />
+	<object class="MixerBusFader" id="{657e9aa1-0311-4580-8a37-bef7aa7c6677}" />
+	<object class="Sidechain" id="{7f2e1a8c-7d4e-4443-8141-c80a0f4fcc0f}" />
+</objects>

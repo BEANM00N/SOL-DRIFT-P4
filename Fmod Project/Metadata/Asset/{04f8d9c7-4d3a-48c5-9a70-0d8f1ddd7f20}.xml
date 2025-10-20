@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{04f8d9c7-4d3a-48c5-9a70-0d8f1ddd7f20}">
+		<property name="assetPath">
+			<value>Foxcat/Weapons/Micro Missiles/launch/v3/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b88b94f9-c11e-4d97-932c-1b1bdf3e4d5e}</destination>
+		</relationship>
+	</object>
+</objects>

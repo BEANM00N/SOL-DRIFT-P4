@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{af93055e-91d3-4700-a863-49f136f10a0f}">
+		<property name="assetPath">
+			<value>Foxcat/Weapons/Machine Gun/ROBTMvmt-SCIFI_Machine Gun Panels Close 01_LUBA_SOL DRIFT_GDC BUILD.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.36839583333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b88b94f9-c11e-4d97-932c-1b1bdf3e4d5e}</destination>
+		</relationship>
+	</object>
+</objects>

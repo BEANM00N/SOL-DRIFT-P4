@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\sol-drift-5.6\\plugins\\projectc9f3263f8f1b0v8\\source\\pjc\\private\\pjcstyles.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\sol-drift-5.6\\intermediate\\build\\win64\\x64\\soldrifteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\sol-drift-5.6\\plugins\\projectc9f3263f8f1b0v8\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pjc\\definitions.pjc.h",
+            "d:\\sol-drift-5.6\\plugins\\projectc9f3263f8f1b0v8\\source\\pjc\\public\\pjcstyles.h",
+            "d:\\sol-drift-5.6\\plugins\\projectc9f3263f8f1b0v8\\source\\pjc\\public\\pjcconstants.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\slatecore\\public\\styling\\slatestyleregistry.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\projects\\public\\plugindisalloweddescriptor.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\projects\\public\\versescope.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

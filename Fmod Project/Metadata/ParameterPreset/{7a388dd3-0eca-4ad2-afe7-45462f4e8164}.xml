@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{7a388dd3-0eca-4ad2-afe7-45462f4e8164}">
+		<property name="name">
+			<value>boost scaler</value>
+		</property>
+		<relationship name="folder">
+			<destination>{55b35ea1-8539-4d76-9b57-a9d3ab338614}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c9c67eb2-9fc4-4c7c-abc4-3e67b8143c04}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c9c67eb2-9fc4-4c7c-abc4-3e67b8143c04}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

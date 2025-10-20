@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\sol-drift-5.6\\plugins\\cpathfinding\\source\\cpathfinding\\private\\cpathfinding.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\sol-drift-5.6\\intermediate\\build\\win64\\x64\\soldrifteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\sol-drift-5.6\\plugins\\cpathfinding\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpathfinding\\definitions.cpathfinding.h",
+            "d:\\sol-drift-5.6\\plugins\\cpathfinding\\source\\cpathfinding\\public\\cpathfinding.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

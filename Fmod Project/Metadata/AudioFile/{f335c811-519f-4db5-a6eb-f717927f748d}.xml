@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f335c811-519f-4db5-a6eb-f717927f748d}">
+		<property name="assetPath">
+			<value>UI/Boost/THRESHOLD/LOW WARNING/UIAlert-SPACE CRAFT_Boost Low Warning 04_LUBA_REAPER_SOL DRIFT.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.62235416666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b88b94f9-c11e-4d97-932c-1b1bdf3e4d5e}</destination>
+		</relationship>
+	</object>
+</objects>

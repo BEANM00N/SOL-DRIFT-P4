@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2f70cbaa-020d-46da-8a84-165e4e5b122a}">
+		<property name="assetPath">
+			<value>Foxcat/Drift/Loop/Engine/Fundamental/2025.05.04_SolDrift_DriftDesign_V3_LoopPlayerShip_DriftLoop_Fundamental_Low.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.2401458333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b88b94f9-c11e-4d97-932c-1b1bdf3e4d5e}</destination>
+		</relationship>
+	</object>
+</objects>

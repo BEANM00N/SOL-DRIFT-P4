@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "54454880328",
+    "firebase_url": "https://online-leaderboard-7f25e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "online-leaderboard-7f25e",
+    "storage_bucket": "online-leaderboard-7f25e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54454880328:android:5467f43e3604c2bd89b07d",
+        "android_client_info": {
+          "package_name": "com.madmoonstudios.soldrift"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXSaKAl8_go8Z9WZI7wl7-Lxq8FHMDs5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

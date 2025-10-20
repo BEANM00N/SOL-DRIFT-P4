@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{37448455-0400-47fa-9fd4-b3660fd97b90}">
+		<property name="name">
+			<value>overload</value>
+		</property>
+		<relationship name="folder">
+			<destination>{1e632263-b5dd-4bfa-807e-c76cdfc28965}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9fe61538-1e2d-459a-bb96-0780a53bb6b8}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9fe61538-1e2d-459a-bb96-0780a53bb6b8}">
+		<property name="minimum">
+			<value>-10</value>
+		</property>
+		<property name="maximum">
+			<value>10</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>6</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

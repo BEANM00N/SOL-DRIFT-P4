@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fb1129ca-db3a-4d83-a3af-7e88c7b7093f}">
+		<property name="assetPath">
+			<value>Foxcat/Boost/BOOST BACKFIRE/VEHMisc-ENGINE_Engine Exhaust Backfire 01_LUBA_PHASE PLANT_custom backfire generator-006.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.088062500000000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b88b94f9-c11e-4d97-932c-1b1bdf3e4d5e}</destination>
+		</relationship>
+	</object>
+</objects>

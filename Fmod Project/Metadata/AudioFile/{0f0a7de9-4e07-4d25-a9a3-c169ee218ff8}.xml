@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0f0a7de9-4e07-4d25-a9a3-c169ee218ff8}">
+		<property name="assetPath">
+			<value>UI/Boost/THRESHOLD/LOW RECHARGED/UIAlert-SPACE CRAFT_Boost Recharge Threshold Reached 03_LUBA_REAPER_SOL DRIFT.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2477291666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b88b94f9-c11e-4d97-932c-1b1bdf3e4d5e}</destination>
+		</relationship>
+	</object>
+</objects>

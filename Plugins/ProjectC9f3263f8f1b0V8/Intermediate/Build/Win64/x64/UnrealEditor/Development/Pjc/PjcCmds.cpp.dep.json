@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\sol-drift-5.6\\plugins\\projectc9f3263f8f1b0v8\\source\\pjc\\private\\pjccmds.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\sol-drift-5.6\\intermediate\\build\\win64\\x64\\soldrifteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\sol-drift-5.6\\plugins\\projectc9f3263f8f1b0v8\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\pjc\\definitions.pjc.h",
+            "d:\\sol-drift-5.6\\plugins\\projectc9f3263f8f1b0v8\\source\\pjc\\public\\pjccmds.h",
+            "d:\\sol-drift-5.6\\plugins\\projectc9f3263f8f1b0v8\\source\\pjc\\public\\pjcstyles.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

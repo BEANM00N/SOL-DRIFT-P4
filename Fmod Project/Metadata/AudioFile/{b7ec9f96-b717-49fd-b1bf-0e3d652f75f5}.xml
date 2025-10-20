@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b7ec9f96-b717-49fd-b1bf-0e3d652f75f5}">
+		<property name="assetPath">
+			<value>Foxcat/Boost/BOOST LOCK/DSGNStngr-SPACE CRAFT_Boost Empty Warning Ui 01_LUBA_REAPER_SOL DRIFT.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.6421458333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b88b94f9-c11e-4d97-932c-1b1bdf3e4d5e}</destination>
+		</relationship>
+	</object>
+</objects>

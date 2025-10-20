@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{be97b7fd-6649-4f2f-ba23-e0699b63fc79}">
+		<property name="assetPath">
+			<value>Foxcat/Weapons/Micro Missiles/explode/EXPLDsgn-SCIFI_Micro Missile Explosion 01_LUBA_SOL DRIFT_GDC BUILD.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.5680000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b88b94f9-c11e-4d97-932c-1b1bdf3e4d5e}</destination>
+		</relationship>
+	</object>
+</objects>

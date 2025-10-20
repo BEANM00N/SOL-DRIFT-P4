@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{8773238c-a23e-4fc9-a9a9-d2f4c43376c6}">
+		<property name="name">
+			<value>Foxcat</value>
+		</property>
+		<relationship name="folder">
+			<destination>{683b150e-7d1f-407a-a7ed-8fec3400473f}</destination>
+		</relationship>
+	</object>
+</objects>

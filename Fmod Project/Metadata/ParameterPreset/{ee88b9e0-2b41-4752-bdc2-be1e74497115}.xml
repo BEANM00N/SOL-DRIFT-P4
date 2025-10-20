@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ee88b9e0-2b41-4752-bdc2-be1e74497115}">
+		<property name="name">
+			<value>ADSR Trigger</value>
+		</property>
+		<relationship name="folder">
+			<destination>{55b35ea1-8539-4d76-9b57-a9d3ab338614}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{4872c5b7-de9d-4374-b52e-db8ba4a7da06}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{4872c5b7-de9d-4374-b52e-db8ba4a7da06}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

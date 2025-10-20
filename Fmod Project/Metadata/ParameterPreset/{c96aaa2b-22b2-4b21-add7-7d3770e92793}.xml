@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{c96aaa2b-22b2-4b21-add7-7d3770e92793}">
+		<property name="name">
+			<value>Music_Fade_Out</value>
+		</property>
+		<relationship name="folder">
+			<destination>{55b35ea1-8539-4d76-9b57-a9d3ab338614}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{febe34ca-130c-46f4-9445-324dae5b8573}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{febe34ca-130c-46f4-9445-324dae5b8573}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
