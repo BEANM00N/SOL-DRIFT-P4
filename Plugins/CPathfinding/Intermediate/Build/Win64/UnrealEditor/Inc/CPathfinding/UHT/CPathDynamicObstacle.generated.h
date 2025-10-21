@@ -19,14 +19,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AActor;
 
 // ********** Begin Class UCPathDynamicObstacle ****************************************************
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnEndOverlap); \
 	DECLARE_FUNCTION(execOnBeginOverlap);
 
 
 CPATHFINDING_API UClass* Z_Construct_UClass_UCPathDynamicObstacle_NoRegister();
 
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUCPathDynamicObstacle(); \
 	friend struct Z_Construct_UClass_UCPathDynamicObstacle_Statics; \
@@ -37,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(UCPathDynamicObstacle)
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UCPathDynamicObstacle(UCPathDynamicObstacle&&) = delete; \
 	UCPathDynamicObstacle(const UCPathDynamicObstacle&) = delete; \
@@ -47,13 +47,13 @@ public: \
 	NO_API virtual ~UCPathDynamicObstacle();
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_12_PROLOG
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_GENERATED_BODY \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_12_PROLOG
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_INCLASS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_ENHANCED_CONSTRUCTORS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_INCLASS_NO_PURE_DECLS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,6 +63,6 @@ class UCPathDynamicObstacle;
 // ********** End Class UCPathDynamicObstacle ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h
+#define CURRENT_FILE_ID FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDynamicObstacle_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

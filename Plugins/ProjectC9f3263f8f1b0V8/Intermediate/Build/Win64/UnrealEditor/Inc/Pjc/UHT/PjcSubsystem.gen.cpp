@@ -2870,14 +2870,14 @@ UPjcSubsystem::~UPjcSubsystem() {}
 // ********** End Class UPjcSubsystem **************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcSubsystem_h__Script_Pjc_Statics
+struct Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcSubsystem_h__Script_Pjc_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UPjcSubsystem, UPjcSubsystem::StaticClass, TEXT("UPjcSubsystem"), &Z_Registration_Info_UClass_UPjcSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPjcSubsystem), 2810868103U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcSubsystem_h__Script_Pjc_609290254(TEXT("/Script/Pjc"),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcSubsystem_h__Script_Pjc_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcSubsystem_h__Script_Pjc_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcSubsystem_h__Script_Pjc_609290254(TEXT("/Script/Pjc"),
+	Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcSubsystem_h__Script_Pjc_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcSubsystem_h__Script_Pjc_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

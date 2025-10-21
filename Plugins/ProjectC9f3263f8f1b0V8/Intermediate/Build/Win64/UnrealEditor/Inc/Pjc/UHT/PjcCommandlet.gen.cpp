@@ -98,14 +98,14 @@ UPjcCommandlet::~UPjcCommandlet() {}
 // ********** End Class UPjcCommandlet *************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h__Script_Pjc_Statics
+struct Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h__Script_Pjc_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UPjcCommandlet, UPjcCommandlet::StaticClass, TEXT("UPjcCommandlet"), &Z_Registration_Info_UClass_UPjcCommandlet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPjcCommandlet), 1951528150U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h__Script_Pjc_390262180(TEXT("/Script/Pjc"),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h__Script_Pjc_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h__Script_Pjc_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h__Script_Pjc_390262180(TEXT("/Script/Pjc"),
+	Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h__Script_Pjc_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h__Script_Pjc_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

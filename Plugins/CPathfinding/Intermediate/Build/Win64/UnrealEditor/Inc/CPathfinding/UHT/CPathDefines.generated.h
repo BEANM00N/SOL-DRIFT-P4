@@ -18,7 +18,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h
+#define CURRENT_FILE_ID FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h
 
 // ********** Begin Enum EAgentShape ***************************************************************
 #define FOREACH_ENUM_EAGENTSHAPE(op) \

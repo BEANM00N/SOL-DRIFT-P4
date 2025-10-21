@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UPjcCommandlet ***********************************************************
 PJC_API UClass* Z_Construct_UClass_UPjcCommandlet_NoRegister();
 
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPjcCommandlet(); \
 	friend struct Z_Construct_UClass_UPjcCommandlet_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UPjcCommandlet)
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UPjcCommandlet(UPjcCommandlet&&) = delete; \
 	UPjcCommandlet(const UPjcCommandlet&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~UPjcCommandlet();
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_9_PROLOG
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_GENERATED_BODY \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_9_PROLOG
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_INCLASS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_ENHANCED_CONSTRUCTORS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_INCLASS_NO_PURE_DECLS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class UPjcCommandlet;
 // ********** End Class UPjcCommandlet *************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h
+#define CURRENT_FILE_ID FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Private_Commandlets_PjcCommandlet_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

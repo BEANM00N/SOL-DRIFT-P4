@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class ACPathCore ***************************************************************
 CPATHFINDING_API UClass* Z_Construct_UClass_ACPathCore_NoRegister();
 
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_INCLASS_NO_PURE_DECLS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACPathCore(); \
 	friend struct Z_Construct_UClass_ACPathCore_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ACPathCore)
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_ENHANCED_CONSTRUCTORS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ACPathCore(ACPathCore&&) = delete; \
 	ACPathCore(const ACPathCore&) = delete; \
@@ -39,12 +39,12 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACPathCore)
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_19_PROLOG
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_GENERATED_BODY \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_19_PROLOG
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_INCLASS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_ENHANCED_CONSTRUCTORS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_INCLASS_NO_PURE_DECLS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -54,6 +54,6 @@ class ACPathCore;
 // ********** End Class ACPathCore *****************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h
+#define CURRENT_FILE_ID FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathCore_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

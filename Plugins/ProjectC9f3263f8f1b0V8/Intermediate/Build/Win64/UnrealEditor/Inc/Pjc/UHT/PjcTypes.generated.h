@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UPjcAssetExcludeSettings *************************************************
 PJC_API UClass* Z_Construct_UClass_UPjcAssetExcludeSettings_NoRegister();
 
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_INCLASS_NO_PURE_DECLS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPjcAssetExcludeSettings(); \
 	friend struct Z_Construct_UClass_UPjcAssetExcludeSettings_Statics; \
@@ -32,7 +32,7 @@ public: \
 
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_ENHANCED_CONSTRUCTORS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPjcAssetExcludeSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -44,12 +44,12 @@ public: \
 	NO_API virtual ~UPjcAssetExcludeSettings();
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_8_PROLOG
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_GENERATED_BODY \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_8_PROLOG
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_INCLASS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_ENHANCED_CONSTRUCTORS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_INCLASS_NO_PURE_DECLS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -61,7 +61,7 @@ class UPjcAssetExcludeSettings;
 // ********** Begin Class UPjcFileExcludeSettings **************************************************
 PJC_API UClass* Z_Construct_UClass_UPjcFileExcludeSettings_NoRegister();
 
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_INCLASS_NO_PURE_DECLS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPjcFileExcludeSettings(); \
 	friend struct Z_Construct_UClass_UPjcFileExcludeSettings_Statics; \
@@ -74,7 +74,7 @@ public: \
 
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_ENHANCED_CONSTRUCTORS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPjcFileExcludeSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -86,12 +86,12 @@ public: \
 	NO_API virtual ~UPjcFileExcludeSettings();
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_34_PROLOG
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_GENERATED_BODY \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_34_PROLOG
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_INCLASS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_ENHANCED_CONSTRUCTORS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_INCLASS_NO_PURE_DECLS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_37_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -101,7 +101,7 @@ class UPjcFileExcludeSettings;
 // ********** End Class UPjcFileExcludeSettings ****************************************************
 
 // ********** Begin ScriptStruct FPjcFileInfo ******************************************************
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_120_GENERATED_BODY \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_120_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPjcFileInfo_Statics; \
 	PJC_API static class UScriptStruct* StaticStruct();
 
@@ -110,7 +110,7 @@ struct FPjcFileInfo;
 // ********** End ScriptStruct FPjcFileInfo ********************************************************
 
 // ********** Begin ScriptStruct FPjcAssetIndirectInfo *********************************************
-#define FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_142_GENERATED_BODY \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h_142_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FPjcAssetIndirectInfo_Statics; \
 	PJC_API static class UScriptStruct* StaticStruct();
 
@@ -119,6 +119,6 @@ struct FPjcAssetIndirectInfo;
 // ********** End ScriptStruct FPjcAssetIndirectInfo ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h
+#define CURRENT_FILE_ID FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

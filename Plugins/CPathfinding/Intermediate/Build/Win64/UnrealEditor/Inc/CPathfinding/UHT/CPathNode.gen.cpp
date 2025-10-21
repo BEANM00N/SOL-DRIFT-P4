@@ -195,7 +195,7 @@ UEnum* Z_Construct_UEnum_CPathfinding_BranchFailSuccessEnum()
 // ********** End Enum BranchFailSuccessEnum *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics
+struct Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ BranchFailSuccessEnum_StaticEnum, TEXT("BranchFailSuccessEnum"), &Z_Registration_Info_UEnum_BranchFailSuccessEnum, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 701982543U) },
@@ -205,10 +205,10 @@ struct Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPath
 		{ FCPathResult::StaticStruct, Z_Construct_UScriptStruct_FCPathResult_Statics::NewStructOps, TEXT("CPathResult"), &Z_Registration_Info_UScriptStruct_FCPathResult, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCPathResult), 149891058U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_2174700406(TEXT("/Script/CPathfinding"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_2174700406(TEXT("/Script/CPathfinding"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathNode_h__Script_CPathfinding_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

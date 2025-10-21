@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UFMODNiagaraEventPlayer **************************************************
 FMODSTUDIONIAGARA_API UClass* Z_Construct_UClass_UFMODNiagaraEventPlayer_NoRegister();
 
-#define FID_SOL_DRIFT_5_6_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_INCLASS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_INCLASS \
 private: \
 	static void StaticRegisterNativesUFMODNiagaraEventPlayer(); \
 	friend struct Z_Construct_UClass_UFMODNiagaraEventPlayer_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UFMODNiagaraEventPlayer)
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_STANDARD_CONSTRUCTORS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFMODNiagaraEventPlayer(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFMODNiagaraEventPlayer) \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~UFMODNiagaraEventPlayer();
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_52_PROLOG
-#define FID_SOL_DRIFT_5_6_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_GENERATED_BODY_LEGACY \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_52_PROLOG
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SOL_DRIFT_5_6_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_INCLASS \
-	FID_SOL_DRIFT_5_6_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_STANDARD_CONSTRUCTORS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_INCLASS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h_55_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,6 +57,6 @@ class UFMODNiagaraEventPlayer;
 // ********** End Class UFMODNiagaraEventPlayer ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_5_6_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h
+#define CURRENT_FILE_ID FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_FMODStudioNiagara_Source_FMODStudioNiagara_Public_FMODNiagaraEventPlayer_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -102,14 +102,14 @@ ACPathVolumeGroundPrio::~ACPathVolumeGroundPrio() {}
 // ********** End Class ACPathVolumeGroundPrio *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolumeGroundPrio_h__Script_CPathfinding_Statics
+struct Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolumeGroundPrio_h__Script_CPathfinding_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ACPathVolumeGroundPrio, ACPathVolumeGroundPrio::StaticClass, TEXT("ACPathVolumeGroundPrio"), &Z_Registration_Info_UClass_ACPathVolumeGroundPrio, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACPathVolumeGroundPrio), 1146413586U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolumeGroundPrio_h__Script_CPathfinding_1559825410(TEXT("/Script/CPathfinding"),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolumeGroundPrio_h__Script_CPathfinding_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolumeGroundPrio_h__Script_CPathfinding_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolumeGroundPrio_h__Script_CPathfinding_1559825410(TEXT("/Script/CPathfinding"),
+	Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolumeGroundPrio_h__Script_CPathfinding_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolumeGroundPrio_h__Script_CPathfinding_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

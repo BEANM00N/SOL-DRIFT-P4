@@ -140,17 +140,17 @@ UEnum* Z_Construct_UEnum_CPathfinding_ECPathfindingFailReason()
 // ********** End Enum ECPathfindingFailReason *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h__Script_CPathfinding_Statics
+struct Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h__Script_CPathfinding_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EAgentShape_StaticEnum, TEXT("EAgentShape"), &Z_Registration_Info_UEnum_EAgentShape, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3991755297U) },
 		{ ECPathfindingFailReason_StaticEnum, TEXT("ECPathfindingFailReason"), &Z_Registration_Info_UEnum_ECPathfindingFailReason, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4250217323U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h__Script_CPathfinding_1744240529(TEXT("/Script/CPathfinding"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h__Script_CPathfinding_1744240529(TEXT("/Script/CPathfinding"),
 	nullptr, 0,
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h__Script_CPathfinding_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h__Script_CPathfinding_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h__Script_CPathfinding_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathDefines_h__Script_CPathfinding_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

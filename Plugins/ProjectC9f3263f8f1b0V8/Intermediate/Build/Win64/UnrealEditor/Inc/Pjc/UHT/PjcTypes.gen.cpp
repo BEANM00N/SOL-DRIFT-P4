@@ -395,7 +395,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FPjcAssetIndirectInfo()
 // ********** End ScriptStruct FPjcAssetIndirectInfo ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics
+struct Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FPjcFileInfo::StaticStruct, Z_Construct_UScriptStruct_FPjcFileInfo_Statics::NewStructOps, TEXT("PjcFileInfo"), &Z_Registration_Info_UScriptStruct_FPjcFileInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FPjcFileInfo), 3217242629U) },
@@ -406,9 +406,9 @@ struct Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_So
 		{ Z_Construct_UClass_UPjcFileExcludeSettings, UPjcFileExcludeSettings::StaticClass, TEXT("UPjcFileExcludeSettings"), &Z_Registration_Info_UClass_UPjcFileExcludeSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPjcFileExcludeSettings), 3740686690U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_3393435851(TEXT("/Script/Pjc"),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_5_6_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_3393435851(TEXT("/Script/Pjc"),
+	Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_ProjectC9f3263f8f1b0V8_Source_Pjc_Public_PjcTypes_h__Script_Pjc_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

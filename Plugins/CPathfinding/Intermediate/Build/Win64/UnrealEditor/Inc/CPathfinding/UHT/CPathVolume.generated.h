@@ -20,7 +20,7 @@ struct FColor;
 struct FCPathNode;
 
 // ********** Begin Class ACPathVolume *************************************************************
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execDrawDebugPath); \
 	DECLARE_FUNCTION(execDrawDebugNodesAroundLocation); \
 	DECLARE_FUNCTION(execDebugDrawNeighbours); \
@@ -29,7 +29,7 @@ struct FCPathNode;
 
 CPATHFINDING_API UClass* Z_Construct_UClass_ACPathVolume_NoRegister();
 
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_INCLASS_NO_PURE_DECLS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACPathVolume(); \
 	friend struct Z_Construct_UClass_ACPathVolume_Statics; \
@@ -40,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(ACPathVolume)
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_ENHANCED_CONSTRUCTORS \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ACPathVolume(ACPathVolume&&) = delete; \
 	ACPathVolume(const ACPathVolume&) = delete; \
@@ -50,13 +50,13 @@ public: \
 	NO_API virtual ~ACPathVolume();
 
 
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_23_PROLOG
-#define FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_GENERATED_BODY \
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_23_PROLOG
+#define FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_INCLASS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_ENHANCED_CONSTRUCTORS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_INCLASS_NO_PURE_DECLS \
+	FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -66,6 +66,6 @@ class ACPathVolume;
 // ********** End Class ACPathVolume ***************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_5_6_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h
+#define CURRENT_FILE_ID FID_WORK_SOL_DRIFT_SOL_DRIFT_P4_Plugins_CPathfinding_Source_CPathfinding_Public_CPathVolume_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

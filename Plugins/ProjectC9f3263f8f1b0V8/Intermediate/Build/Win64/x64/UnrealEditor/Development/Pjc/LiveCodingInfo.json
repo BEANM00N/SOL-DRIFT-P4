@@ -1,5 +1,28 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.Pjc.cpp.obj": [
+			"Pjc.init.gen.cpp.obj",
+			"PjcCommandlet.gen.cpp.obj",
+			"PjcSubsystem.gen.cpp.obj",
+			"PjcTypes.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"PjcCommandlet.cpp.obj",
+			"Pjc.cpp.obj",
+			"PjcCmds.cpp.obj",
+			"PjcFrontendFilters.cpp.obj",
+			"PjcStyles.cpp.obj",
+			"PjcSubsystem.cpp.obj",
+			"SPjcItemAssetCorrupted.cpp.obj",
+			"SPjcItemAssetIndirect.cpp.obj",
+			"SPjcItemFileExternal.cpp.obj",
+			"SPjcItemStat.cpp.obj",
+			"SPjcItemTree.cpp.obj",
+			"SPjcTabAssetsCorrupted.cpp.obj",
+			"SPjcTabAssetsIndirect.cpp.obj",
+			"SPjcTabAssetsUnused.cpp.obj",
+			"SPjcTabFilesExternal.cpp.obj",
+			"SPjcTabMain.cpp.obj"
+		]
 	}
 }

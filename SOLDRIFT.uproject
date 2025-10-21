@@ -80,11 +80,6 @@
 			"Enabled": true
 		},
 		{
-			"Name": "NineSlicer",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/97c1c5df6ab74f949ce4a01cacefc83f"
-		},
-		{
 			"Name": "FSR3MovieRenderPipeline",
 			"Enabled": false,
 			"SupportedTargetPlatforms": [
