@@ -1,5 +1,27 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.CPathfinding.cpp.obj": [
+			"CPathCore.gen.cpp.obj",
+			"CPathDefines.gen.cpp.obj",
+			"CPathDynamicObstacle.gen.cpp.obj",
+			"CPathfinding.init.gen.cpp.obj",
+			"CPathFindPath.gen.cpp.obj",
+			"CPathNode.gen.cpp.obj",
+			"CPathVolume.gen.cpp.obj",
+			"CPathVolumeGroundPrio.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"CPathAsyncVolumeGeneration.cpp.obj",
+			"CPathCore.cpp.obj",
+			"CPathDefines.cpp.obj",
+			"CPathDynamicObstacle.cpp.obj",
+			"CPathfinding.cpp.obj",
+			"CPathfindingThread.cpp.obj",
+			"CPathFindPath.cpp.obj",
+			"CPathNode.cpp.obj",
+			"CPathOctree.cpp.obj",
+			"CPathVolume.cpp.obj",
+			"CPathVolumeGroundPrio.cpp.obj"
+		]
 	}
 }

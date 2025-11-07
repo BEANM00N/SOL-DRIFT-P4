@@ -1,0 +1,18 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-MassCommunitySample.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:/MegaFunk mass Entity/MassSample/Intermediate/Build/Win64/x64/MassSampleProjectEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"D:/MegaFunk mass Entity/MassSample/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp.obj"
+"D:/MegaFunk mass Entity/MassSample/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/MSBPFunctionLibrary.cpp.obj"
+"D:/MegaFunk mass Entity/MassSample/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/MSMassCollision.cpp.obj"
+"D:/MegaFunk mass Entity/MassSample/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/MassProjectileHitInterface.cpp.obj"
+"D:/MegaFunk mass Entity/MassSample/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/MSProjectileHitObservers.cpp.obj"
+"D:/MegaFunk mass Entity/MassSample/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/MSProjectileSimProcessors.cpp.obj"
+"D:/MegaFunk mass Entity/MassSample/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/MSProjectileSimTrait.cpp.obj"
+"D:/MegaFunk mass Entity/MassSample/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Default.rc2.res"
+/OUT:"D:/MegaFunk mass Entity/MassSample/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/UnrealEditor-MassCommunitySample.lib"

@@ -1,0 +1,16 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\sol-drift-p4\\plugins\\masscommunitysample\\source\\masscommunitysample\\projectilesim\\msprojectilebplib.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\sol-drift-p4\\intermediate\\build\\win64\\x64\\soldrifteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\sol-drift-p4\\plugins\\masscommunitysample\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\masscommunitysample\\definitions.masscommunitysample.h",
+            "d:\\sol-drift-p4\\plugins\\masscommunitysample\\source\\masscommunitysample\\projectilesim\\msprojectilebplib.h",
+            "d:\\sol-drift-p4\\plugins\\masscommunitysample\\intermediate\\build\\win64\\unrealeditor\\inc\\masscommunitysample\\uht\\msprojectilebplib.generated.h",
+            "d:\\sol-drift-p4\\plugins\\masscommunitysample\\intermediate\\build\\win64\\unrealeditor\\inc\\masscommunitysample\\uht\\msprojectilebplib.gen.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

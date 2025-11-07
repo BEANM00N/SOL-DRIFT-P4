@@ -1,0 +1,41 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\megafunk mass entity\\masssample\\plugins\\masscommunitysample\\source\\masscommunitysample\\projectilesim\\massprojectilehitinterface.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\megafunk mass entity\\masssample\\intermediate\\build\\win64\\x64\\masssampleprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\megafunk mass entity\\masssample\\plugins\\masscommunitysample\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\masscommunitysample\\definitions.masscommunitysample.h",
+            "d:\\megafunk mass entity\\masssample\\plugins\\masscommunitysample\\source\\masscommunitysample\\projectilesim\\massprojectilehitinterface.h",
+            "d:\\megafunk mass entity\\masssample\\plugins\\masscommunitysample\\source\\masscommunitysample\\common\\misc\\msbpfunctionlibrary.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massentityview.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massentityhandle.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\massentity\\uht\\massentityhandle.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massarchetypetypes.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massentitytypes.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structtypebitset.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structutilstypes.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\instancedstruct.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structutils.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\coreuobject\\uht\\instancedstruct.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massprocessingtypes.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\massentity\\uht\\massprocessingtypes.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structarrayview.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structview.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\sharedstruct.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\coreuobject\\uht\\sharedstruct.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massexternalsubsystemtraits.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massentityelementtypes.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\massentity\\uht\\massentityelementtypes.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massentityconcepts.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\masstestableensures.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\massentity\\uht\\massentitytypes.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\massentity\\uht\\massentityview.generated.h",
+            "d:\\megafunk mass entity\\masssample\\plugins\\masscommunitysample\\intermediate\\build\\win64\\unrealeditor\\inc\\masscommunitysample\\uht\\msbpfunctionlibrary.generated.h",
+            "d:\\megafunk mass entity\\masssample\\plugins\\masscommunitysample\\intermediate\\build\\win64\\unrealeditor\\inc\\masscommunitysample\\uht\\massprojectilehitinterface.generated.h",
+            "d:\\megafunk mass entity\\masssample\\plugins\\masscommunitysample\\intermediate\\build\\win64\\unrealeditor\\inc\\masscommunitysample\\uht\\massprojectilehitinterface.gen.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
