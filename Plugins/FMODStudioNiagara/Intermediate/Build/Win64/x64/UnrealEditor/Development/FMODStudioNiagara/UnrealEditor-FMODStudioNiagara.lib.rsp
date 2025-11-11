@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-FMODStudioNiagara.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:/Users/joshm/Desktop/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
-"C:/Users/joshm/Desktop/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/Module.FMODStudioNiagara.cpp.obj"
-"C:/Users/joshm/Desktop/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/Default.rc2.res"
-/OUT:"C:/Users/joshm/Desktop/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/UnrealEditor-FMODStudioNiagara.lib"
+"C:/Users/marcu/OneDrive/Desktop/WORK/Projects/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:/Users/marcu/OneDrive/Desktop/WORK/Projects/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/Module.FMODStudioNiagara.cpp.obj"
+"C:/Users/marcu/OneDrive/Desktop/WORK/Projects/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/Default.rc2.res"
+/OUT:"C:/Users/marcu/OneDrive/Desktop/WORK/Projects/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/UnrealEditor-FMODStudioNiagara.lib"
