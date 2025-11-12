@@ -147,16 +147,16 @@ UScriptStruct* Z_Construct_UScriptStruct_FMSHitResultFragment()
 // ********** End ScriptStruct FMSHitResultFragment ************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Physics_MSMassCollision_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Physics_MSMassCollision_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FMSSharedStaticMesh::StaticStruct, Z_Construct_UScriptStruct_FMSSharedStaticMesh_Statics::NewStructOps, TEXT("MSSharedStaticMesh"), &Z_Registration_Info_UScriptStruct_FMSSharedStaticMesh, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSSharedStaticMesh), 1586069186U) },
 		{ FMSHitResultFragment::StaticStruct, Z_Construct_UScriptStruct_FMSHitResultFragment_Statics::NewStructOps, TEXT("MSHitResultFragment"), &Z_Registration_Info_UScriptStruct_FMSHitResultFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSHitResultFragment), 2568008827U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Physics_MSMassCollision_h__Script_MassCommunitySample_3449535845(TEXT("/Script/MassCommunitySample"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Physics_MSMassCollision_h__Script_MassCommunitySample_3449535845(TEXT("/Script/MassCommunitySample"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Physics_MSMassCollision_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Physics_MSMassCollision_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Physics_MSMassCollision_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Physics_MSMassCollision_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

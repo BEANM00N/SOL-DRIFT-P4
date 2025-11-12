@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FMSMassFindNavMeshPathTargetInstanceData **************************
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h_14_GENERATED_BODY \
+#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h_14_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMSMassFindNavMeshPathTargetInstanceData_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -26,7 +26,7 @@ struct FMSMassFindNavMeshPathTargetInstanceData;
 // ********** End ScriptStruct FMSMassFindNavMeshPathTargetInstanceData ****************************
 
 // ********** Begin ScriptStruct FMSMassFindNavMeshPathWanderTargetInRadius ************************
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h_25_GENERATED_BODY \
+#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h_25_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMSMassFindNavMeshPathWanderTargetInRadius_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FMassStateTreeTaskBase Super;
@@ -36,6 +36,6 @@ struct FMSMassFindNavMeshPathWanderTargetInRadius;
 // ********** End ScriptStruct FMSMassFindNavMeshPathWanderTargetInRadius **************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h
+#define CURRENT_FILE_ID FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

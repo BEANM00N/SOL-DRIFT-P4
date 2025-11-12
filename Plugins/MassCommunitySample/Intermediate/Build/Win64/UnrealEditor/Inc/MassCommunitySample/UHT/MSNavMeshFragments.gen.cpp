@@ -65,15 +65,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FNavMeshAIFragment()
 // ********** End ScriptStruct FNavMeshAIFragment **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FNavMeshAIFragment::StaticStruct, Z_Construct_UScriptStruct_FNavMeshAIFragment_Statics::NewStructOps, TEXT("NavMeshAIFragment"), &Z_Registration_Info_UScriptStruct_FNavMeshAIFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FNavMeshAIFragment), 13155197U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h__Script_MassCommunitySample_2213189229(TEXT("/Script/MassCommunitySample"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h__Script_MassCommunitySample_2213189229(TEXT("/Script/MassCommunitySample"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

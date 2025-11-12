@@ -633,7 +633,7 @@ UMSPathologicalBenchmarkProcessor::~UMSPathologicalBenchmarkProcessor() {}
 // ********** End Class UMSPathologicalBenchmarkProcessor ******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FAlberta::StaticStruct, Z_Construct_UScriptStruct_FAlberta_Statics::NewStructOps, TEXT("Alberta"), &Z_Registration_Info_UScriptStruct_FAlberta, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FAlberta), 927734852U) },
@@ -652,9 +652,9 @@ struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source
 		{ Z_Construct_UClass_UMSPathologicalBenchmarkProcessor, UMSPathologicalBenchmarkProcessor::StaticClass, TEXT("UMSPathologicalBenchmarkProcessor"), &Z_Registration_Info_UClass_UMSPathologicalBenchmarkProcessor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSPathologicalBenchmarkProcessor), 3542908911U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_2646540231(TEXT("/Script/MassCommunitySample"),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_2646540231(TEXT("/Script/MassCommunitySample"),
+	Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Benchmark_MSPathologicalBenchmarkProcessor_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

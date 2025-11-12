@@ -878,7 +878,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FMSPenetrateTag()
 // ********** End ScriptStruct FMSPenetrateTag *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EMSAffiliation_StaticEnum, TEXT("EMSAffiliation"), &Z_Registration_Info_UEnum_EMSAffiliation, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3816050378U) },
@@ -900,10 +900,10 @@ struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source
 		{ FMSPenetrateTag::StaticStruct, Z_Construct_UScriptStruct_FMSPenetrateTag_Statics::NewStructOps, TEXT("MSPenetrateTag"), &Z_Registration_Info_UScriptStruct_FMSPenetrateTag, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSPenetrateTag), 3136797414U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_142485091(TEXT("/Script/MassCommunitySample"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_142485091(TEXT("/Script/MassCommunitySample"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Fragments_MSProjectileFragments_h__Script_MassCommunitySample_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
