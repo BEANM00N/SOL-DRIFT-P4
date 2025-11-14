@@ -59,7 +59,7 @@ struct Z_Construct_UFunction_UMassProjectileHitInterface_ProjectileHit_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMassProjectileHitInterface_ProjectileHit_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MassProjectileHitInterface_eventProjectileHit_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMassProjectileHitInterface_ProjectileHit_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MassProjectileHitInterface_eventProjectileHit_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMassProjectileHitInterface_ProjectileHit_Statics::NewProp_HitResult = { "HitResult", nullptr, (EPropertyFlags)0x0010008000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MassProjectileHitInterface_eventProjectileHit_Parms, HitResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(0, nullptr) }; // 267591329
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMassProjectileHitInterface_ProjectileHit_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMassProjectileHitInterface_ProjectileHit_Statics::NewProp_Entity,
@@ -122,7 +122,7 @@ struct Z_Construct_UClass_UMassProjectileHitInterface_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMassProjectileHitInterface_ProjectileHit, "ProjectileHit" }, // 2982026026
+		{ &Z_Construct_UFunction_UMassProjectileHitInterface_ProjectileHit, "ProjectileHit" }, // 756944633
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -163,14 +163,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR(UMassProjectileHitInterface);
 // ********** End Interface UMassProjectileHitInterface ********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_MassProjectileHitInterface_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_MassProjectileHitInterface_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMassProjectileHitInterface, UMassProjectileHitInterface::StaticClass, TEXT("UMassProjectileHitInterface"), &Z_Registration_Info_UClass_UMassProjectileHitInterface, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMassProjectileHitInterface), 955978725U) },
+		{ Z_Construct_UClass_UMassProjectileHitInterface, UMassProjectileHitInterface::StaticClass, TEXT("UMassProjectileHitInterface"), &Z_Registration_Info_UClass_UMassProjectileHitInterface, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMassProjectileHitInterface), 2606993544U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_MassProjectileHitInterface_h__Script_MassCommunitySample_2711410409(TEXT("/Script/MassCommunitySample"),
-	Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_MassProjectileHitInterface_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_MassProjectileHitInterface_h__Script_MassCommunitySample_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_MassProjectileHitInterface_h__Script_MassCommunitySample_2938232606(TEXT("/Script/MassCommunitySample"),
+	Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_MassProjectileHitInterface_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_MassProjectileHitInterface_h__Script_MassCommunitySample_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

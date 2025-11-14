@@ -114,7 +114,7 @@ struct Z_Construct_UFunction_UMSObserverProcessorBP_BPExecute_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSObserverProcessorBP_BPExecute_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSObserverProcessorBP_eventBPExecute_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSObserverProcessorBP_BPExecute_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSObserverProcessorBP_eventBPExecute_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSObserverProcessorBP_BPExecute_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSObserverProcessorBP_eventBPExecute_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSObserverProcessorBP_BPExecute_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSObserverProcessorBP_BPExecute_Statics::NewProp_EntityHandle,
@@ -215,7 +215,7 @@ struct Z_Construct_UClass_UMSObserverProcessorBP_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMSObserverProcessorBP_BPExecute, "BPExecute" }, // 3298215164
+		{ &Z_Construct_UFunction_UMSObserverProcessorBP_BPExecute, "BPExecute" }, // 1051498296
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -449,21 +449,21 @@ UMSObserverSubsystem::~UMSObserverSubsystem() {}
 // ********** End Class UMSObserverSubsystem *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EMassObservedOperationBP_StaticEnum, TEXT("EMassObservedOperationBP"), &Z_Registration_Info_UEnum_EMassObservedOperationBP, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2012552247U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMSObserverProcessorBP, UMSObserverProcessorBP::StaticClass, TEXT("UMSObserverProcessorBP"), &Z_Registration_Info_UClass_UMSObserverProcessorBP, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSObserverProcessorBP), 87725741U) },
+		{ Z_Construct_UClass_UMSObserverProcessorBP, UMSObserverProcessorBP::StaticClass, TEXT("UMSObserverProcessorBP"), &Z_Registration_Info_UClass_UMSObserverProcessorBP, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSObserverProcessorBP), 597717217U) },
 		{ Z_Construct_UClass_UMSObserverSettings, UMSObserverSettings::StaticClass, TEXT("UMSObserverSettings"), &Z_Registration_Info_UClass_UMSObserverSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSObserverSettings), 678795201U) },
 		{ Z_Construct_UClass_UMSObserverSubsystem, UMSObserverSubsystem::StaticClass, TEXT("UMSObserverSubsystem"), &Z_Registration_Info_UClass_UMSObserverSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSObserverSubsystem), 1243579979U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_14653235(TEXT("/Script/MassCommunitySample"),
-	Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_3537570384(TEXT("/Script/MassCommunitySample"),
+	Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h__Script_MassCommunitySample_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

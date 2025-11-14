@@ -44,13 +44,7 @@ struct Z_Construct_UScriptStruct_FMSEntityViewBPWrapper_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * FMassEntityView wrapper for for general blueprint use\n * This can be rather evil due to the fact that the EntityView is transient in representing the actual state\n * If you want to store an entity ID longer term you might be better off with the FMSEntityHandleBPWrapper\n */" },
-#endif
 		{ "ModuleRelativePath", "Common/Misc/MSBPFunctionLibrary.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "FMassEntityView wrapper for for general blueprint use\nThis can be rather evil due to the fact that the EntityView is transient in representing the actual state\nIf you want to store an entity ID longer term you might be better off with the FMSEntityHandleBPWrapper" },
-#endif
 	};
 #endif // WITH_METADATA
 	static void* NewStructOps()
@@ -207,7 +201,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_BreakIndexToInt_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_BreakIndexToInt_Statics::NewProp_InValue = { "InValue", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventBreakIndexToInt_Parms, InValue), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InValue_MetaData), NewProp_InValue_MetaData) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_BreakIndexToInt_Statics::NewProp_InValue = { "InValue", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventBreakIndexToInt_Parms, InValue), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InValue_MetaData), NewProp_InValue_MetaData) }; // 2635041887
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_BreakIndexToInt_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventBreakIndexToInt_Parms, Index), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_BreakIndexToInt_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_BreakIndexToInt_Statics::NewProp_InValue,
@@ -262,7 +256,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_DestroyEntity_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_DestroyEntity_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventDestroyEntity_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EntityHandle_MetaData), NewProp_EntityHandle_MetaData) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_DestroyEntity_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventDestroyEntity_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EntityHandle_MetaData), NewProp_EntityHandle_MetaData) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_DestroyEntity_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventDestroyEntity_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_DestroyEntity_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_DestroyEntity_Statics::NewProp_EntityHandle,
@@ -325,7 +319,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasFragment_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasFragment_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_Statics::NewProp_Fragment = { "Fragment", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasFragment_Parms, Fragment), Z_Construct_UClass_UScriptStruct, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Fragment_MetaData), NewProp_Fragment_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasFragment_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -387,7 +381,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_OLD_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_OLD_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasFragment_OLD_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_OLD_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasFragment_OLD_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_OLD_Statics::NewProp_Fragment = { "Fragment", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasFragment_OLD_Parms, Fragment), Z_Construct_UScriptStruct_FInstancedStruct, METADATA_PARAMS(0, nullptr) }; // 1627169465
 void Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_OLD_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -456,7 +450,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasTag_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasTag_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_Statics::NewProp_Tag = { "Tag", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasTag_Parms, Tag), Z_Construct_UClass_UScriptStruct, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Tag_MetaData), NewProp_Tag_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasTag_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -520,7 +514,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_OLD_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_OLD_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasTag_OLD_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_OLD_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasTag_OLD_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_OLD_Statics::NewProp_Fragment = { "Fragment", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasTag_OLD_Parms, Fragment), Z_Construct_UScriptStruct_FInstancedStruct, METADATA_PARAMS(0, nullptr) }; // 1627169465
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_OLD_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventEntityHasTag_OLD_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_OLD_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -597,7 +591,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox
 };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox_Statics::NewProp_Center = { "Center", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindClosestHashGridEntityInBox_Parms, Center), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Center_MetaData), NewProp_Center_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox_Statics::NewProp_Extents = { "Extents", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindClosestHashGridEntityInBox_Parms, Extents), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Extents_MetaData), NewProp_Extents_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindClosestHashGridEntityInBox_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindClosestHashGridEntityInBox_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindClosestHashGridEntityInBox_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox_Statics::NewProp_ReturnBranch_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox_Statics::NewProp_ReturnBranch = { "ReturnBranch", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindClosestHashGridEntityInBox_Parms, ReturnBranch), Z_Construct_UEnum_MassCommunitySample_EReturnSuccess, METADATA_PARAMS(0, nullptr) }; // 285403919
@@ -671,8 +665,8 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Static
 };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Statics::NewProp_Center = { "Center", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindOctreeEntitiesInBox_Parms, Center), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Center_MetaData), NewProp_Center_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Statics::NewProp_Extents = { "Extents", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindOctreeEntitiesInBox_Parms, Extents), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Extents_MetaData), NewProp_Extents_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Statics::NewProp_Entities_Inner = { "Entities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Statics::NewProp_Entities = { "Entities", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindOctreeEntitiesInBox_Parms, Entities), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Statics::NewProp_Entities_Inner = { "Entities", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Statics::NewProp_Entities = { "Entities", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindOctreeEntitiesInBox_Parms, Entities), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventFindOctreeEntitiesInBox_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox_Statics::NewProp_Center,
@@ -706,6 +700,70 @@ DEFINE_FUNCTION(UMSBPFunctionLibrary::execFindOctreeEntitiesInBox)
 }
 // ********** End Class UMSBPFunctionLibrary Function FindOctreeEntitiesInBox **********************
 
+// ********** Begin Class UMSBPFunctionLibrary Function GenerateFibonacciSphereTransforms **********
+struct Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics
+{
+	struct MSBPFunctionLibrary_eventGenerateFibonacciSphereTransforms_Parms
+	{
+		FVector Origin;
+		int32 NumPoints;
+		float Radius;
+		TArray<FTransform> ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Mass|Spawning" },
+		{ "DisplayName", "Generate Fibonacci Sphere Transforms" },
+		{ "ModuleRelativePath", "Common/Misc/MSBPFunctionLibrary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Origin_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_Origin;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_NumPoints;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Radius;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_Origin = { "Origin", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGenerateFibonacciSphereTransforms_Parms, Origin), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Origin_MetaData), NewProp_Origin_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_NumPoints = { "NumPoints", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGenerateFibonacciSphereTransforms_Parms, NumPoints), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_Radius = { "Radius", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGenerateFibonacciSphereTransforms_Parms, Radius), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGenerateFibonacciSphereTransforms_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_Origin,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_NumPoints,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_Radius,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_ReturnValue_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMSBPFunctionLibrary, nullptr, "GenerateFibonacciSphereTransforms", Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::MSBPFunctionLibrary_eventGenerateFibonacciSphereTransforms_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::MSBPFunctionLibrary_eventGenerateFibonacciSphereTransforms_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMSBPFunctionLibrary::execGenerateFibonacciSphereTransforms)
+{
+	P_GET_STRUCT_REF(FVector,Z_Param_Out_Origin);
+	P_GET_PROPERTY(FIntProperty,Z_Param_NumPoints);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_Radius);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(TArray<FTransform>*)Z_Param__Result=UMSBPFunctionLibrary::GenerateFibonacciSphereTransforms(Z_Param_Out_Origin,Z_Param_NumPoints,Z_Param_Radius);
+	P_NATIVE_END;
+}
+// ********** End Class UMSBPFunctionLibrary Function GenerateFibonacciSphereTransforms ************
+
 // ********** Begin Class UMSBPFunctionLibrary Function GetEntityFragmentByType ********************
 struct Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType_Statics
 {
@@ -720,14 +778,8 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Mass" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n\x09 * You may need to make a new fragment struct variable to pass in here to serve as the type\n\x09 * A better experience would probably require a custom k2 node thingy?\n\x09 */" },
-#endif
 		{ "ExpandEnumAsExecs", "ReturnBranch" },
 		{ "ModuleRelativePath", "Common/Misc/MSBPFunctionLibrary.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "You may need to make a new fragment struct variable to pass in here to serve as the type\nA better experience would probably require a custom k2 node thingy?" },
-#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -743,7 +795,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType_Static
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityFragmentByType_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityFragmentByType_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType_Statics::NewProp_Fragment = { "Fragment", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityFragmentByType_Parms, Fragment), Z_Construct_UScriptStruct_FInstancedStruct, METADATA_PARAMS(0, nullptr) }; // 1627169465
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityFragmentByType_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType_Statics::NewProp_ReturnBranch_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
@@ -807,7 +859,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityTransform_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityTransform_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityTransform_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityTransform_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityTransform_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityTransform_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityTransform_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityTransform_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityTransform_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityTransform_Statics::PropPointers[] = {
@@ -863,7 +915,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityVelocity_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityVelocity_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityVelocity_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityVelocity_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityVelocity_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityVelocity_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityVelocity_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityVelocity_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetEntityVelocity_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityVelocity_Statics::PropPointers[] = {
@@ -926,7 +978,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_GetMassAgentEntity_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetMassAgentEntity_Statics::NewProp_OutEntity = { "OutEntity", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetMassAgentEntity_Parms, OutEntity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetMassAgentEntity_Statics::NewProp_OutEntity = { "OutEntity", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetMassAgentEntity_Parms, OutEntity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetMassAgentEntity_Statics::NewProp_Agent = { "Agent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetMassAgentEntity_Parms, Agent), Z_Construct_UClass_UMassAgentComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Agent_MetaData), NewProp_Agent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GetMassAgentEntity_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGetMassAgentEntity_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 void Z_Construct_UFunction_UMSBPFunctionLibrary_GetMassAgentEntity_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -1039,7 +1091,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_IsEntityValid_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_IsEntityValid_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventIsEntityValid_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_IsEntityValid_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventIsEntityValid_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_IsEntityValid_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventIsEntityValid_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UMSBPFunctionLibrary_IsEntityValid_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -1099,7 +1151,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityForce_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityForce_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityForce_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EntityHandle_MetaData), NewProp_EntityHandle_MetaData) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityForce_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityForce_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EntityHandle_MetaData), NewProp_EntityHandle_MetaData) }; // 2635041887
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityForce_Statics::NewProp_Force = { "Force", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityForce_Parms, Force), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Force_MetaData), NewProp_Force_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityForce_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityForce_Statics::NewProp_EntityHandle,
@@ -1140,13 +1192,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityFragment_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Mass" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n\x09 * Sets an entity's fragment data or adds it if it's ins't present. This might need more testing...\n\x09 */" },
-#endif
 		{ "ModuleRelativePath", "Common/Misc/MSBPFunctionLibrary.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Sets an entity's fragment data or adds it if it's ins't present. This might need more testing..." },
-#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
@@ -1159,7 +1205,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityFragment_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityFragment_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityFragment_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityFragment_Statics::NewProp_Entity = { "Entity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityFragment_Parms, Entity), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityFragment_Statics::NewProp_Fragment = { "Fragment", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityFragment_Parms, Fragment), Z_Construct_UScriptStruct_FInstancedStruct, METADATA_PARAMS(0, nullptr) }; // 1627169465
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityFragment_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityFragment_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityFragment_Statics::PropPointers[] = {
@@ -1216,7 +1262,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityTransform_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityTransform_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityTransform_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EntityHandle_MetaData), NewProp_EntityHandle_MetaData) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityTransform_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityTransform_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EntityHandle_MetaData), NewProp_EntityHandle_MetaData) }; // 2635041887
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityTransform_Statics::NewProp_Transform = { "Transform", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityTransform_Parms, Transform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Transform_MetaData), NewProp_Transform_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityTransform_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityTransform_Statics::NewProp_EntityHandle,
@@ -1264,7 +1310,7 @@ struct Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityVelocity_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityVelocity_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityVelocity_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityVelocity_Statics::NewProp_EntityHandle = { "EntityHandle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityVelocity_Parms, EntityHandle), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityVelocity_Statics::NewProp_Velocity = { "Velocity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSetEntityVelocity_Parms, Velocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityVelocity_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityVelocity_Statics::NewProp_EntityHandle,
@@ -1326,7 +1372,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFuncti
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSpawnEntityFromEntityConfig_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig_Statics::NewProp_ReturnBranch_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig_Statics::NewProp_ReturnBranch = { "ReturnBranch", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSpawnEntityFromEntityConfig_Parms, ReturnBranch), Z_Construct_UEnum_MassCommunitySample_EReturnSuccess, METADATA_PARAMS(0, nullptr) }; // 285403919
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSpawnEntityFromEntityConfig_Parms, ReturnValue), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 4214274932
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSpawnEntityFromEntityConfig_Parms, ReturnValue), Z_Construct_UScriptStruct_FMSEntityViewBPWrapper, METADATA_PARAMS(0, nullptr) }; // 2635041887
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig_Statics::NewProp_MassEntityConfig,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig_Statics::NewProp_WorldContextObject,
@@ -1358,6 +1404,83 @@ DEFINE_FUNCTION(UMSBPFunctionLibrary::execSpawnEntityFromEntityConfig)
 }
 // ********** End Class UMSBPFunctionLibrary Function SpawnEntityFromEntityConfig ******************
 
+// ********** Begin Class UMSBPFunctionLibrary Function SpawnMassEntityBatchWithTransformsAndVelocity 
+struct Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics
+{
+	struct MSBPFunctionLibrary_eventSpawnMassEntityBatchWithTransformsAndVelocity_Parms
+	{
+		const UObject* WorldContextObject;
+		UMassEntityConfigAsset* MassEntityConfig;
+		TArray<FTransform> SpawnTransforms;
+		float VelocityMultiplier;
+		EReturnSuccess ReturnBranch;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Mass" },
+		{ "ExpandEnumAsExecs", "ReturnBranch" },
+		{ "ModuleRelativePath", "Common/Misc/MSBPFunctionLibrary.h" },
+		{ "WorldContext", "WorldContextObject" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnTransforms_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_MassEntityConfig;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_SpawnTransforms_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_SpawnTransforms;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_VelocityMultiplier;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnBranch_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnBranch;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSpawnMassEntityBatchWithTransformsAndVelocity_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_MassEntityConfig = { "MassEntityConfig", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSpawnMassEntityBatchWithTransformsAndVelocity_Parms, MassEntityConfig), Z_Construct_UClass_UMassEntityConfigAsset_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_SpawnTransforms_Inner = { "SpawnTransforms", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_SpawnTransforms = { "SpawnTransforms", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSpawnMassEntityBatchWithTransformsAndVelocity_Parms, SpawnTransforms), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnTransforms_MetaData), NewProp_SpawnTransforms_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_VelocityMultiplier = { "VelocityMultiplier", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSpawnMassEntityBatchWithTransformsAndVelocity_Parms, VelocityMultiplier), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_ReturnBranch_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_ReturnBranch = { "ReturnBranch", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventSpawnMassEntityBatchWithTransformsAndVelocity_Parms, ReturnBranch), Z_Construct_UEnum_MassCommunitySample_EReturnSuccess, METADATA_PARAMS(0, nullptr) }; // 285403919
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_WorldContextObject,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_MassEntityConfig,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_SpawnTransforms_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_SpawnTransforms,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_VelocityMultiplier,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_ReturnBranch_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::NewProp_ReturnBranch,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMSBPFunctionLibrary, nullptr, "SpawnMassEntityBatchWithTransformsAndVelocity", Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::MSBPFunctionLibrary_eventSpawnMassEntityBatchWithTransformsAndVelocity_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::MSBPFunctionLibrary_eventSpawnMassEntityBatchWithTransformsAndVelocity_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMSBPFunctionLibrary::execSpawnMassEntityBatchWithTransformsAndVelocity)
+{
+	P_GET_OBJECT(UObject,Z_Param_WorldContextObject);
+	P_GET_OBJECT(UMassEntityConfigAsset,Z_Param_MassEntityConfig);
+	P_GET_TARRAY_REF(FTransform,Z_Param_Out_SpawnTransforms);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_VelocityMultiplier);
+	P_GET_ENUM_REF(EReturnSuccess,Z_Param_Out_ReturnBranch);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	UMSBPFunctionLibrary::SpawnMassEntityBatchWithTransformsAndVelocity(Z_Param_WorldContextObject,Z_Param_MassEntityConfig,Z_Param_Out_SpawnTransforms,Z_Param_VelocityMultiplier,(EReturnSuccess&)(Z_Param_Out_ReturnBranch));
+	P_NATIVE_END;
+}
+// ********** End Class UMSBPFunctionLibrary Function SpawnMassEntityBatchWithTransformsAndVelocity 
+
 // ********** Begin Class UMSBPFunctionLibrary *****************************************************
 void UMSBPFunctionLibrary::StaticRegisterNativesUMSBPFunctionLibrary()
 {
@@ -1371,6 +1494,7 @@ void UMSBPFunctionLibrary::StaticRegisterNativesUMSBPFunctionLibrary()
 		{ "EntityHasTag_OLD", &UMSBPFunctionLibrary::execEntityHasTag_OLD },
 		{ "FindClosestHashGridEntityInBox", &UMSBPFunctionLibrary::execFindClosestHashGridEntityInBox },
 		{ "FindOctreeEntitiesInBox", &UMSBPFunctionLibrary::execFindOctreeEntitiesInBox },
+		{ "GenerateFibonacciSphereTransforms", &UMSBPFunctionLibrary::execGenerateFibonacciSphereTransforms },
 		{ "GetEntityFragmentByType", &UMSBPFunctionLibrary::execGetEntityFragmentByType },
 		{ "GetEntityTransform", &UMSBPFunctionLibrary::execGetEntityTransform },
 		{ "GetEntityVelocity", &UMSBPFunctionLibrary::execGetEntityVelocity },
@@ -1382,6 +1506,7 @@ void UMSBPFunctionLibrary::StaticRegisterNativesUMSBPFunctionLibrary()
 		{ "SetEntityTransform", &UMSBPFunctionLibrary::execSetEntityTransform },
 		{ "SetEntityVelocity", &UMSBPFunctionLibrary::execSetEntityVelocity },
 		{ "SpawnEntityFromEntityConfig", &UMSBPFunctionLibrary::execSpawnEntityFromEntityConfig },
+		{ "SpawnMassEntityBatchWithTransformsAndVelocity", &UMSBPFunctionLibrary::execSpawnMassEntityBatchWithTransformsAndVelocity },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -1424,25 +1549,27 @@ struct Z_Construct_UClass_UMSBPFunctionLibrary_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_BreakIndexToInt, "BreakIndexToInt" }, // 994830285
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_DestroyEntity, "DestroyEntity" }, // 1495667519
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment, "EntityHasFragment" }, // 3607328003
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_OLD, "EntityHasFragment_OLD" }, // 978396762
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag, "EntityHasTag" }, // 2266987169
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_OLD, "EntityHasTag_OLD" }, // 4139458096
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox, "FindClosestHashGridEntityInBox" }, // 2757836886
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox, "FindOctreeEntitiesInBox" }, // 2565789822
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType, "GetEntityFragmentByType" }, // 2679669555
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityTransform, "GetEntityTransform" }, // 3520520848
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityVelocity, "GetEntityVelocity" }, // 93936264
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetMassAgentEntity, "GetMassAgentEntity" }, // 3143975735
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_BreakIndexToInt, "BreakIndexToInt" }, // 39861689
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_DestroyEntity, "DestroyEntity" }, // 2365637330
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment, "EntityHasFragment" }, // 1780299746
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasFragment_OLD, "EntityHasFragment_OLD" }, // 1880357837
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag, "EntityHasTag" }, // 2355451298
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_EntityHasTag_OLD, "EntityHasTag_OLD" }, // 3371099679
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox, "FindClosestHashGridEntityInBox" }, // 922025820
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox, "FindOctreeEntitiesInBox" }, // 2538841211
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms, "GenerateFibonacciSphereTransforms" }, // 3997927085
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType, "GetEntityFragmentByType" }, // 3288112004
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityTransform, "GetEntityTransform" }, // 3733937920
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityVelocity, "GetEntityVelocity" }, // 2197281323
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetMassAgentEntity, "GetMassAgentEntity" }, // 2377159527
 		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetMassEntityCount, "GetMassEntityCount" }, // 1308274362
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_IsEntityValid, "IsEntityValid" }, // 3098456863
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityForce, "SetEntityForce" }, // 1344640088
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityFragment, "SetEntityFragment" }, // 2673973419
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityTransform, "SetEntityTransform" }, // 1865745512
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityVelocity, "SetEntityVelocity" }, // 2676942515
-		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig, "SpawnEntityFromEntityConfig" }, // 1194746524
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_IsEntityValid, "IsEntityValid" }, // 904074731
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityForce, "SetEntityForce" }, // 2338076659
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityFragment, "SetEntityFragment" }, // 2074559440
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityTransform, "SetEntityTransform" }, // 799646741
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SetEntityVelocity, "SetEntityVelocity" }, // 917635097
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnEntityFromEntityConfig, "SpawnEntityFromEntityConfig" }, // 1119499797
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_SpawnMassEntityBatchWithTransformsAndVelocity, "SpawnMassEntityBatchWithTransformsAndVelocity" }, // 3847669237
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1484,23 +1611,23 @@ UMSBPFunctionLibrary::~UMSBPFunctionLibrary() {}
 // ********** End Class UMSBPFunctionLibrary *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EReturnSuccess_StaticEnum, TEXT("EReturnSuccess"), &Z_Registration_Info_UEnum_EReturnSuccess, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 285403919U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FMSEntityViewBPWrapper::StaticStruct, Z_Construct_UScriptStruct_FMSEntityViewBPWrapper_Statics::NewStructOps, TEXT("MSEntityViewBPWrapper"), &Z_Registration_Info_UScriptStruct_FMSEntityViewBPWrapper, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSEntityViewBPWrapper), 4214274932U) },
+		{ FMSEntityViewBPWrapper::StaticStruct, Z_Construct_UScriptStruct_FMSEntityViewBPWrapper_Statics::NewStructOps, TEXT("MSEntityViewBPWrapper"), &Z_Registration_Info_UScriptStruct_FMSEntityViewBPWrapper, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSEntityViewBPWrapper), 2635041887U) },
 		{ FMSEntityHandleBPWrapper::StaticStruct, Z_Construct_UScriptStruct_FMSEntityHandleBPWrapper_Statics::NewStructOps, TEXT("MSEntityHandleBPWrapper"), &Z_Registration_Info_UScriptStruct_FMSEntityHandleBPWrapper, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSEntityHandleBPWrapper), 4103997747U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMSBPFunctionLibrary, UMSBPFunctionLibrary::StaticClass, TEXT("UMSBPFunctionLibrary"), &Z_Registration_Info_UClass_UMSBPFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSBPFunctionLibrary), 2777316667U) },
+		{ Z_Construct_UClass_UMSBPFunctionLibrary, UMSBPFunctionLibrary::StaticClass, TEXT("UMSBPFunctionLibrary"), &Z_Registration_Info_UClass_UMSBPFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSBPFunctionLibrary), 3472520818U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_3266582639(TEXT("/Script/MassCommunitySample"),
-	Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_157085441(TEXT("/Script/MassCommunitySample"),
+	Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
