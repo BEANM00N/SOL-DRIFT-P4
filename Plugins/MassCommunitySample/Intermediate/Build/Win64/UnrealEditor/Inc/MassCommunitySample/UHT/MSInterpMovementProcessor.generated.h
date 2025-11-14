@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UMSInterpMovementProcessor ***********************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UMSInterpMovementProcessor_NoRegister();
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMSInterpMovementProcessor(); \
 	friend struct Z_Construct_UClass_UMSInterpMovementProcessor_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UMSInterpMovementProcessor)
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMSInterpMovementProcessor(UMSInterpMovementProcessor&&) = delete; \
 	UMSInterpMovementProcessor(const UMSInterpMovementProcessor&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~UMSInterpMovementProcessor();
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_12_PROLOG
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_GENERATED_BODY \
+#define FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_12_PROLOG
+#define FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_INCLASS_NO_PURE_DECLS \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class UMSInterpMovementProcessor;
 // ********** End Class UMSInterpMovementProcessor *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h
+#define CURRENT_FILE_ID FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSInterpMovementProcessor_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

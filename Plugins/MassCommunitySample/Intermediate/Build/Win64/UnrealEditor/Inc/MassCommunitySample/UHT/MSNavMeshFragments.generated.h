@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FNavMeshAIFragment ************************************************
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h_11_GENERATED_BODY \
+#define FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h_11_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FNavMeshAIFragment_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FMassFragment Super;
@@ -27,6 +27,6 @@ struct FNavMeshAIFragment;
 // ********** End ScriptStruct FNavMeshAIFragment **************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h
+#define CURRENT_FILE_ID FID_Users_marcu_Desktop_WORK_SOL_DRIFT_GameFiles_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshFragments_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
