@@ -13,6 +13,9 @@
 #include "Engine/World.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "CoreMinimal.h"
+#include "MassSpawnLocationProcessor.h"
+#include "MassMovementFragments.h"
+#include "MassSpawnerTypes.h"
 #include "Common/Fragments/MSOctreeFragments.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(MSBPFunctionLibrary)
@@ -47,7 +50,6 @@ bool UMSBPFunctionLibrary::EntityHasFragment(FMSEntityViewBPWrapper Entity, UScr
 
 	if (Entity.EntityView.IsValid())
 	{
-		// I am not sure if we care about a struct view or raw pointer here, but either should work
 		if (Entity.EntityView.GetFragmentDataStruct(Fragment).IsValid())
 		{
 			return true;
@@ -106,7 +108,6 @@ FMSEntityViewBPWrapper UMSBPFunctionLibrary::SpawnEntityFromEntityConfig(UMassEn
 	TArray<FMassEntityHandle> Entities;
 	SpawnerSubsystem->SpawnEntities(EntityTemplate.GetTemplateID(), 1, FStructView(), TSubclassOf<UMassProcessor>(), Entities);
 
-	//If no observers did anything, we can just assume the archetype is the same as our template
 	FMSEntityViewBPWrapper NewEntityWrapper;
 	NewEntityWrapper.EntityView = FMassEntityView(EntityManager, Entities[0]);
 
@@ -220,18 +221,141 @@ void UMSBPFunctionLibrary::DestroyEntity(const FMSEntityViewBPWrapper EntityHand
 	// Check if valid
 	if (EntityHandle.EntityView.IsValid())
 	{
-		// This is the clean wrapper function from your documentation.
-		// It's the correct way to destroy an entity from outside a processor.
 		EntityManager.Defer().DestroyEntity(Entity);
 	}
 	else
 	{
-		// This logic from your original code is still important
-		// if the entity was only reserved and never fully spawned.
 		EntityManager.ReleaseReservedEntity(Entity);
 	}
 }
 ////-------------------------------------
+
+void UMSBPFunctionLibrary::SpawnMassEntityBatchWithTransformsAndVelocity(
+	const UObject* WorldContextObject,
+	UMassEntityConfigAsset* MassEntityConfig,
+	const TArray<FTransform>& SpawnTransforms,
+	float VelocityMultiplier,
+	EReturnSuccess& ReturnBranch
+)
+{
+	UWorld* World = WorldContextObject ? WorldContextObject->GetWorld() : nullptr;
+	const int32 Count = SpawnTransforms.Num();
+
+	if (!World || !MassEntityConfig || Count == 0)
+	{
+		ReturnBranch = EReturnSuccess::Failure;
+		return;
+	}
+
+	// Get both subsystems
+	UMassSpawnerSubsystem* SpawnerSubsystem = World->GetSubsystem<UMassSpawnerSubsystem>();
+	UMassEntitySubsystem* EntitySubsystem = World->GetSubsystem<UMassEntitySubsystem>();
+
+	if (!SpawnerSubsystem || !EntitySubsystem)
+	{
+		ReturnBranch = EReturnSuccess::Failure;
+		return;
+	}
+
+	FMassEntityManager& EntityManager = EntitySubsystem->GetMutableEntityManager();
+	const FMassEntityTemplate& EntityTemplate = MassEntityConfig->GetConfig().GetOrCreateEntityTemplate(*World);
+	
+	//Package Transform data
+	FMassTransformsSpawnData TransformsData;
+	TransformsData.Transforms = SpawnTransforms;
+	
+	FInstancedStruct SpawnDataStruct;
+	SpawnDataStruct.InitializeAs<FMassTransformsSpawnData>(TransformsData);
+
+	// This array will be filled by the spawner with the new entity handles
+	TArray<FMassEntityHandle> OutEntities; 
+
+	// Call SpawnEntities.
+	SpawnerSubsystem->SpawnEntities(
+		EntityTemplate.GetTemplateID(),
+		Count,
+		FConstStructView(SpawnDataStruct),
+		UMassSpawnLocationProcessor::StaticClass(),
+		OutEntities
+	);
+	
+	// Get the composition descriptor directly.
+	const FMassArchetypeCompositionDescriptor& CompositionDesc = EntityTemplate.GetCompositionDescriptor();
+
+	// Check if the composition contains the FMassVelocityFragment *type* using a template.
+	if (!CompositionDesc.Contains<FMassVelocityFragment>())
+	{
+		UE_LOG(LogTemp, Warning, TEXT("SpawnMassEntityBatchWithTransformsAndVelocity: The EntityConfig '%s' does not have FMassVelocityFragment. Cannot set velocity."), *MassEntityConfig->GetName());
+		ReturnBranch = EReturnSuccess::Success; // Spawned, but couldn't set velocity
+		return;
+	}
+
+	for (int32 i = 0; i < OutEntities.Num(); ++i)
+	{
+		const FMassEntityHandle& Entity = OutEntities[i];
+		if (EntityManager.IsEntityValid(Entity))
+		{
+			// Calculate velocity
+			const FVector Velocity = SpawnTransforms[i].GetRotation().GetForwardVector() * VelocityMultiplier;
+			
+			// Create the fragment instance
+			FMassVelocityFragment NewVelocityFragment;
+			NewVelocityFragment.Value = Velocity;
+
+			// Push the command to set the velocity fragment
+			EntityManager.Defer().PushCommand<FMassCommandAddFragmentInstances>(Entity, NewVelocityFragment);
+		}
+	}
+
+	ReturnBranch = EReturnSuccess::Success;
+}
+
+TArray<FTransform> UMSBPFunctionLibrary::GenerateFibonacciSphereTransforms(const FVector& Origin, int32 NumPoints, float Radius)
+{
+	TArray<FTransform> OutTransforms;
+	if (NumPoints <= 0)
+	{
+		return OutTransforms;
+	}
+
+	// Pre-allocate the array for performance
+	OutTransforms.Reserve(NumPoints);
+
+	// GOLDEN RATIO BABY
+	const float GoldenAngle = 2.399963f; // PI * (3.0 - sqrt(5.0))
+
+	// Handle the (NumPoints - 1) denominator, prevents divide-by-zero if NumPoints is 1
+	const float Denominator = (float)FMath::Max(1, NumPoints - 1);
+
+	for (int32 i = 0; i < NumPoints; ++i)
+	{
+		const float i_float = (float)i;
+
+		// Calculate Y
+		// Clamp to prevent floating point errors from causing Sqrt(negative number)
+		const float y = FMath::Clamp(1.0f - (i_float / Denominator) * 2.0f, -1.0f, 1.0f);
+
+		// Calculate the radius at this height
+		const float radius_at_y = FMath::Sqrt(1.0f - (y * y));
+
+		// Calculate the angle
+		const float theta = i_float * GoldenAngle;
+
+		// Calculate X and Z
+		const float x = FMath::Cos(theta) * radius_at_y;
+		const float z = FMath::Sin(theta) * radius_at_y;
+
+		// Create the final transform
+		const FVector Direction = FVector(x, y, z); // This is a unit vector
+		const FVector Location = Origin + (Direction * Radius);
+		const FRotator Rotation = Direction.ToOrientationRotator();
+
+		// Add to array
+		OutTransforms.Emplace(FTransform(Rotation, Location));
+	}
+
+	return OutTransforms;
+}
 
 bool UMSBPFunctionLibrary::GetMassAgentEntity(FMSEntityViewBPWrapper& OutEntity, UMassAgentComponent* Agent, const UObject* WorldContextObject)
 {

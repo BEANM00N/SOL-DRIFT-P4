@@ -6,17 +6,6 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "MSBPFunctionLibrary.generated.h"
 
-
-// 
-
-// TODO @karl having two of these feels quite weird, it makes sense in C++ but do we care about the distinction in BP?
-// Feedback please!! What makes the most sense? Personally I think BP stuff should be where we have the most freedom
-// to just get data we need on the spot even if it means we do some repeated work. Or perhaps the mass entity view can be smarter?
-/**
- * FMassEntityView wrapper for for general blueprint use
- * This can be rather evil due to the fact that the EntityView is transient in representing the actual state
- * If you want to store an entity ID longer term you might be better off with the FMSEntityHandleBPWrapper
- */
 USTRUCT(BlueprintType)
 struct FMSEntityViewBPWrapper
 {
@@ -78,6 +67,18 @@ public:
 	static FMSEntityViewBPWrapper SpawnEntityFromEntityConfig(UMassEntityConfigAsset* MassEntityConfig,
 															 const UObject* WorldContextObject,EReturnSuccess& ReturnBranch);
 
+	UFUNCTION(BlueprintCallable, Category = "Mass", meta = (WorldContext = "WorldContextObject", ExpandEnumAsExecs = "ReturnBranch"))
+	static void SpawnMassEntityBatchWithTransformsAndVelocity(
+		const UObject* WorldContextObject,
+		UMassEntityConfigAsset* MassEntityConfig,
+		const TArray<FTransform>& SpawnTransforms,
+		float VelocityMultiplier,
+		EReturnSuccess& ReturnBranch
+	);
+
+	UFUNCTION(BlueprintPure, Category = "Mass|Spawning", meta = (DisplayName = "Generate Fibonacci Sphere Transforms"))
+	static TArray<FTransform> GenerateFibonacciSphereTransforms(const FVector& Origin, int32 NumPoints, float Radius);
+
 	UFUNCTION(BlueprintCallable, Category = "Mass")
 	static void SetEntityTransform(const FMSEntityViewBPWrapper EntityHandle,const FTransform Transform);
 
@@ -107,18 +108,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Mass", meta = (WorldContext = "WorldContextObject",ExpandEnumAsExecs = "ReturnBranch"))
 	static void FindClosestHashGridEntityInBox(const FVector Center,const FVector Extents, FMSEntityViewBPWrapper& Entity, const UObject* WorldContextObject,EReturnSuccess& ReturnBranch);
-
-	/**
-	 * Sets an entity's fragment data or adds it if it's ins't present. This might need more testing...
-	 */
+	
 	UFUNCTION(BlueprintCallable, Category = "Mass", meta=(WorldContext = "WorldContextObject"))
 	static void SetEntityFragment(FMSEntityViewBPWrapper Entity, FInstancedStruct Fragment,const UObject* WorldContextObject);
-
-
-	/**
-	 * You may need to make a new fragment struct variable to pass in here to serve as the type
-	 * A better experience would probably require a custom k2 node thingy?
-	 */
+	
 	UFUNCTION(BlueprintCallable, Category = "Mass", meta=(WorldContext = "WorldContextObject",ExpandEnumAsExecs = "ReturnBranch"))
 	static FInstancedStruct GetEntityFragmentByType(FMSEntityViewBPWrapper Entity, FInstancedStruct Fragment,const UObject* WorldContextObject, EReturnSuccess& ReturnBranch);
 
