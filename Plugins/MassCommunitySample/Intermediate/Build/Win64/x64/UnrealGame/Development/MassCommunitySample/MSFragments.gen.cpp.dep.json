@@ -1,0 +1,35 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\sol-drift-p4\\plugins\\masscommunitysample\\intermediate\\build\\win64\\unrealgame\\inc\\masscommunitysample\\uht\\msfragments.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\sol-drift-p4\\intermediate\\build\\win64\\x64\\soldrift\\development\\engine\\sharedpch.engine.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\sol-drift-p4\\plugins\\masscommunitysample\\intermediate\\build\\win64\\x64\\unrealgame\\development\\masscommunitysample\\definitions.masscommunitysample.h",
+            "d:\\sol-drift-p4\\plugins\\masscommunitysample\\source\\masscommunitysample\\common\\fragments\\msfragments.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massentitytypes.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structtypebitset.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structutilstypes.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\instancedstruct.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structutils.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\coreuobject\\uht\\instancedstruct.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massprocessingtypes.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\massentity\\uht\\massprocessingtypes.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structarrayview.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\structview.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\structutils\\sharedstruct.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\coreuobject\\uht\\sharedstruct.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massexternalsubsystemtraits.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massentityelementtypes.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\massentity\\uht\\massentityelementtypes.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massentityconcepts.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\masstestableensures.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\massentity\\public\\massentityhandle.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\massentity\\uht\\massentityhandle.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\massentity\\uht\\massentitytypes.generated.h",
+            "d:\\sol-drift-p4\\plugins\\masscommunitysample\\intermediate\\build\\win64\\unrealgame\\inc\\masscommunitysample\\uht\\msfragments.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
