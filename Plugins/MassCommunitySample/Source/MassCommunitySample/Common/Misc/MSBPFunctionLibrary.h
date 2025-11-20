@@ -67,15 +67,18 @@ public:
 	static FMSEntityViewBPWrapper SpawnEntityFromEntityConfig(UMassEntityConfigAsset* MassEntityConfig,
 															 const UObject* WorldContextObject,EReturnSuccess& ReturnBranch);
 
-	UFUNCTION(BlueprintCallable, Category = "Mass", meta = (WorldContext = "WorldContextObject", ExpandEnumAsExecs = "ReturnBranch"))
-	static void SpawnMassEntityBatchWithTransformsAndVelocity(
-		const UObject* WorldContextObject,
-		UMassEntityConfigAsset* MassEntityConfig,
-		const TArray<FTransform>& SpawnTransforms,
-		float VelocityMultiplier,
-		EReturnSuccess& ReturnBranch
+	UFUNCTION(BlueprintCallable, Category = "Mass", meta = (WorldContext = "WorldContextObject", ExpandEnumAsExecs = "ReturnBranch"))  
+	static void SpawnMassEntityBatchWithTransformsAndVelocity(  
+		const UObject* WorldContextObject,  
+		UMassEntityConfigAsset* MassEntityConfig,  
+		const TArray<FTransform>& SpawnTransforms,  
+		float VelocityMultiplier,  
+		EReturnSuccess& ReturnBranch  
 	);
 
+	UFUNCTION(BlueprintCallable, Category = "Mass", meta = (DisplayName = "Generate Ring Transforms"))  
+	static TArray<FTransform> GenerateRingTransforms(const FVector& Origin, int32 NumPoints, float Radius);
+	
 	UFUNCTION(BlueprintPure, Category = "Mass|Spawning", meta = (DisplayName = "Generate Fibonacci Sphere Transforms"))
 	static TArray<FTransform> GenerateFibonacciSphereTransforms(const FVector& Origin, int32 NumPoints, float Radius);
 

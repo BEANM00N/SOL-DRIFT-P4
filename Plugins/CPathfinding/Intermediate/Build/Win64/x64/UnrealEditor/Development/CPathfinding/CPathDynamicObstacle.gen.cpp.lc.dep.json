@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\joshm\\desktop\\sol-drift-p4\\plugins\\cpathfinding\\intermediate\\build\\win64\\unrealeditor\\inc\\cpathfinding\\uht\\cpathdynamicobstacle.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\joshm\\desktop\\sol-drift-p4\\intermediate\\build\\win64\\x64\\soldrifteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\joshm\\desktop\\sol-drift-p4\\plugins\\cpathfinding\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cpathfinding\\definitions.cpathfinding.h",
+            "c:\\users\\joshm\\desktop\\sol-drift-p4\\plugins\\cpathfinding\\source\\cpathfinding\\public\\cpathdynamicobstacle.h",
+            "c:\\users\\joshm\\desktop\\sol-drift-p4\\plugins\\cpathfinding\\intermediate\\build\\win64\\unrealeditor\\inc\\cpathfinding\\uht\\cpathdynamicobstacle.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -3,7 +3,6 @@
 	{
 		"Module.MassCommunitySample.cpp.obj": [
 			"PerModuleInline.gen.cpp.obj",
-			"MSBPFunctionLibrary.cpp.obj",
 			"MSDeferredCommands.cpp.obj",
 			"MSDocumentationActor.cpp.obj",
 			"MSInterpMovementProcessor.cpp.obj",
@@ -50,7 +49,8 @@
 			"MSSceneCompTransformToActorTraits.gen.cpp.obj",
 			"MSVisualizationSample.gen.cpp.obj",
 			"SpacedGridLocationsSpawnDataGenerator.gen.cpp.obj",
-			"ThisLocationSpawnDataGenerator.gen.cpp.obj"
+			"ThisLocationSpawnDataGenerator.gen.cpp.obj",
+			"MSBPFunctionLibrary.cpp.obj"
 		]
 	}
 }

@@ -1,21 +1,25 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
-#include "MSBPFunctionLibrary.h"
-#include "MassAgentComponent.h"
-#include "MassCommonFragments.h"
-#include "MassEntitySubsystem.h"
-#include "MassEntityManager.h"
-#include "MassMovementFragments.h"
-#include "MassSpawnerSubsystem.h"
-#include "MSSubsystem.h"
-#include "VectorTypes.h"
-#include "Engine/World.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "CoreMinimal.h"
-#include "MassSpawnLocationProcessor.h"
-#include "MassMovementFragments.h"
-#include "MassSpawnerTypes.h"
+#include "MSBPFunctionLibrary.h"  
+#include "MassAgentComponent.h"  
+#include "MassCommonFragments.h"  
+#include "MassSpawnLocationProcessor.h"  
+#include "MassEntitySubsystem.h"  
+#include "MassEntityManager.h"  
+#include "MassMovementFragments.h"  
+#include "MassSpawnerSubsystem.h"  
+#include "MSSubsystem.h"  
+#include "MassArchetypeTypes.h"          
+#include "MassMovementFragments.h"  
+#include "MassSpawnLocationProcessor.h"  
+#include "MassMovementTypes.h"  
+#include "MassEntityTypes.h"  
+#include "VectorTypes.h"  
+#include "Engine/World.h"  
+#include "Kismet/BlueprintFunctionLibrary.h"  
+#include "CoreMinimal.h"  
+#include "ProjectileSim/Fragments/MSProjectileFragments.h"  
+#include "SpacedGridLocationsSpawnDataGenerator.h"  
 #include "Common/Fragments/MSOctreeFragments.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(MSBPFunctionLibrary)
@@ -230,84 +234,68 @@ void UMSBPFunctionLibrary::DestroyEntity(const FMSEntityViewBPWrapper EntityHand
 }
 ////-------------------------------------
 
-void UMSBPFunctionLibrary::SpawnMassEntityBatchWithTransformsAndVelocity(
-	const UObject* WorldContextObject,
-	UMassEntityConfigAsset* MassEntityConfig,
-	const TArray<FTransform>& SpawnTransforms,
-	float VelocityMultiplier,
-	EReturnSuccess& ReturnBranch
-)
-{
-	UWorld* World = WorldContextObject ? WorldContextObject->GetWorld() : nullptr;
-	const int32 Count = SpawnTransforms.Num();
-
-	if (!World || !MassEntityConfig || Count == 0)
-	{
-		ReturnBranch = EReturnSuccess::Failure;
-		return;
-	}
-
-	// Get both subsystems
-	UMassSpawnerSubsystem* SpawnerSubsystem = World->GetSubsystem<UMassSpawnerSubsystem>();
-	UMassEntitySubsystem* EntitySubsystem = World->GetSubsystem<UMassEntitySubsystem>();
-
-	if (!SpawnerSubsystem || !EntitySubsystem)
-	{
-		ReturnBranch = EReturnSuccess::Failure;
-		return;
-	}
-
-	FMassEntityManager& EntityManager = EntitySubsystem->GetMutableEntityManager();
-	const FMassEntityTemplate& EntityTemplate = MassEntityConfig->GetConfig().GetOrCreateEntityTemplate(*World);
+void UMSBPFunctionLibrary::SpawnMassEntityBatchWithTransformsAndVelocity(  
+    const UObject* WorldContextObject,  
+    UMassEntityConfigAsset* MassEntityConfig,  
+    const TArray<FTransform>& SpawnTransforms,  
+    float VelocityMultiplier,  
+    EReturnSuccess& ReturnBranch  
+)  
+{  
+    UWorld* World = WorldContextObject ? WorldContextObject->GetWorld() : nullptr;  
+    const int32 Count = SpawnTransforms.Num();  
+  
+    if (!World || !MassEntityConfig || Count == 0)  
+    {       ReturnBranch = EReturnSuccess::Failure;  
+       return;  
+    }  
+    // Get both subsystems  
+    UMassSpawnerSubsystem* SpawnerSubsystem = World->GetSubsystem<UMassSpawnerSubsystem>();  
+    UMassEntitySubsystem* EntitySubsystem = World->GetSubsystem<UMassEntitySubsystem>();  
+  
+    if (!SpawnerSubsystem || !EntitySubsystem)  
+    {       ReturnBranch = EReturnSuccess::Failure;  
+       return;  
+    }  
+    FMassEntityManager& EntityManager = EntitySubsystem->GetMutableEntityManager();  
+    const FMassEntityTemplate& EntityTemplate = MassEntityConfig->GetConfig().GetOrCreateEntityTemplate(*World);  
 	
-	//Package Transform data
-	FMassTransformsSpawnData TransformsData;
-	TransformsData.Transforms = SpawnTransforms;
-	
-	FInstancedStruct SpawnDataStruct;
-	SpawnDataStruct.InitializeAs<FMassTransformsSpawnData>(TransformsData);
+	FMassTransformsSpawnData TransformsData;  
+    TransformsData.Transforms = SpawnTransforms;  
+    FInstancedStruct SpawnDataStruct;  
+    SpawnDataStruct.InitializeAs<FMassTransformsSpawnData>(TransformsData);  
+  
+    // This array will be filled by the spawner with the new entity handles  
+    TArray<FMassEntityHandle> OutEntities;   
+    
+    SpawnerSubsystem->SpawnEntities(  
+       EntityTemplate.GetTemplateID(),  
+       Count,       FConstStructView(SpawnDataStruct),  
+       UMassSpawnLocationProcessor::StaticClass(),  
+       OutEntities    );  
 
-	// This array will be filled by the spawner with the new entity handles
-	TArray<FMassEntityHandle> OutEntities; 
-
-	// Call SpawnEntities.
-	SpawnerSubsystem->SpawnEntities(
-		EntityTemplate.GetTemplateID(),
-		Count,
-		FConstStructView(SpawnDataStruct),
-		UMassSpawnLocationProcessor::StaticClass(),
-		OutEntities
-	);
-	
-	// Get the composition descriptor directly.
-	const FMassArchetypeCompositionDescriptor& CompositionDesc = EntityTemplate.GetCompositionDescriptor();
-
-	// Check if the composition contains the FMassVelocityFragment *type* using a template.
-	if (!CompositionDesc.Contains<FMassVelocityFragment>())
-	{
-		UE_LOG(LogTemp, Warning, TEXT("SpawnMassEntityBatchWithTransformsAndVelocity: The EntityConfig '%s' does not have FMassVelocityFragment. Cannot set velocity."), *MassEntityConfig->GetName());
-		ReturnBranch = EReturnSuccess::Success; // Spawned, but couldn't set velocity
-		return;
-	}
-
-	for (int32 i = 0; i < OutEntities.Num(); ++i)
-	{
-		const FMassEntityHandle& Entity = OutEntities[i];
-		if (EntityManager.IsEntityValid(Entity))
-		{
-			// Calculate velocity
-			const FVector Velocity = SpawnTransforms[i].GetRotation().GetForwardVector() * VelocityMultiplier;
-			
-			// Create the fragment instance
-			FMassVelocityFragment NewVelocityFragment;
-			NewVelocityFragment.Value = Velocity;
-
-			// Push the command to set the velocity fragment
-			EntityManager.Defer().PushCommand<FMassCommandAddFragmentInstances>(Entity, NewVelocityFragment);
-		}
-	}
-
-	ReturnBranch = EReturnSuccess::Success;
+    const FMassArchetypeCompositionDescriptor& CompositionDesc = EntityTemplate.GetCompositionDescriptor();  
+  
+    // Check if the composition contains the FMassVelocityFragment 
+    if (!CompositionDesc.Contains<FMassVelocityFragment>())  
+    {       UE_LOG(LogTemp, Warning, TEXT("SpawnMassEntityBatchWithTransformsAndVelocity: The EntityConfig '%s' does not have FMassVelocityFragment. Cannot set velocity."), *MassEntityConfig->GetName());  
+       ReturnBranch = EReturnSuccess::Success;
+       return;  
+    }    
+  
+    for (int32 i = 0; i < OutEntities.Num(); ++i)  
+    {       const FMassEntityHandle& Entity = OutEntities[i];  
+       if (EntityManager.IsEntityValid(Entity))  
+       {          // Calculate the velocity  
+          const FVector Velocity = SpawnTransforms[i].GetRotation().GetForwardVector() * VelocityMultiplier;  
+          // Create the fragment instance  
+          FMassVelocityFragment NewVelocityFragment;  
+          NewVelocityFragment.Value = Velocity;  
+  
+          // Push the command to set/overwrite the velocity fragment  
+          EntityManager.Defer().PushCommand<FMassCommandAddFragmentInstances>(Entity, NewVelocityFragment);  
+       }    }  
+    ReturnBranch = EReturnSuccess::Success;  
 }
 
 TArray<FTransform> UMSBPFunctionLibrary::GenerateFibonacciSphereTransforms(const FVector& Origin, int32 NumPoints, float Radius)
@@ -355,6 +343,37 @@ TArray<FTransform> UMSBPFunctionLibrary::GenerateFibonacciSphereTransforms(const
 	}
 
 	return OutTransforms;
+}
+
+TArray<FTransform> UMSBPFunctionLibrary::GenerateRingTransforms(const FVector& Origin, int32 NumPoints, float Radius)  
+{  
+	TArray<FTransform> OutTransforms;  
+	if (NumPoints <= 0)  
+	{       return OutTransforms;  
+	}  
+	OutTransforms.Reserve(NumPoints);  
+  
+	// The angle between each point in radians  
+	const float AngleStep = UE_TWO_PI / (float)NumPoints;  
+  
+	for (int32 i = 0; i < NumPoints; ++i)  
+	{       // Calculate the angle for this point  
+		const float Theta = (float)i * AngleStep;  
+  
+		// Calculate X and Y on a unit circle  
+		const float x = FMath::Cos(Theta);  
+		const float y = FMath::Sin(Theta);  
+  
+		// Create the direction vector (Flat on Z)  
+		const FVector Direction = FVector(x, y, 0.0f);  
+		// Calculate final location  
+		const FVector Location = Origin + (Direction * Radius);  
+		// Face away from the center  
+		const FRotator Rotation = Direction.ToOrientationRotator();  
+  
+		OutTransforms.Emplace(FTransform(Rotation, Location));  
+	}  
+	return OutTransforms;  
 }
 
 bool UMSBPFunctionLibrary::GetMassAgentEntity(FMSEntityViewBPWrapper& OutEntity, UMassAgentComponent* Agent, const UObject* WorldContextObject)
