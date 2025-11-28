@@ -17,5 +17,4 @@
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathFindPath.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathNode.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathOctree.cpp"
-#include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathVolume.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathVolumeGroundPrio.cpp"

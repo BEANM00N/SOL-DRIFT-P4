@@ -94,21 +94,21 @@ void ACPathCore::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	while (!OutputQueue.IsEmpty())
+	// CHANGE: Only process a limited number of results per frame to prevent hitches
+	int ProcessedCount = 0;
+	int MaxResultsPerFrame = 1; // Start with 1, increase if queue backs up
+
+	while (!OutputQueue.IsEmpty() && ProcessedCount < MaxResultsPerFrame)
 	{
 		std::pair<FCPathResult*, PathResultDelegate> Result;
 		OutputQueue.Dequeue(Result);
 
 		if (Result.second.IsBound())
 		{
-			//auto UPtr = std::unique_ptr<FCPathResult>(Result.first);
 			Result.second.Execute(*Result.first);
 		}
-		else
-		{
-			PrintCoreMessage(FString("Tick - DELEGATE wasn't bound"));
-		}
 		delete Result.first;
+		ProcessedCount++;
 	}
 }
 

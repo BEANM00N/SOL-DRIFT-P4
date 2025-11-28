@@ -20,8 +20,8 @@
 			"CPathFindPath.cpp.obj",
 			"CPathNode.cpp.obj",
 			"CPathOctree.cpp.obj",
-			"CPathVolume.cpp.obj",
-			"CPathVolumeGroundPrio.cpp.obj"
+			"CPathVolumeGroundPrio.cpp.obj",
+			"CPathVolume.cpp.obj"
 		]
 	}
 }

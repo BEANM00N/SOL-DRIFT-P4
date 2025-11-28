@@ -605,7 +605,7 @@ CPathOctree* ACPathVolume::FindClosestFreeLeaf(FVector WorldLocation, uint32& Tr
 		CPathOctree* Tree = FindTreeByID(CurrentNode.TreeID);
 		if (Tree->GetIsFree())
 		{
-			if (!GetWorld()->LineTraceTestByChannel(WorldLocation, CurrentNode.WorldLocation, TraceChannel))
+			//if (!GetWorld()->LineTraceTestByChannel(WorldLocation, CurrentNode.WorldLocation, TraceChannel))
 			{
 				TreeID = CurrentNode.TreeID;
 				//DrawDebugLine(GetWorld(), WorldLocation, CurrentNode.WorldLocation, FColor::Green, false, 1);
@@ -644,7 +644,7 @@ CPathOctree* ACPathVolume::FindClosestFreeLeaf(FVector WorldLocation, uint32& Tr
 		CPathOctree* Tree = FindTreeByID(CurrentNode.TreeID);
 		if (Tree->GetIsFree())
 		{
-			if (!GetWorld()->LineTraceTestByChannel(WorldLocation, CurrentNode.WorldLocation, TraceChannel))
+			//if (!GetWorld()->LineTraceTestByChannel(WorldLocation, CurrentNode.WorldLocation, TraceChannel))
 			{
 				TreeID = CurrentNode.TreeID;
 				//DrawDebugLine(GetWorld(), WorldLocation, CurrentNode.WorldLocation, FColor::Green, false, 1);
