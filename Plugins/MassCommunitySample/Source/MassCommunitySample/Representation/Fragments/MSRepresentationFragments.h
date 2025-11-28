@@ -29,6 +29,10 @@ struct MASSCOMMUNITYSAMPLE_API FSharedNiagaraSystemFragment : public FMassShared
 
 	UPROPERTY()
 	TArray<FQuat4f> ParticleOrientations;
+
+	inline static FName ParticleIDsName = "MassParticleIDs";
+	UPROPERTY()
+	TArray<int32> EntityIDs;
 	
 	// todo: make this an instanced struct you can do whatever in?
 	// This is quite gross but not having this here risks archetype sorting fun afaik

@@ -48,11 +48,15 @@ void UMSNiagaraRepresentationProcessors::Execute(FMassEntityManager& EntityManag
 		int32 ArrayResizeAmount = SharedNiagaraFragment.IteratorOffset + QueryLength;
 
 		SharedNiagaraFragment.IteratorOffset += QueryLength;
+		
+		// Resize all arrays including IDs
 		SharedNiagaraFragment.ParticlePositions.SetNumUninitialized(ArrayResizeAmount);
 		SharedNiagaraFragment.ParticleOrientations.SetNumUninitialized(ArrayResizeAmount);
+		SharedNiagaraFragment.EntityIDs.SetNumUninitialized(ArrayResizeAmount); // --- ADDED ---
 
 		FVector* PositionsDataArray = SharedNiagaraFragment.ParticlePositions.GetData();
 		FQuat4f* DirectionsDataArray = SharedNiagaraFragment.ParticleOrientations.GetData();
+		int32* IDsDataArray = SharedNiagaraFragment.EntityIDs.GetData(); // --- ADDED ---
 
 
 		for (int32 i = 0; i < QueryLength; ++i)
@@ -63,6 +67,10 @@ void UMSNiagaraRepresentationProcessors::Execute(FMassEntityManager& EntityManag
 
 			PositionsDataArray[ArrayPosition] = Transform.GetTranslation();
 			DirectionsDataArray[ArrayPosition] = (FQuat4f)Transform.GetRotation();
+			
+			// --- ADDED --- 
+			// Use the Entity Index as a stable ID for the ribbon to track
+			IDsDataArray[ArrayPosition] = Context.GetEntity(i).Index;
 		}
 	});
 
@@ -79,6 +87,7 @@ void UMSNiagaraRepresentationProcessors::Execute(FMassEntityManager& EntityManag
 			{
 				SharedNiagaraFragment.ParticlePositions.Reset();
 				SharedNiagaraFragment.ParticleOrientations.Reset();
+				SharedNiagaraFragment.EntityIDs.Reset(); // --- ADDED ---
 			}
 
 			// congratulations to me (karl) for making SetNiagaraArrayVector public in an engine PR (he's so cool) (wow)
@@ -86,6 +95,10 @@ void UMSNiagaraRepresentationProcessors::Execute(FMassEntityManager& EntityManag
 			                                                                 SharedNiagaraFragment.ParticlePositions);
 			UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayQuat(NiagaraComponent, SharedNiagaraFragment.ParticleOrientationsParameterName,
 			                                                               SharedNiagaraFragment.ParticleOrientations);
+			// --- ADDED ---
+			// Push the IDs array to Niagara
+			UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayInt32(NiagaraComponent, SharedNiagaraFragment.ParticleIDsName,
+																			SharedNiagaraFragment.EntityIDs);
 		}
 		else
 		{
