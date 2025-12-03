@@ -22,6 +22,7 @@ MASSCOMMUNITYSAMPLE_API UScriptStruct* Z_Construct_UScriptStruct_FMSAngularVeloc
 MASSCOMMUNITYSAMPLE_API UScriptStruct* Z_Construct_UScriptStruct_FMSBasicMovement();
 MASSCOMMUNITYSAMPLE_API UScriptStruct* Z_Construct_UScriptStruct_FMSExampleSharedFragment();
 MASSCOMMUNITYSAMPLE_API UScriptStruct* Z_Construct_UScriptStruct_FMSGravityTag();
+MASSCOMMUNITYSAMPLE_API UScriptStruct* Z_Construct_UScriptStruct_FMSNameFragment();
 MASSCOMMUNITYSAMPLE_API UScriptStruct* Z_Construct_UScriptStruct_FMSRotationFollowsVelocityTag();
 MASSCOMMUNITYSAMPLE_API UScriptStruct* Z_Construct_UScriptStruct_FOriginalTransformFragment();
 MASSCOMMUNITYSAMPLE_API UScriptStruct* Z_Construct_UScriptStruct_FSampleColorFragment();
@@ -438,6 +439,65 @@ UScriptStruct* Z_Construct_UScriptStruct_FMassSampleDebuggableTag()
 }
 // ********** End ScriptStruct FMassSampleDebuggableTag ********************************************
 
+// ********** Begin ScriptStruct FMSNameFragment ***************************************************
+static_assert(std::is_polymorphic<FMSNameFragment>() == std::is_polymorphic<FMassFragment>(), "USTRUCT FMSNameFragment cannot be polymorphic unless super FMassFragment is polymorphic");
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FMSNameFragment;
+class UScriptStruct* FMSNameFragment::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FMSNameFragment.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FMSNameFragment.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FMSNameFragment, (UObject*)Z_Construct_UPackage__Script_MassCommunitySample(), TEXT("MSNameFragment"));
+	}
+	return Z_Registration_Info_UScriptStruct_FMSNameFragment.OuterSingleton;
+}
+struct Z_Construct_UScriptStruct_FMSNameFragment_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Common/Fragments/MSFragments.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[] = {
+		{ "Category", "Mass" },
+		{ "ModuleRelativePath", "Common/Fragments/MSFragments.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FNamePropertyParams NewProp_Name;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMSNameFragment>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+};
+const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FMSNameFragment_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FMSNameFragment, Name), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Name_MetaData), NewProp_Name_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMSNameFragment_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMSNameFragment_Statics::NewProp_Name,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMSNameFragment_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FMSNameFragment_Statics::StructParams = {
+	(UObject* (*)())Z_Construct_UPackage__Script_MassCommunitySample,
+	Z_Construct_UScriptStruct_FMassFragment,
+	&NewStructOps,
+	"MSNameFragment",
+	Z_Construct_UScriptStruct_FMSNameFragment_Statics::PropPointers,
+	UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMSNameFragment_Statics::PropPointers),
+	sizeof(FMSNameFragment),
+	alignof(FMSNameFragment),
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	EStructFlags(0x00000201),
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMSNameFragment_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FMSNameFragment_Statics::Struct_MetaDataParams)
+};
+UScriptStruct* Z_Construct_UScriptStruct_FMSNameFragment()
+{
+	if (!Z_Registration_Info_UScriptStruct_FMSNameFragment.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FMSNameFragment.InnerSingleton, Z_Construct_UScriptStruct_FMSNameFragment_Statics::StructParams);
+	}
+	return Z_Registration_Info_UScriptStruct_FMSNameFragment.InnerSingleton;
+}
+// ********** End ScriptStruct FMSNameFragment *****************************************************
+
 // ********** Begin ScriptStruct FMSExampleSharedFragment ******************************************
 static_assert(std::is_polymorphic<FMSExampleSharedFragment>() == std::is_polymorphic<FMassConstSharedFragment>(), "USTRUCT FMSExampleSharedFragment cannot be polymorphic unless super FMassConstSharedFragment is polymorphic");
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FMSExampleSharedFragment;
@@ -607,12 +667,13 @@ struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source
 		{ FMSRotationFollowsVelocityTag::StaticStruct, Z_Construct_UScriptStruct_FMSRotationFollowsVelocityTag_Statics::NewStructOps, TEXT("MSRotationFollowsVelocityTag"), &Z_Registration_Info_UScriptStruct_FMSRotationFollowsVelocityTag, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSRotationFollowsVelocityTag), 1508828527U) },
 		{ FMSBasicMovement::StaticStruct, Z_Construct_UScriptStruct_FMSBasicMovement_Statics::NewStructOps, TEXT("MSBasicMovement"), &Z_Registration_Info_UScriptStruct_FMSBasicMovement, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSBasicMovement), 2411187772U) },
 		{ FMassSampleDebuggableTag::StaticStruct, Z_Construct_UScriptStruct_FMassSampleDebuggableTag_Statics::NewStructOps, TEXT("MassSampleDebuggableTag"), &Z_Registration_Info_UScriptStruct_FMassSampleDebuggableTag, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMassSampleDebuggableTag), 879555536U) },
+		{ FMSNameFragment::StaticStruct, Z_Construct_UScriptStruct_FMSNameFragment_Statics::NewStructOps, TEXT("MSNameFragment"), &Z_Registration_Info_UScriptStruct_FMSNameFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSNameFragment), 2394578100U) },
 		{ FMSExampleSharedFragment::StaticStruct, Z_Construct_UScriptStruct_FMSExampleSharedFragment_Statics::NewStructOps, TEXT("MSExampleSharedFragment"), &Z_Registration_Info_UScriptStruct_FMSExampleSharedFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSExampleSharedFragment), 1350320826U) },
 		{ FMSAngularForce::StaticStruct, Z_Construct_UScriptStruct_FMSAngularForce_Statics::NewStructOps, TEXT("MSAngularForce"), &Z_Registration_Info_UScriptStruct_FMSAngularForce, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSAngularForce), 2650035214U) },
 		{ FMSAngularVelocity::StaticStruct, Z_Construct_UScriptStruct_FMSAngularVelocity_Statics::NewStructOps, TEXT("MSAngularVelocity"), &Z_Registration_Info_UScriptStruct_FMSAngularVelocity, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSAngularVelocity), 2973283123U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_1449356564(TEXT("/Script/MassCommunitySample"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_3837618177(TEXT("/Script/MassCommunitySample"),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
 	nullptr, 0);

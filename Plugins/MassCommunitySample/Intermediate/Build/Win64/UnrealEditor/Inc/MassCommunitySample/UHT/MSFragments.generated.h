@@ -86,8 +86,18 @@ struct FMSBasicMovement;
 struct FMassSampleDebuggableTag;
 // ********** End ScriptStruct FMassSampleDebuggableTag ********************************************
 
+// ********** Begin ScriptStruct FMSNameFragment ***************************************************
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h_91_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FMSNameFragment_Statics; \
+	static class UScriptStruct* StaticStruct(); \
+	typedef FMassFragment Super;
+
+
+struct FMSNameFragment;
+// ********** End ScriptStruct FMSNameFragment *****************************************************
+
 // ********** Begin ScriptStruct FMSExampleSharedFragment ******************************************
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h_96_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h_105_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMSExampleSharedFragment_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FMassConstSharedFragment Super;
@@ -97,7 +107,7 @@ struct FMSExampleSharedFragment;
 // ********** End ScriptStruct FMSExampleSharedFragment ********************************************
 
 // ********** Begin ScriptStruct FMSAngularForce ***************************************************
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h_112_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h_121_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMSAngularForce_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FMassFragment Super;
@@ -107,7 +117,7 @@ struct FMSAngularForce;
 // ********** End ScriptStruct FMSAngularForce *****************************************************
 
 // ********** Begin ScriptStruct FMSAngularVelocity ************************************************
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h_119_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h_128_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMSAngularVelocity_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FMassFragment Super;

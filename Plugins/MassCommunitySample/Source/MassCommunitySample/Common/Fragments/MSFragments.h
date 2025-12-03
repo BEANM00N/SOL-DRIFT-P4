@@ -85,6 +85,15 @@ struct MASSCOMMUNITYSAMPLE_API FMassSampleDebuggableTag : public FMassTag
 	GENERATED_BODY()
 };
 
+USTRUCT(BlueprintType)
+struct MASSCOMMUNITYSAMPLE_API FMSNameFragment : public FMassFragment
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mass")
+	FName Name;
+};
+
 
 // A simple shared fragment example
 // Generally these are added through traits

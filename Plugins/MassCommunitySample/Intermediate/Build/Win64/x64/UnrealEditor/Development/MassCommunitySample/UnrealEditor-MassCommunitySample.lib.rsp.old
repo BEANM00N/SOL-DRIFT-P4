@@ -9,5 +9,7 @@
 "D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
 "D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp.obj"
 "D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/MSNiagaraRepresentationProcessors.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/MassCommunitySample.init.gen.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/MSRepresentationFragments.gen.cpp.obj"
 "D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Default.rc2.res"
 /OUT:"D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/UnrealEditor-MassCommunitySample.lib"
