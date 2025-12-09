@@ -2,6 +2,15 @@
 	"RemapUnityFiles": 
 	{
 		"Module.MassCommunitySample.cpp.obj": [
+			"MSMassPhysicsTypes.gen.cpp.obj",
+			"MSNavMeshFragments.gen.cpp.obj",
+			"MSOctreeFragments.gen.cpp.obj",
+			"MSProjectileFragments.gen.cpp.obj",
+			"MSRepresentationTypes.gen.cpp.obj",
+			"MSSceneCompTransformToActorTraits.gen.cpp.obj",
+			"MSVisualizationSample.gen.cpp.obj",
+			"SpacedGridLocationsSpawnDataGenerator.gen.cpp.obj",
+			"ThisLocationSpawnDataGenerator.gen.cpp.obj",
 			"MSBPFunctionLibrary.cpp.obj",
 			"MSDeferredCommands.cpp.obj",
 			"MSDocumentationActor.cpp.obj",
@@ -40,16 +49,7 @@
 			"MSNiagaraRepresentationTraits.cpp.obj",
 			"MassCommunitySample.init.gen.cpp.obj",
 			"MSFragments.gen.cpp.obj",
-			"MSMassPhysicsTypes.gen.cpp.obj",
-			"MSNavMeshFragments.gen.cpp.obj",
-			"MSOctreeFragments.gen.cpp.obj",
-			"MSProjectileFragments.gen.cpp.obj",
-			"MSRepresentationFragments.gen.cpp.obj",
-			"MSRepresentationTypes.gen.cpp.obj",
-			"MSSceneCompTransformToActorTraits.gen.cpp.obj",
-			"MSVisualizationSample.gen.cpp.obj",
-			"SpacedGridLocationsSpawnDataGenerator.gen.cpp.obj",
-			"ThisLocationSpawnDataGenerator.gen.cpp.obj"
+			"MSRepresentationFragments.gen.cpp.obj"
 		]
 	}
 }

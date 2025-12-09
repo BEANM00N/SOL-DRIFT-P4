@@ -60,6 +60,7 @@ struct FMSEntityHandleBPWrapper;
 	DECLARE_FUNCTION(execGetEntityTransform); \
 	DECLARE_FUNCTION(execSetEntityTransform); \
 	DECLARE_FUNCTION(execGenerateFibonacciSphereTransforms); \
+	DECLARE_FUNCTION(execGenerateRingTransforms); \
 	DECLARE_FUNCTION(execSpawnMassEntityBatchWithTransformsAndVelocity); \
 	DECLARE_FUNCTION(execSpawnEntityFromEntityConfig); \
 	DECLARE_FUNCTION(execIsEntityValid); \

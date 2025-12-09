@@ -57,6 +57,9 @@ struct Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ParticleOrientations_MetaData[] = {
 		{ "ModuleRelativePath", "Representation/Fragments/MSRepresentationFragments.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EntityIDs_MetaData[] = {
+		{ "ModuleRelativePath", "Representation/Fragments/MSRepresentationFragments.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FirstCustomParticleData_MetaData[] = {
 		{ "ModuleRelativePath", "Representation/Fragments/MSRepresentationFragments.h" },
 	};
@@ -69,6 +72,8 @@ struct Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ParticlePositions;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ParticleOrientations_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ParticleOrientations;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_EntityIDs_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_EntityIDs;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_FirstCustomParticleData_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_FirstCustomParticleData;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_SecondCustomParticleData_Inner;
@@ -85,6 +90,8 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FShared
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_ParticlePositions = { "ParticlePositions", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSharedNiagaraSystemFragment, ParticlePositions), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ParticlePositions_MetaData), NewProp_ParticlePositions_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_ParticleOrientations_Inner = { "ParticleOrientations", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FQuat4f, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_ParticleOrientations = { "ParticleOrientations", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSharedNiagaraSystemFragment, ParticleOrientations), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ParticleOrientations_MetaData), NewProp_ParticleOrientations_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_EntityIDs_Inner = { "EntityIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_EntityIDs = { "EntityIDs", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSharedNiagaraSystemFragment, EntityIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EntityIDs_MetaData), NewProp_EntityIDs_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_FirstCustomParticleData_Inner = { "FirstCustomParticleData", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_FirstCustomParticleData = { "FirstCustomParticleData", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FSharedNiagaraSystemFragment, FirstCustomParticleData), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FirstCustomParticleData_MetaData), NewProp_FirstCustomParticleData_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_SecondCustomParticleData_Inner = { "SecondCustomParticleData", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
@@ -95,6 +102,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_ParticlePositions,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_ParticleOrientations_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_ParticleOrientations,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_EntityIDs_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_EntityIDs,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_FirstCustomParticleData_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_FirstCustomParticleData,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewProp_SecondCustomParticleData_Inner,
@@ -331,13 +340,13 @@ UScriptStruct* Z_Construct_UScriptStruct_FSampleISMPerInstanceSingleFloatFragmen
 struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Fragments_MSRepresentationFragments_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSharedNiagaraSystemFragment::StaticStruct, Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewStructOps, TEXT("SharedNiagaraSystemFragment"), &Z_Registration_Info_UScriptStruct_FSharedNiagaraSystemFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSharedNiagaraSystemFragment), 1661842643U) },
+		{ FSharedNiagaraSystemFragment::StaticStruct, Z_Construct_UScriptStruct_FSharedNiagaraSystemFragment_Statics::NewStructOps, TEXT("SharedNiagaraSystemFragment"), &Z_Registration_Info_UScriptStruct_FSharedNiagaraSystemFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSharedNiagaraSystemFragment), 1135948991U) },
 		{ FCustomNiagaraFloatsPairFragment::StaticStruct, Z_Construct_UScriptStruct_FCustomNiagaraFloatsPairFragment_Statics::NewStructOps, TEXT("CustomNiagaraFloatsPairFragment"), &Z_Registration_Info_UScriptStruct_FCustomNiagaraFloatsPairFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCustomNiagaraFloatsPairFragment), 3642007706U) },
 		{ FSharedNiagaraSystemSpawnFragment::StaticStruct, Z_Construct_UScriptStruct_FSharedNiagaraSystemSpawnFragment_Statics::NewStructOps, TEXT("SharedNiagaraSystemSpawnFragment"), &Z_Registration_Info_UScriptStruct_FSharedNiagaraSystemSpawnFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSharedNiagaraSystemSpawnFragment), 2849974379U) },
 		{ FSampleISMPerInstanceSingleFloatFragment::StaticStruct, Z_Construct_UScriptStruct_FSampleISMPerInstanceSingleFloatFragment_Statics::NewStructOps, TEXT("SampleISMPerInstanceSingleFloatFragment"), &Z_Registration_Info_UScriptStruct_FSampleISMPerInstanceSingleFloatFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSampleISMPerInstanceSingleFloatFragment), 13815720U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Fragments_MSRepresentationFragments_h__Script_MassCommunitySample_2721566682(TEXT("/Script/MassCommunitySample"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Fragments_MSRepresentationFragments_h__Script_MassCommunitySample_1626067681(TEXT("/Script/MassCommunitySample"),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Fragments_MSRepresentationFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Fragments_MSRepresentationFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
 	nullptr, 0);

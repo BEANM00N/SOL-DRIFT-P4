@@ -764,6 +764,70 @@ DEFINE_FUNCTION(UMSBPFunctionLibrary::execGenerateFibonacciSphereTransforms)
 }
 // ********** End Class UMSBPFunctionLibrary Function GenerateFibonacciSphereTransforms ************
 
+// ********** Begin Class UMSBPFunctionLibrary Function GenerateRingTransforms *********************
+struct Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics
+{
+	struct MSBPFunctionLibrary_eventGenerateRingTransforms_Parms
+	{
+		FVector Origin;
+		int32 NumPoints;
+		float Radius;
+		TArray<FTransform> ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Mass" },
+		{ "DisplayName", "Generate Ring Transforms" },
+		{ "ModuleRelativePath", "Common/Misc/MSBPFunctionLibrary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Origin_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_Origin;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_NumPoints;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Radius;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_Origin = { "Origin", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGenerateRingTransforms_Parms, Origin), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Origin_MetaData), NewProp_Origin_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_NumPoints = { "NumPoints", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGenerateRingTransforms_Parms, NumPoints), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_Radius = { "Radius", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGenerateRingTransforms_Parms, Radius), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MSBPFunctionLibrary_eventGenerateRingTransforms_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_Origin,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_NumPoints,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_Radius,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_ReturnValue_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMSBPFunctionLibrary, nullptr, "GenerateRingTransforms", Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::MSBPFunctionLibrary_eventGenerateRingTransforms_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::MSBPFunctionLibrary_eventGenerateRingTransforms_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMSBPFunctionLibrary::execGenerateRingTransforms)
+{
+	P_GET_STRUCT_REF(FVector,Z_Param_Out_Origin);
+	P_GET_PROPERTY(FIntProperty,Z_Param_NumPoints);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_Radius);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(TArray<FTransform>*)Z_Param__Result=UMSBPFunctionLibrary::GenerateRingTransforms(Z_Param_Out_Origin,Z_Param_NumPoints,Z_Param_Radius);
+	P_NATIVE_END;
+}
+// ********** End Class UMSBPFunctionLibrary Function GenerateRingTransforms ***********************
+
 // ********** Begin Class UMSBPFunctionLibrary Function GetEntityFragmentByType ********************
 struct Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType_Statics
 {
@@ -1495,6 +1559,7 @@ void UMSBPFunctionLibrary::StaticRegisterNativesUMSBPFunctionLibrary()
 		{ "FindClosestHashGridEntityInBox", &UMSBPFunctionLibrary::execFindClosestHashGridEntityInBox },
 		{ "FindOctreeEntitiesInBox", &UMSBPFunctionLibrary::execFindOctreeEntitiesInBox },
 		{ "GenerateFibonacciSphereTransforms", &UMSBPFunctionLibrary::execGenerateFibonacciSphereTransforms },
+		{ "GenerateRingTransforms", &UMSBPFunctionLibrary::execGenerateRingTransforms },
 		{ "GetEntityFragmentByType", &UMSBPFunctionLibrary::execGetEntityFragmentByType },
 		{ "GetEntityTransform", &UMSBPFunctionLibrary::execGetEntityTransform },
 		{ "GetEntityVelocity", &UMSBPFunctionLibrary::execGetEntityVelocity },
@@ -1558,6 +1623,7 @@ struct Z_Construct_UClass_UMSBPFunctionLibrary_Statics
 		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_FindClosestHashGridEntityInBox, "FindClosestHashGridEntityInBox" }, // 922025820
 		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_FindOctreeEntitiesInBox, "FindOctreeEntitiesInBox" }, // 2538841211
 		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateFibonacciSphereTransforms, "GenerateFibonacciSphereTransforms" }, // 3997927085
+		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GenerateRingTransforms, "GenerateRingTransforms" }, // 4009962427
 		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityFragmentByType, "GetEntityFragmentByType" }, // 3288112004
 		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityTransform, "GetEntityTransform" }, // 3733937920
 		{ &Z_Construct_UFunction_UMSBPFunctionLibrary_GetEntityVelocity, "GetEntityVelocity" }, // 2197281323
@@ -1621,10 +1687,10 @@ struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source
 		{ FMSEntityHandleBPWrapper::StaticStruct, Z_Construct_UScriptStruct_FMSEntityHandleBPWrapper_Statics::NewStructOps, TEXT("MSEntityHandleBPWrapper"), &Z_Registration_Info_UScriptStruct_FMSEntityHandleBPWrapper, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSEntityHandleBPWrapper), 4103997747U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMSBPFunctionLibrary, UMSBPFunctionLibrary::StaticClass, TEXT("UMSBPFunctionLibrary"), &Z_Registration_Info_UClass_UMSBPFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSBPFunctionLibrary), 3472520818U) },
+		{ Z_Construct_UClass_UMSBPFunctionLibrary, UMSBPFunctionLibrary::StaticClass, TEXT("UMSBPFunctionLibrary"), &Z_Registration_Info_UClass_UMSBPFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSBPFunctionLibrary), 3808193022U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_157085441(TEXT("/Script/MassCommunitySample"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_2583847513(TEXT("/Script/MassCommunitySample"),
 	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
 	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_MSBPFunctionLibrary_h__Script_MassCommunitySample_Statics::EnumInfo));

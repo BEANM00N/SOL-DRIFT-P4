@@ -6,7 +6,7 @@
         "PCH": "d:\\sol-drift-p4\\intermediate\\build\\win64\\x64\\soldrift\\development\\engine\\sharedpch.engine.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
         "Includes": [
             "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\intermediate\\build\\win64\\x64\\unrealgame\\development\\fmodstudioniagara\\definitions.fmodstudioniagara.h",
-            "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\source\\fmodstudioniagara\\private\\fmodniagaraeventplayer.cpp",
+            "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\intermediate\\build\\win64\\unrealgame\\inc\\fmodstudioniagara\\uht\\fmodniagaraeventplayer.gen.cpp",
             "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\source\\fmodstudioniagara\\public\\fmodniagaraeventplayer.h",
             "d:\\sol-drift-p4\\plugins\\fmodstudio\\source\\fmodstudio\\classes\\fmodevent.h",
             "d:\\sol-drift-p4\\plugins\\fmodstudio\\source\\fmodstudio\\classes\\fmodasset.h",
@@ -130,6 +130,8 @@
             "d:\\epic\\ue_5.6\\engine\\plugins\\fx\\niagara\\intermediate\\build\\win64\\unrealgame\\inc\\niagara\\uht\\niagarasystem.generated.h",
             "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\source\\fmodstudioniagara\\public\\fmodstudioniagara.h",
             "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\intermediate\\build\\win64\\unrealgame\\inc\\fmodstudioniagara\\uht\\fmodniagaraeventplayer.generated.h",
+            "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\intermediate\\build\\win64\\unrealgame\\inc\\fmodstudioniagara\\uht\\fmodstudioniagara.init.gen.cpp",
+            "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\source\\fmodstudioniagara\\private\\fmodniagaraeventplayer.cpp",
             "d:\\sol-drift-p4\\plugins\\fmodstudio\\source\\fmodstudio\\classes\\fmodblueprintstatics.h",
             "d:\\sol-drift-p4\\plugins\\fmodstudio\\intermediate\\build\\win64\\unrealgame\\inc\\fmodstudio\\uht\\fmodblueprintstatics.generated.h",
             "d:\\sol-drift-p4\\plugins\\fmodstudio\\source\\fmodstudio\\classes\\fmodsettings.h",
