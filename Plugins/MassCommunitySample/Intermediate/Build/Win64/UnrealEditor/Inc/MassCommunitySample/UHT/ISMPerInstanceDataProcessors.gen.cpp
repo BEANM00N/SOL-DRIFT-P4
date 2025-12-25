@@ -182,15 +182,15 @@ UISMPerInstanceDataChangerExampleProcessor::~UISMPerInstanceDataChangerExamplePr
 // ********** End Class UISMPerInstanceDataChangerExampleProcessor *********************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Processors_ISMPerInstanceDataProcessors_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Processors_ISMPerInstanceDataProcessors_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UismPerInstanceDataUpdater, UismPerInstanceDataUpdater::StaticClass, TEXT("UismPerInstanceDataUpdater"), &Z_Registration_Info_UClass_UismPerInstanceDataUpdater, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UismPerInstanceDataUpdater), 3459480459U) },
 		{ Z_Construct_UClass_UISMPerInstanceDataChangerExampleProcessor, UISMPerInstanceDataChangerExampleProcessor::StaticClass, TEXT("UISMPerInstanceDataChangerExampleProcessor"), &Z_Registration_Info_UClass_UISMPerInstanceDataChangerExampleProcessor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UISMPerInstanceDataChangerExampleProcessor), 1464258795U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Processors_ISMPerInstanceDataProcessors_h__Script_MassCommunitySample_2097825031(TEXT("/Script/MassCommunitySample"),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Processors_ISMPerInstanceDataProcessors_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Processors_ISMPerInstanceDataProcessors_h__Script_MassCommunitySample_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Processors_ISMPerInstanceDataProcessors_h__Script_MassCommunitySample_2097825031(TEXT("/Script/MassCommunitySample"),
+	Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Processors_ISMPerInstanceDataProcessors_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_Processors_ISMPerInstanceDataProcessors_h__Script_MassCommunitySample_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
