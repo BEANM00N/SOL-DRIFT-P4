@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-CPathfinding.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
-"D:/SOL-DRIFT-P4/Plugins/CPathfinding/Intermediate/Build/Win64/x64/UnrealEditor/Development/CPathfinding/Module.CPathfinding.cpp.obj"
-"D:/SOL-DRIFT-P4/Plugins/CPathfinding/Intermediate/Build/Win64/x64/UnrealEditor/Development/CPathfinding/Default.rc2.res"
-/OUT:"D:/SOL-DRIFT-P4/Plugins/CPathfinding/Intermediate/Build/Win64/x64/UnrealEditor/Development/CPathfinding/UnrealEditor-CPathfinding.lib"
+"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/CPathfinding/Intermediate/Build/Win64/x64/UnrealEditor/Development/CPathfinding/Module.CPathfinding.cpp.obj"
+"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/CPathfinding/Intermediate/Build/Win64/x64/UnrealEditor/Development/CPathfinding/Default.rc2.res"
+/OUT:"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/CPathfinding/Intermediate/Build/Win64/x64/UnrealEditor/Development/CPathfinding/UnrealEditor-CPathfinding.lib"

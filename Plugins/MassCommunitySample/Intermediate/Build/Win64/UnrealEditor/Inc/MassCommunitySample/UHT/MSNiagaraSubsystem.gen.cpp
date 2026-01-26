@@ -116,14 +116,14 @@ UMSNiagaraSubsystem::~UMSNiagaraSubsystem() {}
 // ********** End Class UMSNiagaraSubsystem ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSNiagaraSubsystem_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSNiagaraSubsystem_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UMSNiagaraSubsystem, UMSNiagaraSubsystem::StaticClass, TEXT("UMSNiagaraSubsystem"), &Z_Registration_Info_UClass_UMSNiagaraSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSNiagaraSubsystem), 3081823724U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSNiagaraSubsystem_h__Script_MassCommunitySample_1268576756(TEXT("/Script/MassCommunitySample"),
-	Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSNiagaraSubsystem_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSNiagaraSubsystem_h__Script_MassCommunitySample_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSNiagaraSubsystem_h__Script_MassCommunitySample_1268576756(TEXT("/Script/MassCommunitySample"),
+	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSNiagaraSubsystem_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSNiagaraSubsystem_h__Script_MassCommunitySample_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
