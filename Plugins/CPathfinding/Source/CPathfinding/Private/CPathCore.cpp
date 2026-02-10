@@ -96,13 +96,13 @@ void ACPathCore::Tick(float DeltaTime)
 
 	// CHANGE: Only process a limited number of results per frame to prevent hitches
 	int ProcessedCount = 0;
-	int MaxResultsPerFrame = 1; // Start with 1, increase if queue backs up
+	int MaxResultsPerFrame = 50; // Start with 1, increase if queue backs up
 
 	while (!OutputQueue.IsEmpty() && ProcessedCount < MaxResultsPerFrame)
 	{
 		std::pair<FCPathResult*, PathResultDelegate> Result;
 		OutputQueue.Dequeue(Result);
-
+d
 		if (Result.second.IsBound())
 		{
 			Result.second.Execute(*Result.first);
