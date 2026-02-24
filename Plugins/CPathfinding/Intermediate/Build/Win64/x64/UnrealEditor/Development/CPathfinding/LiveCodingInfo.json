@@ -12,6 +12,7 @@
 			"CPathVolumeGroundPrio.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"CPathAsyncVolumeGeneration.cpp.obj",
+			"CPathCore.cpp.obj",
 			"CPathDefines.cpp.obj",
 			"CPathDynamicObstacle.cpp.obj",
 			"CPathfinding.cpp.obj",
@@ -20,8 +21,7 @@
 			"CPathNode.cpp.obj",
 			"CPathOctree.cpp.obj",
 			"CPathVolume.cpp.obj",
-			"CPathVolumeGroundPrio.cpp.obj",
-			"CPathCore.cpp.obj"
+			"CPathVolumeGroundPrio.cpp.obj"
 		]
 	}
 }

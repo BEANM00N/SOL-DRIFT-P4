@@ -1,9 +1,0 @@
-{
-	"BuildId": "43139311",
-	"Modules": 
-	{
-		"SubstanceConnector": "UnrealEditor-SubstanceConnector.dylib",
-		"SubstanceCore": "UnrealEditor-SubstanceCore.dylib",
-		"SubstanceEditor": "UnrealEditor-SubstanceEditor.dylib"
-	}
-}
