@@ -9,6 +9,7 @@
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Intermediate/Build/Win64/UnrealEditor/Inc/CPathfinding/UHT/CPathVolumeGroundPrio.gen.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Intermediate/Build/Win64/x64/UnrealEditor/Development/CPathfinding/PerModuleInline.gen.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathAsyncVolumeGeneration.cpp"
+#include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathCore.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathDefines.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathDynamicObstacle.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathfinding.cpp"

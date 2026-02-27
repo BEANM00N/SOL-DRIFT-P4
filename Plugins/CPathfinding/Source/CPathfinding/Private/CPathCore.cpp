@@ -102,7 +102,7 @@ void ACPathCore::Tick(float DeltaTime)
 	{
 		std::pair<FCPathResult*, PathResultDelegate> Result;
 		OutputQueue.Dequeue(Result);
-d
+
 		if (Result.second.IsBound())
 		{
 			Result.second.Execute(*Result.first);
