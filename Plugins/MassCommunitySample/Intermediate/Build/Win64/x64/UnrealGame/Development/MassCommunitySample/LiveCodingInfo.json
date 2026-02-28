@@ -2,10 +2,13 @@
 	"RemapUnityFiles": 
 	{
 		"Module.MassCommunitySample.cpp.obj": [
+			"MassCommunitySample.init.gen.cpp.obj",
+			"MSFragments.gen.cpp.obj",
 			"MSMassPhysicsTypes.gen.cpp.obj",
 			"MSNavMeshFragments.gen.cpp.obj",
 			"MSOctreeFragments.gen.cpp.obj",
 			"MSProjectileFragments.gen.cpp.obj",
+			"MSRepresentationFragments.gen.cpp.obj",
 			"MSRepresentationTypes.gen.cpp.obj",
 			"MSSceneCompTransformToActorTraits.gen.cpp.obj",
 			"MSVisualizationSample.gen.cpp.obj",
@@ -46,10 +49,7 @@
 			"MSNiagaraSubsystem.cpp.obj",
 			"ISMPerInstanceDataProcessors.cpp.obj",
 			"MSNiagaraRepresentationProcessors.cpp.obj",
-			"MSNiagaraRepresentationTraits.cpp.obj",
-			"MassCommunitySample.init.gen.cpp.obj",
-			"MSFragments.gen.cpp.obj",
-			"MSRepresentationFragments.gen.cpp.obj"
+			"MSNiagaraRepresentationTraits.cpp.obj"
 		]
 	}
 }

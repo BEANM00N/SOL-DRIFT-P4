@@ -45,7 +45,7 @@
                                 },
                                 "region": {
                                     "startLine": 54,
-                                    "startColumn": 48,
+                                    "startColumn": 47,
                                     "snippet": {
                                         "text": "\t\tBuildContext.AddSharedFragment(EntityManager.GetOrCreateSharedFragmentByHash<FSharedCollisionSettingsFragment>("
                                     }
@@ -70,7 +70,7 @@
                                 },
                                 "region": {
                                     "startLine": 83,
-                                    "startColumn": 23,
+                                    "startColumn": 22,
                                     "snippet": {
                                         "text": "          QueryParams.ClearIgnoredActors();"
                                     }
@@ -95,7 +95,7 @@
                                 },
                                 "region": {
                                     "startLine": 42,
-                                    "startColumn": 23,
+                                    "startColumn": 21,
                                     "snippet": {
                                         "text": "\t\treturn MassManager->GetOrCreateSharedFragmentByHash<FSharedNiagaraSystemFragment>(ParamsHash,SharedStructToReturn);"
                                     }
@@ -120,7 +120,7 @@
                                 },
                                 "region": {
                                     "startLine": 73,
-                                    "startColumn": 22,
+                                    "startColumn": 20,
                                     "snippet": {
                                         "text": "\treturn MassManager->GetOrCreateSharedFragmentByHash<FSharedNiagaraSystemFragment>(ParamsHash,SharedStructToReturn);"
                                     }
