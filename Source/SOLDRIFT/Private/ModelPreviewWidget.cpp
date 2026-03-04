@@ -1,12 +1,15 @@
 ﻿#include "ModelPreviewWidget.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/PostProcessComponent.h" 
+
+// --- Wrap Editor-Only Includes ---
+#if WITH_EDITOR
 #include "AdvancedPreviewScene.h"
 #include "SEditorViewport.h"
-#include "Components/StaticMeshComponent.h"
 #include "EditorViewportClient.h"
-#include "Components/PostProcessComponent.h" // <-- Required for Post Processing
 
 // =========================================================
-// 1. The Slate Viewport Implementation
+// 1. The Slate Viewport Implementation (Editor Only)
 // =========================================================
 class SMyCustomViewport : public SEditorViewport
 {
@@ -41,6 +44,7 @@ protected:
 private:
     TSharedPtr<FAdvancedPreviewScene> PreviewScene;
 };
+#endif // WITH_EDITOR
 
 // =========================================================
 // 2. The UMG Wrapper Implementation
@@ -52,15 +56,19 @@ UModelPreviewWidget::UModelPreviewWidget()
 
 UModelPreviewWidget::~UModelPreviewWidget()
 {
-    // Clean up
+// --- Wrap Editor-Only Cleanup ---
+#if WITH_EDITOR
     if (PreviewScene.IsValid())
     {
         PreviewScene.Reset();
     }
+#endif
 }
 
 TSharedRef<SWidget> UModelPreviewWidget::RebuildWidget()
 {
+// --- Wrap Editor-Only Widget Generation ---
+#if WITH_EDITOR
     if (IsDesignTime())
     {
         // Return a blank box if we are just looking at the UMG designer
@@ -77,7 +85,7 @@ TSharedRef<SWidget> UModelPreviewWidget::RebuildWidget()
     ConstructionValues.bCreatePhysicsScene = false;
     PreviewScene = MakeShareable(new FAdvancedPreviewScene(ConstructionValues));
 
-    // --- NEW: Add Post Processing for Exposure Control ---
+    // Add Post Processing for Exposure Control
     UPostProcessComponent* PPComp = NewObject<UPostProcessComponent>(GetTransientPackage(), NAME_None, RF_Transient);
     PPComp->bUnbound = true; // Ensure it affects the entire viewport camera
     
@@ -88,7 +96,6 @@ TSharedRef<SWidget> UModelPreviewWidget::RebuildWidget()
     PPComp->Settings.AutoExposureMaxBrightness = 1.0f;
     
     PreviewScene->AddComponent(PPComp, FTransform::Identity);
-    // -----------------------------------------------------
 
     // Add a mesh component to the isolated scene
     PreviewMeshComponent = NewObject<UStaticMeshComponent>(GetTransientPackage(), NAME_None, RF_Transient);
@@ -98,35 +105,47 @@ TSharedRef<SWidget> UModelPreviewWidget::RebuildWidget()
     ViewportWidget = SNew(SMyCustomViewport, PreviewScene);
 
     return ViewportWidget.ToSharedRef();
+
+#else
+    // Fallback for packaged games: just return an empty box so the game doesn't crash
+    return SNew(SBox);
+#endif
 }
 
 void UModelPreviewWidget::ReleaseSlateResources(bool bReleaseChildren)
 {
     Super::ReleaseSlateResources(bReleaseChildren);
+    
+#if WITH_EDITOR
     ViewportWidget.Reset();
     PreviewScene.Reset();
+#endif
 }
 
 void UModelPreviewWidget::SetStaticMesh(UStaticMesh* NewMesh)
 {
+#if WITH_EDITOR
     if (PreviewMeshComponent)
     {
         PreviewMeshComponent->SetStaticMesh(NewMesh);
 
-        // --- NEW: Auto-Focus the Camera ---
+        // Auto-Focus the Camera
         if (NewMesh && ViewportWidget.IsValid() && ViewportWidget->MyViewportClient.IsValid())
         {
             // The 'true' argument at the end makes it instant instead of a slow camera pan
             ViewportWidget->MyViewportClient->FocusViewportOnBox(PreviewMeshComponent->Bounds.GetBox(), true);
         }
-        // ----------------------------------
     }
+#endif
 }
+
 void UModelPreviewWidget::SetMaterial(int32 ElementIndex, UMaterialInterface* Material)
 {
+#if WITH_EDITOR
     if (PreviewMeshComponent)
     {
         // Passes the material and index down to the hidden 3D mesh
         PreviewMeshComponent->SetMaterial(ElementIndex, Material);
     }
+#endif
 }
