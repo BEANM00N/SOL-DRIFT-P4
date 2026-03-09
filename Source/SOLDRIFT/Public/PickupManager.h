@@ -21,6 +21,7 @@ struct FMagnetPickup
 	FRotator Rotation;
 	FRotator SpinRate;
 	float StateTimer;
+	float LifeRemaining;
 	EPickupState State;
 };
 
@@ -51,10 +52,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Target")
 	AActor* TargetActor;
 
-	// =========================================================
-	// TWEAKABLE PARAMETERS
-	// =========================================================
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Ejection (Explosion)")
 	float EjectMinSpeed = 400.f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Ejection (Explosion)")
@@ -62,21 +59,27 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Ejection (Explosion)")
 	float EjectDuration = 0.6f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Ejection (Explosion)")
-	float FloatingDrag = 4.0f; // How fast they slow down in Zero-G
+	float FloatingDrag = 4.0f; 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Magnetism")
-	float MagnetRadius = 1200.f; // How close player needs to be to trigger magnet
+	float MagnetRadius = 1200.f; 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Magnetism")
-	float MagnetAcceleration = 4000.f; // How fast it ramps up speed
+	float MagnetAcceleration = 4000.f; 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Magnetism")
 	float MaxMagnetSpeed = 4500.f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Magnetism")
-	float CollectionRadius = 100.f; // Distance to "consume" the item
+	float CollectionRadius = 100.f; 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Visuals")
 	FVector PickupScale = FVector(1.0f, 1.0f, 1.0f);
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Lifespan")
+	float PickupLifeSpan = 15.0f; // How long it lives total
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Lifespan")
+	float FlashStartDuration = 4.0f; // Starts flashing when it has this many seconds left
 
 private:
 	TArray<FMagnetPickup> ActivePickups;
-	TArray<FTransform> InstanceTransforms; // Buffer for updating the ISMC
+	TArray<FTransform> InstanceTransforms; 
 };

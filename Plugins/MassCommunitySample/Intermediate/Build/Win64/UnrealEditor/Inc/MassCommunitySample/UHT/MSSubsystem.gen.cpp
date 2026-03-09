@@ -249,15 +249,15 @@ UMassSampleSettings::~UMassSampleSettings() {}
 // ********** End Class UMassSampleSettings ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_MSSubsystem_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_MSSubsystem_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UMSSubsystem, UMSSubsystem::StaticClass, TEXT("UMSSubsystem"), &Z_Registration_Info_UClass_UMSSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMSSubsystem), 128463667U) },
 		{ Z_Construct_UClass_UMassSampleSettings, UMassSampleSettings::StaticClass, TEXT("UMassSampleSettings"), &Z_Registration_Info_UClass_UMassSampleSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMassSampleSettings), 3340603067U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_MSSubsystem_h__Script_MassCommunitySample_4080586174(TEXT("/Script/MassCommunitySample"),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_MSSubsystem_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_MSSubsystem_h__Script_MassCommunitySample_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_MSSubsystem_h__Script_MassCommunitySample_4080586174(TEXT("/Script/MassCommunitySample"),
+	Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_MSSubsystem_h__Script_MassCommunitySample_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_MSSubsystem_h__Script_MassCommunitySample_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
