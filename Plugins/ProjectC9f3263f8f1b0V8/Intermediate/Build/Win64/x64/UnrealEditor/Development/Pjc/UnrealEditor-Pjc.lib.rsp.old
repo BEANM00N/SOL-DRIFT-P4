@@ -8,5 +8,9 @@
 /NODEFAULTLIB
 "C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
 "C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Module.Pjc.cpp.obj"
+"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Pjc.init.gen.cpp.obj"
+"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcCommandlet.gen.cpp.obj"
+"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcSubsystem.gen.cpp.obj"
+"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcTypes.gen.cpp.obj"
 "C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Default.rc2.res"
 /OUT:"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/UnrealEditor-Pjc.lib"

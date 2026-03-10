@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FMSOctreeFragment *************************************************
-#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSOctreeFragments_h_58_GENERATED_BODY \
+#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSOctreeFragments_h_58_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMSOctreeFragment_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FMassFragment Super;
@@ -27,7 +27,7 @@ struct FMSOctreeFragment;
 // ********** End ScriptStruct FMSOctreeFragment ***************************************************
 
 // ********** Begin ScriptStruct FMSInOctreeGridTag ************************************************
-#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSOctreeFragments_h_66_GENERATED_BODY \
+#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSOctreeFragments_h_66_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMSInOctreeGridTag_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FMassTag Super;
@@ -37,7 +37,7 @@ struct FMSInOctreeGridTag;
 // ********** End ScriptStruct FMSInOctreeGridTag **************************************************
 
 // ********** Begin ScriptStruct FMSSharedBaseBounds ***********************************************
-#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSOctreeFragments_h_73_GENERATED_BODY \
+#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSOctreeFragments_h_73_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FMSSharedBaseBounds_Statics; \
 	static class UScriptStruct* StaticStruct(); \
 	typedef FMassConstSharedFragment Super;
@@ -47,6 +47,6 @@ struct FMSSharedBaseBounds;
 // ********** End ScriptStruct FMSSharedBaseBounds *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSOctreeFragments_h
+#define CURRENT_FILE_ID FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSOctreeFragments_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class ULambdaMassProcessor *****************************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_ULambdaMassProcessor_NoRegister();
 
-#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_INCLASS_NO_PURE_DECLS \
+#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesULambdaMassProcessor(); \
 	friend struct Z_Construct_UClass_ULambdaMassProcessor_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ULambdaMassProcessor)
 
 
-#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_ENHANCED_CONSTRUCTORS \
+#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ULambdaMassProcessor(ULambdaMassProcessor&&) = delete; \
 	ULambdaMassProcessor(const ULambdaMassProcessor&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~ULambdaMassProcessor();
 
 
-#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_55_PROLOG
-#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_GENERATED_BODY \
+#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_55_PROLOG
+#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_INCLASS_NO_PURE_DECLS \
-	FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_ENHANCED_CONSTRUCTORS \
+	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_INCLASS_NO_PURE_DECLS \
+	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h_58_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class ULambdaMassProcessor;
 // ********** End Class ULambdaMassProcessor *******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h
+#define CURRENT_FILE_ID FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_LambdaBasedMassProcessor_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
