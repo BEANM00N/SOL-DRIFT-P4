@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UThisLocationSpawnDataGenerator ******************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UThisLocationSpawnDataGenerator_NoRegister();
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_INCLASS_NO_PURE_DECLS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUThisLocationSpawnDataGenerator(); \
 	friend struct Z_Construct_UClass_UThisLocationSpawnDataGenerator_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UThisLocationSpawnDataGenerator)
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_ENHANCED_CONSTRUCTORS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UThisLocationSpawnDataGenerator(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~UThisLocationSpawnDataGenerator();
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_16_PROLOG
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_16_PROLOG
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_INCLASS_NO_PURE_DECLS \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_ENHANCED_CONSTRUCTORS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_INCLASS_NO_PURE_DECLS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,6 +57,6 @@ class UThisLocationSpawnDataGenerator;
 // ********** End Class UThisLocationSpawnDataGenerator ********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h
+#define CURRENT_FILE_ID FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Misc_ThisLocationSpawnDataGenerator_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

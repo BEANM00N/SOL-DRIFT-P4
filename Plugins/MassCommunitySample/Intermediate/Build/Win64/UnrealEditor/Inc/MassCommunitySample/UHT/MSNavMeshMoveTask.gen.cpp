@@ -149,16 +149,16 @@ UScriptStruct* Z_Construct_UScriptStruct_FMSMassFindNavMeshPathWanderTargetInRad
 // ********** End ScriptStruct FMSMassFindNavMeshPathWanderTargetInRadius **************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FMSMassFindNavMeshPathTargetInstanceData::StaticStruct, Z_Construct_UScriptStruct_FMSMassFindNavMeshPathTargetInstanceData_Statics::NewStructOps, TEXT("MSMassFindNavMeshPathTargetInstanceData"), &Z_Registration_Info_UScriptStruct_FMSMassFindNavMeshPathTargetInstanceData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSMassFindNavMeshPathTargetInstanceData), 1881631477U) },
 		{ FMSMassFindNavMeshPathWanderTargetInRadius::StaticStruct, Z_Construct_UScriptStruct_FMSMassFindNavMeshPathWanderTargetInRadius_Statics::NewStructOps, TEXT("MSMassFindNavMeshPathWanderTargetInRadius"), &Z_Registration_Info_UScriptStruct_FMSMassFindNavMeshPathWanderTargetInRadius, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSMassFindNavMeshPathWanderTargetInRadius), 3460817266U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h__Script_MassCommunitySample_925408662(TEXT("/Script/MassCommunitySample"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h__Script_MassCommunitySample_925408662(TEXT("/Script/MassCommunitySample"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_Navigation_MSNavMeshMoveTask_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

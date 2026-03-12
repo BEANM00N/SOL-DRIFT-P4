@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\joshm\\documents\\github\\sol-drift-p4\\plugins\\fmodstudioniagara\\intermediate\\build\\win64\\unrealeditor\\inc\\fmodstudioniagara\\uht\\fmodstudioniagara.init.gen.cpp",
+        "Source": "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\intermediate\\build\\win64\\unrealeditor\\inc\\fmodstudioniagara\\uht\\fmodstudioniagara.init.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\joshm\\documents\\github\\sol-drift-p4\\intermediate\\build\\win64\\x64\\soldrifteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "PCH": "d:\\sol-drift-p4\\intermediate\\build\\win64\\x64\\soldrifteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
         "Includes": [
-            "c:\\users\\joshm\\documents\\github\\sol-drift-p4\\plugins\\fmodstudioniagara\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\fmodstudioniagara\\definitions.fmodstudioniagara.h"
+            "d:\\sol-drift-p4\\plugins\\fmodstudioniagara\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\fmodstudioniagara\\definitions.fmodstudioniagara.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

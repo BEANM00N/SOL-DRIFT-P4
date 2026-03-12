@@ -8,12 +8,11 @@
 UENUM(BlueprintType)
 enum class EPickupState : uint8
 {
-	Ejecting,   // Exploding out of the enemy
-	Floating,   // Zero-G drifting
-	Magnetized  // Flying towards the player
+	Ejecting,   
+	Floating,   
+	Magnetized  
 };
 
-// Internal data tracking each individual pickup
 struct FMagnetPickup
 {
 	FVector Location;
@@ -23,9 +22,9 @@ struct FMagnetPickup
 	float StateTimer;
 	float LifeRemaining;
 	EPickupState State;
+	int32 MeshIndex; // <--- Tracks which mesh this specific item uses
 };
 
-// Delegate to tell Blueprints "We collected X amount of items this frame"
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnPickupsCollected, int32, AmountCollected);
 
 UCLASS()
@@ -35,20 +34,26 @@ class SOLDRIFT_API APickupManager : public AActor
 	
 public:	
 	APickupManager();
+	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
-	UInstancedStaticMeshComponent* ISMC;
+	USceneComponent* RootComp;
 
-	/** Call this from an Enemy's death event to explode items outwards */
+	/** Add your different meshes (Bolts, Gears, Scrap) here! */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Visuals")
+	TArray<UStaticMesh*> PickupMeshes;
+
+	/** Internal array of ISMCs dynamically created for each mesh */
+	UPROPERTY()
+	TArray<UInstancedStaticMeshComponent*> InstancedMeshes;
+
 	UFUNCTION(BlueprintCallable, Category = "Pickups")
 	void SpawnPickups(FVector SpawnLocation, int32 Count);
 
-	/** Fires whenever pickups reach the player */
 	UPROPERTY(BlueprintAssignable, Category = "Pickups")
 	FOnPickupsCollected OnPickupsCollected;
 
-	/** The Actor the pickups should magnetize to (Usually the Player) */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Target")
 	AActor* TargetActor;
 
@@ -74,12 +79,10 @@ public:
 	FVector PickupScale = FVector(1.0f, 1.0f, 1.0f);
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Lifespan")
-	float PickupLifeSpan = 15.0f; // How long it lives total
-
+	float PickupLifeSpan = 15.0f; 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pickups|Lifespan")
-	float FlashStartDuration = 4.0f; // Starts flashing when it has this many seconds left
+	float FlashStartDuration = 4.0f; 
 
 private:
 	TArray<FMagnetPickup> ActivePickups;
-	TArray<FTransform> InstanceTransforms; 
 };

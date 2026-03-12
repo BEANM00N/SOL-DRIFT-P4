@@ -1,12 +1,12 @@
-"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/UnrealEditor/Inc/Pjc/UHT/PjcSubsystem.gen.cpp"
-@"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Pjc.Shared.rsp"
-/FI"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h"
-/FI"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Definitions.Pjc.h"
-/Yu"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h"
-/Fp"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.pch"
-/Fo"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcSubsystem.gen.cpp.obj"
-/experimental:log "C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcSubsystem.gen.cpp.sarif"
-/sourceDependencies "C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcSubsystem.gen.cpp.dep.json"
+"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/UnrealEditor/Inc/Pjc/UHT/PjcSubsystem.gen.cpp"
+@"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Pjc.Shared.rsp"
+/FI"D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h"
+/FI"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Definitions.Pjc.h"
+/Yu"D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h"
+/Fp"D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.pch"
+/Fo"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcSubsystem.gen.cpp.obj"
+/experimental:log "D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcSubsystem.gen.cpp.sarif"
+/sourceDependencies "D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcSubsystem.gen.cpp.dep.json"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo

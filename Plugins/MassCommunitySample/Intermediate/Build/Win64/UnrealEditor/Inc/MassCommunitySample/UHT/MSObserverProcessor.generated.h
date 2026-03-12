@@ -20,10 +20,10 @@ class UObject;
 struct FMSEntityViewBPWrapper;
 
 // ********** Begin Class UMSObserverProcessorBP ***************************************************
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_CALLBACK_WRAPPERS
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_CALLBACK_WRAPPERS
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UMSObserverProcessorBP_NoRegister();
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_INCLASS_NO_PURE_DECLS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMSObserverProcessorBP(); \
 	friend struct Z_Construct_UClass_UMSObserverProcessorBP_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UMSObserverProcessorBP)
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_ENHANCED_CONSTRUCTORS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMSObserverProcessorBP(UMSObserverProcessorBP&&) = delete; \
 	UMSObserverProcessorBP(const UMSObserverProcessorBP&) = delete; \
@@ -44,13 +44,13 @@ public: \
 	NO_API virtual ~UMSObserverProcessorBP();
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_22_PROLOG
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_22_PROLOG
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_CALLBACK_WRAPPERS \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_INCLASS_NO_PURE_DECLS \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_ENHANCED_CONSTRUCTORS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_CALLBACK_WRAPPERS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_INCLASS_NO_PURE_DECLS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -62,7 +62,7 @@ class UMSObserverProcessorBP;
 // ********** Begin Class UMSObserverSettings ******************************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UMSObserverSettings_NoRegister();
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_INCLASS_NO_PURE_DECLS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMSObserverSettings(); \
 	friend struct Z_Construct_UClass_UMSObserverSettings_Statics; \
@@ -75,7 +75,7 @@ public: \
 
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_ENHANCED_CONSTRUCTORS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMSObserverSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -87,12 +87,12 @@ public: \
 	NO_API virtual ~UMSObserverSettings();
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_54_PROLOG
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_54_PROLOG
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_INCLASS_NO_PURE_DECLS \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_ENHANCED_CONSTRUCTORS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_INCLASS_NO_PURE_DECLS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_57_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -104,7 +104,7 @@ class UMSObserverSettings;
 // ********** Begin Class UMSObserverSubsystem *****************************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UMSObserverSubsystem_NoRegister();
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_INCLASS_NO_PURE_DECLS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMSObserverSubsystem(); \
 	friend struct Z_Construct_UClass_UMSObserverSubsystem_Statics; \
@@ -115,7 +115,7 @@ public: \
 	DECLARE_SERIALIZER(UMSObserverSubsystem)
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_ENHANCED_CONSTRUCTORS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMSObserverSubsystem(); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -127,12 +127,12 @@ public: \
 	NO_API virtual ~UMSObserverSubsystem();
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_64_PROLOG
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_64_PROLOG
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_INCLASS_NO_PURE_DECLS \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_ENHANCED_CONSTRUCTORS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_INCLASS_NO_PURE_DECLS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h_67_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -142,7 +142,7 @@ class UMSObserverSubsystem;
 // ********** End Class UMSObserverSubsystem *******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h
+#define CURRENT_FILE_ID FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Experimental_BlueprintIntegration_MSObserverProcessor_h
 
 // ********** Begin Enum EMassObservedOperationBP **************************************************
 #define FOREACH_ENUM_EMASSOBSERVEDOPERATIONBP(op) \

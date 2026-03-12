@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UMSGravityProcessor ******************************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UMSGravityProcessor_NoRegister();
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMSGravityProcessor(); \
 	friend struct Z_Construct_UClass_UMSGravityProcessor_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UMSGravityProcessor)
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMSGravityProcessor(UMSGravityProcessor&&) = delete; \
 	UMSGravityProcessor(const UMSGravityProcessor&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~UMSGravityProcessor();
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_15_PROLOG
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_15_PROLOG
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_INCLASS_NO_PURE_DECLS \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_ENHANCED_CONSTRUCTORS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_INCLASS_NO_PURE_DECLS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,7 +57,7 @@ class UMSGravityProcessor;
 // ********** Begin Class UMSBasicMovementProcessor ************************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UMSBasicMovementProcessor_NoRegister();
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_INCLASS_NO_PURE_DECLS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMSBasicMovementProcessor(); \
 	friend struct Z_Construct_UClass_UMSBasicMovementProcessor_Statics; \
@@ -68,7 +68,7 @@ public: \
 	DECLARE_SERIALIZER(UMSBasicMovementProcessor)
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_ENHANCED_CONSTRUCTORS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMSBasicMovementProcessor(UMSBasicMovementProcessor&&) = delete; \
 	UMSBasicMovementProcessor(const UMSBasicMovementProcessor&) = delete; \
@@ -78,12 +78,12 @@ public: \
 	NO_API virtual ~UMSBasicMovementProcessor();
 
 
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_39_PROLOG
-#define FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_39_PROLOG
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_INCLASS_NO_PURE_DECLS \
-	FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_ENHANCED_CONSTRUCTORS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_INCLASS_NO_PURE_DECLS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h_42_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -93,6 +93,6 @@ class UMSBasicMovementProcessor;
 // ********** End Class UMSBasicMovementProcessor **************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_WORK_UnrealProjects_SOL_DRIFT_CurrentVersion_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h
+#define CURRENT_FILE_ID FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Processors_MSMovementProcessors_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

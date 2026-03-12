@@ -1,28 +1,47 @@
 #include "PickupManager.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Components/SceneComponent.h"
 
 APickupManager::APickupManager()
 {
     PrimaryActorTick.bCanEverTick = true;
 
-    // Create the Instanced Mesh Component
-    ISMC = CreateDefaultSubobject<UInstancedStaticMeshComponent>(TEXT("InstancedMesh"));
-    RootComponent = ISMC;
-    
-    // Turn off collision. We calculate distance mathematically, so collision just wastes CPU
-    ISMC->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-    ISMC->SetGenerateOverlapEvents(false);
+    // We now use a basic Scene Component as the root
+    RootComp = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+    RootComponent = RootComp;
+}
+
+void APickupManager::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Dynamically create an ISMC for every mesh in your array
+    for (UStaticMesh* Mesh : PickupMeshes)
+    {
+        if (!Mesh) continue;
+
+        UInstancedStaticMeshComponent* NewISMC = NewObject<UInstancedStaticMeshComponent>(this);
+        NewISMC->SetStaticMesh(Mesh);
+        NewISMC->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+        NewISMC->SetGenerateOverlapEvents(false);
+        NewISMC->SetupAttachment(RootComponent);
+        NewISMC->RegisterComponent();
+
+        InstancedMeshes.Add(NewISMC);
+    }
 }
 
 void APickupManager::SpawnPickups(FVector SpawnLocation, int32 Count)
 {
+    // Safety check: Don't spawn if we forgot to add meshes in the Blueprint!
+    if (InstancedMeshes.IsEmpty()) return;
+
     for (int32 i = 0; i < Count; ++i)
     {
        FMagnetPickup NewPickup;
        NewPickup.Location = SpawnLocation;
        
-       // Create a random explosion direction (biased slightly upwards)
        FVector RandomDir = FMath::VRand();
        RandomDir.Z = FMath::Abs(RandomDir.Z) + 0.3f; 
        RandomDir.Normalize();
@@ -30,15 +49,15 @@ void APickupManager::SpawnPickups(FVector SpawnLocation, int32 Count)
        float Speed = FMath::RandRange(EjectMinSpeed, EjectMaxSpeed);
        NewPickup.Velocity = RandomDir * Speed;
        
-       // Give it a random tumbling spin
        NewPickup.Rotation = FRotator::ZeroRotator;
        NewPickup.SpinRate = FRotator(FMath::RandRange(-200.f, 200.f), FMath::RandRange(-200.f, 200.f), FMath::RandRange(-200.f, 200.f));
 
        NewPickup.State = EPickupState::Ejecting;
-       NewPickup.StateTimer = FMath::RandRange(EjectDuration * 0.8f, EjectDuration * 1.2f); // Add slight randomness to duration
-       
-       // Set its total lifespan
+       NewPickup.StateTimer = FMath::RandRange(EjectDuration * 0.8f, EjectDuration * 1.2f); 
        NewPickup.LifeRemaining = PickupLifeSpan;
+
+       // RANDOMLY select one of the meshes for this specific pickup!
+       NewPickup.MeshIndex = FMath::RandRange(0, InstancedMeshes.Num() - 1);
 
        ActivePickups.Add(NewPickup);
     }
@@ -48,12 +67,8 @@ void APickupManager::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
 
-    if (ActivePickups.IsEmpty())
-    {
-       return;
-    }
+    if (ActivePickups.IsEmpty()) return;
 
-    // Auto-find player if not set
     if (!TargetActor)
     {
        TargetActor = UGameplayStatics::GetPlayerPawn(this, 0);
@@ -61,35 +76,29 @@ void APickupManager::Tick(float DeltaTime)
     }
 
     FVector TargetLoc = TargetActor->GetActorLocation();
-    
-    // Use Squared distances to avoid expensive Square Root math
     float MagRadiusSq = FMath::Square(MagnetRadius);
     float ColRadiusSq = FMath::Square(CollectionRadius);
 
     int32 CollectedThisFrame = 0;
 
-    // Prepare the transform buffer for the Instanced Mesh
-    InstanceTransforms.Reset();
-    InstanceTransforms.Reserve(ActivePickups.Num());
+    // Create a 2D array to hold transforms for EACH different mesh type
+    TArray<TArray<FTransform>> TransformsPerMesh;
+    TransformsPerMesh.SetNum(InstancedMeshes.Num());
 
-    // Iterate BACKWARDS because we might remove elements from the array
+    // Iterate BACKWARDS
     for (int32 i = ActivePickups.Num() - 1; i >= 0; --i)
     {
        FMagnetPickup& P = ActivePickups[i];
 
-       // Kill the pickup if it runs out of time
        P.LifeRemaining -= DeltaTime;
        if (P.LifeRemaining <= 0.0f)
        {
-           // Remove it without adding to CollectedThisFrame
            ActivePickups.RemoveAtSwap(i);
            continue; 
        }
 
-       // STATE: EJECTING
        if (P.State == EPickupState::Ejecting)
        {
-          // Drag
           P.Velocity -= P.Velocity * FloatingDrag * DeltaTime;
           P.StateTimer -= DeltaTime;
 
@@ -98,30 +107,22 @@ void APickupManager::Tick(float DeltaTime)
              P.State = EPickupState::Floating;
           }
        }
-       // STATE: FLOATING (Zero-G idle)
        else if (P.State == EPickupState::Floating)
        {
-          // Continue to bring them to a soft halt
           P.Velocity -= P.Velocity * FloatingDrag * DeltaTime;
 
-          // Check distance to player
           if (FVector::DistSquared(P.Location, TargetLoc) <= MagRadiusSq)
           {
              P.State = EPickupState::Magnetized;
           }
        }
-       // Seek Player
        else if (P.State == EPickupState::Magnetized)
        {
           FVector DirectionToTarget = (TargetLoc - P.Location).GetSafeNormal();
-          
-          // The speed we WANT to be going (straight at the player at max speed)
           FVector DesiredVelocity = DirectionToTarget * MaxMagnetSpeed;
           
-          // VInterpTo smoothly bends our current momentum into the desired direction.
           P.Velocity = FMath::VInterpTo(P.Velocity, DesiredVelocity, DeltaTime, MagnetAcceleration * 0.01f);
 
-          // Did we hit the player?
           float DistToTargetSq = FVector::DistSquared(P.Location, TargetLoc);
           float MoveStepSq = (P.Velocity * DeltaTime).SizeSquared();
 
@@ -129,18 +130,14 @@ void APickupManager::Tick(float DeltaTime)
           {
              CollectedThisFrame++;
              ActivePickups.RemoveAtSwap(i);
-             continue; // Skip the rest of the loop for this item, it dead
+             continue; 
           }
        }
 
-       // Apply final velocity to location
        P.Location += P.Velocity * DeltaTime;
-       
-       // Apply spinning
        P.Rotation += P.SpinRate * DeltaTime;
 
-       FVector CurrentScale = PickupScale; // Defaults to normal size
-       
+       FVector CurrentScale = PickupScale; 
        if (P.LifeRemaining <= FlashStartDuration)
        {
            float FlashSpeed = FMath::GetMappedRangeValueClamped(
@@ -155,22 +152,42 @@ void APickupManager::Tick(float DeltaTime)
            }
        }
 
-       // Add this item's transform to the visual buffer with the potentially flashing scale
-       InstanceTransforms.Add(FTransform(P.Rotation, P.Location, CurrentScale));   
+       // Add the transform to the correct ISMC bucket based on the random mesh index
+       TransformsPerMesh[P.MeshIndex].Add(FTransform(P.Rotation, P.Location, CurrentScale));   
     }
 
-    // Sync the Visuals to the Math.
-    if (InstanceTransforms.Num() != ISMC->GetInstanceCount())
+    // ==============================================================
+    // THE FLICKER FIX: Sync visual instances without clearing!
+    // ==============================================================
+    for (int32 i = 0; i < InstancedMeshes.Num(); ++i)
     {
-       ISMC->ClearInstances();
-       ISMC->AddInstances(InstanceTransforms, false);
-    }
-    else
-    {
-       ISMC->BatchUpdateInstancesTransforms(0, InstanceTransforms, true, true, true);
+        UInstancedStaticMeshComponent* CurrentISMC = InstancedMeshes[i];
+        TArray<FTransform>& Transforms = TransformsPerMesh[i];
+
+        int32 CurrentCount = CurrentISMC->GetInstanceCount();
+        int32 NeededCount = Transforms.Num();
+
+        // 1. Grow the ISMC array if we spawned new items
+        while (CurrentCount < NeededCount)
+        {
+            CurrentISMC->AddInstance(FTransform::Identity);
+            CurrentCount++;
+        }
+
+        // 2. Shrink the ISMC array if items were collected (This prevents the full-refresh flicker)
+        while (CurrentCount > NeededCount)
+        {
+            CurrentISMC->RemoveInstance(CurrentCount - 1);
+            CurrentCount--;
+        }
+
+        // 3. Fast-update all remaining transforms
+        if (NeededCount > 0)
+        {
+            CurrentISMC->BatchUpdateInstancesTransforms(0, Transforms, true, true, true);
+        }
     }
 
-    // Call Event Dispatcher that item was collected. Should be bound to the Player.
     if (CollectedThisFrame > 0)
     {
        OnPickupsCollected.Broadcast(CollectedThisFrame);
