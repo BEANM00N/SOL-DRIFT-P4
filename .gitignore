@@ -46,8 +46,19 @@ SourceArt/**/*.png
 SourceArt/**/*.tga
 
 # Binary Files
-Binaries/*
-Plugins/*/Binaries/*
+#Binaries/*
+#Plugins/*/Binaries/*
+
+# ...BUT explicitly allow the actual compiled DLLs and Module trackers through!
+!Binaries/**/*.dll
+!Binaries/**/*.modules
+!Plugins/*/Binaries/**/*.dll
+!Plugins/*/Binaries/**/*.modules
+
+# ...AND explicitly block massive debug symbols and Live Coding garbage
+*.pdb
+*.patch_*
+*LiveCoding*
 
 # Builds
 Build/*

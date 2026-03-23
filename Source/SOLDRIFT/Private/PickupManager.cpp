@@ -16,7 +16,7 @@ void APickupManager::BeginPlay()
 {
     Super::BeginPlay();
 
-    // Dynamically create an ISMC for every mesh in your array
+    // Dynamically create an ISMC for every mesh in array
     for (UStaticMesh* Mesh : PickupMeshes)
     {
         if (!Mesh) continue;
@@ -34,7 +34,7 @@ void APickupManager::BeginPlay()
 
 void APickupManager::SpawnPickups(FVector SpawnLocation, int32 Count)
 {
-    // Safety check: Don't spawn if we forgot to add meshes in the Blueprint!
+    // Don't spawn if no meshes were added.
     if (InstancedMeshes.IsEmpty()) return;
 
     for (int32 i = 0; i < Count; ++i)
@@ -81,11 +81,11 @@ void APickupManager::Tick(float DeltaTime)
 
     int32 CollectedThisFrame = 0;
 
-    // Create a 2D array to hold transforms for EACH different mesh type
+    // 2D array to hold transforms for each different mesh
     TArray<TArray<FTransform>> TransformsPerMesh;
     TransformsPerMesh.SetNum(InstancedMeshes.Num());
 
-    // Iterate BACKWARDS
+    // Iterate in reverse
     for (int32 i = ActivePickups.Num() - 1; i >= 0; --i)
     {
        FMagnetPickup& P = ActivePickups[i];
@@ -155,10 +155,9 @@ void APickupManager::Tick(float DeltaTime)
        // Add the transform to the correct ISMC bucket based on the random mesh index
        TransformsPerMesh[P.MeshIndex].Add(FTransform(P.Rotation, P.Location, CurrentScale));   
     }
-
-    // ==============================================================
-    // THE FLICKER FIX: Sync visual instances without clearing!
-    // ==============================================================
+	
+    // Sync visual instances without clearing (reduces the weird flicker when just a few pieces were picked up out of the bunch.
+    
     for (int32 i = 0; i < InstancedMeshes.Num(); ++i)
     {
         UInstancedStaticMeshComponent* CurrentISMC = InstancedMeshes[i];
