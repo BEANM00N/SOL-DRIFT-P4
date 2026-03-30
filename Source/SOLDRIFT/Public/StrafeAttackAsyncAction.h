@@ -30,7 +30,7 @@ public:
 	// This is what exposes it as a node in BP. Need to establish the input pins here too:
 
 	UFUNCTION(BlueprintCallable, meta = (BlueprintInternalUseOnly = "true", WorldContext = "WorldContextObject"), Category = "Combat|Sentry")
-	static UStrafeAttackAsyncAction* StrafeTarget(UObject*WorldContextObject, FVector TurretLocation, FVector TargetLocation, float StrafeWidth, float StrafeTime, float ShotsPerSecond);
+	static UStrafeAttackAsyncAction* StrafeTarget(UObject* WorldContextObject, FVector TurretLocation, FVector TargetLocation, float StrafeWidth, float StrafeTime, float ShotsPerSecond, float InitialDelay);
 
 	// We inherit EPIC's existing function through FTickableGameObject, but we actually want to override those functions
 	// which we can then populate in the cpp file.
@@ -53,5 +53,8 @@ private:
 	bool bIsActive = false;
 	FVector StrafeStartWorld;
 	FVector StrafeEndWorld;
+	float DelayDuration;
+	float DelayElapsedTime;
+	bool bIsDelaying;
 	
 };
