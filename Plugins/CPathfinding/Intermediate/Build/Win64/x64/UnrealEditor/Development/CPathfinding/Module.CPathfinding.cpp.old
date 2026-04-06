@@ -14,7 +14,6 @@
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathDynamicObstacle.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathfinding.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathfindingThread.cpp"
-#include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathFindPath.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathNode.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathOctree.cpp"
 #include "D:/SOL-DRIFT-P4/Plugins/CPathfinding/Source/CPathfinding/Private/CPathVolume.cpp"
