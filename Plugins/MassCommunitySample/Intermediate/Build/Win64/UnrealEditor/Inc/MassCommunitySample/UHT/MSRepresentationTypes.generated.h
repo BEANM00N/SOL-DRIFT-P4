@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FNiagaraMassHelper ************************************************
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSRepresentationTypes_h_9_GENERATED_BODY \
+#define FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSRepresentationTypes_h_9_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FNiagaraMassHelper_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -26,6 +26,6 @@ struct FNiagaraMassHelper;
 // ********** End ScriptStruct FNiagaraMassHelper **************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSRepresentationTypes_h
+#define CURRENT_FILE_ID FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Representation_MSRepresentationTypes_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
