@@ -24,51 +24,63 @@ void UFlecsSubsystem::Initialize(FSubsystemCollectionBase& Collection)
           p.Value += v.Value * it.delta_time();
        });
 
-    // ---------------------------------------------------------
-    // SYSTEM 2: RAYCAST COLLISION
-    // ---------------------------------------------------------
-    UWorld* WorldPtr = GetWorld();
-    EcsWorld->system<Position, const Velocity>("Collision")
-       .each([WorldPtr](flecs::iter& it, size_t i, Position& p, const Velocity& v) 
-       {
-          if (!WorldPtr) return;
-          float dt = it.delta_time();
+   // ---------------------------------------------------------
+   // SYSTEM 2: RAYCAST COLLISION
+   // ---------------------------------------------------------
+   EcsWorld->system<Position, const Velocity>("Collision")
+      .each([this](flecs::iter& it, size_t i, Position& p, const Velocity& v) 
+      {
+         // 1. Dynamically fetch the current, valid World
+         UWorld* CurrentWorld = this->GetWorld();
+         if (!CurrentWorld) return;
 
-          FVector Start = p.Value - (v.Value * dt); 
-          FVector End = p.Value;
+         float dt = it.delta_time();
 
-          FHitResult Hit;
-          FCollisionQueryParams Params;
+         FVector Start = p.Value - (v.Value * dt); 
+         FVector End = p.Value;
 
-          if (WorldPtr->LineTraceSingleByChannel(Hit, Start, End, ECC_Visibility, Params))
-          {
-             p.Value = Hit.ImpactPoint;
-             it.entity(i).set<HitEvent>({ Hit });
-          }
-       });
+         FHitResult Hit;
+         FCollisionQueryParams Params;
 
-    // ---------------------------------------------------------
-    // SYSTEM 3: PROCESS HITS
-    // ---------------------------------------------------------
-    EcsWorld->system<const HitEvent, const DamagePayload, const Affiliation>("ProcessHits")
-       .each([](flecs::iter& it, size_t i, const HitEvent& hitEvent, const DamagePayload& damage, const Affiliation& affil) 
-       {
-          flecs::entity e = it.entity(i);
-          AActor* HitActor = hitEvent.Hit.GetActor();
+         // 2. Safely trace against the living world
+         if (CurrentWorld->LineTraceSingleByChannel(Hit, Start, End, ECC_Visibility, Params))
+         {
+            p.Value = Hit.ImpactPoint;
+            it.entity(i).set<HitEvent>({ Hit });
+         }
+      });
 
-          if (HitActor) 
-          {
-             UGameplayStatics::ApplyDamage(HitActor, damage.Amount, nullptr, nullptr, UDamageType::StaticClass());
-          }
+   // ---------------------------------------------------------
+   // SYSTEM 3: PROCESS HITS
+   // ---------------------------------------------------------
+   EcsWorld->system<const HitEvent, const DamagePayload, const Affiliation>("ProcessHits")
+      .each([](flecs::iter& it, size_t i, const HitEvent& hitEvent, const DamagePayload& damage, const Affiliation& affil) 
+      {
+         flecs::entity e = it.entity(i);
+         AActor* HitActor = hitEvent.Hit.GetActor();
 
-          if (e.has<CanPenetrate>()) {
-             e.remove<HitEvent>();
-          } else if (e.has<CanRicochet>()) {
-             e.remove<HitEvent>();
-          } else {
-             e.destruct();
-          }
-       });
+         if (HitActor) 
+         {
+            // Use Epic's native ApplyPointDamage instead of the custom library
+            UGameplayStatics::ApplyPointDamage(
+                HitActor, 
+                damage.Amount, 
+                hitEvent.Hit.ImpactNormal, // The direction the hit came from
+                hitEvent.Hit,              // The full Hit Result!
+                nullptr,                   // Instigator
+                nullptr,                   // Damage Causer
+                UDamageType::StaticClass()
+            );
+         }
+
+         if (e.has<CanPenetrate>()) {
+            e.remove<HitEvent>();
+         } else if (e.has<CanRicochet>()) {
+            e.remove<HitEvent>();
+         } else {
+            e.destruct();
+         }
+      });
 
     // ---------------------------------------------------------
     // INIT RENDER QUERY
