@@ -306,7 +306,7 @@
 /I "D:/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/UnrealEditor/Inc/FMODStudioNiagara/UHT"
 /I "D:/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Source"
 /I "D:/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Source/FMODStudioNiagara/Public"
-/I "D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd"
+/I "../Intermediate/Build/Win64/x64/UnrealEditor/Development/UnrealEd"
 /external:W0
 /external:I "ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"
 /external:I "ThirdParty/AtomicQueue"

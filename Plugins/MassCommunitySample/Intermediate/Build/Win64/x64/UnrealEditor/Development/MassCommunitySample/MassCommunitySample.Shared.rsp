@@ -381,7 +381,7 @@
 /I "D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/UnrealEditor/Inc/MassCommunitySample/UHT"
 /I "D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample"
 /I "D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source"
-/I "D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd"
+/I "../Intermediate/Build/Win64/x64/UnrealEditor/Development/UnrealEd"
 /external:W0
 /external:I "ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"
 /external:I "ThirdParty/AtomicQueue"
