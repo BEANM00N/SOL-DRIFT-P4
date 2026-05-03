@@ -4,6 +4,7 @@
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "NiagaraComponent.h"
 #include "NiagaraDataInterfaceArrayFunctionLibrary.h"
+#include "UObject/WeakObjectPtrTemplates.h" // Added for safe object references
 
 THIRD_PARTY_INCLUDES_START
 #ifdef _MSC_VER
@@ -20,13 +21,27 @@ THIRD_PARTY_INCLUDES_END
 
 #include "FlecsSubsystem.generated.h"
 
-// Components
+// ---------------------------------------------------------
+// FLECS COMPONENTS
+// ---------------------------------------------------------
 struct Position { FVector Value; };
 struct Velocity { FVector Value; };
-struct DamagePayload { float Amount; };
 struct RibbonID { int32 Value; };
 
-// Tags
+// The expanded damage payload using safe Weak Pointers
+struct DamagePayload { 
+    float Amount; 
+    TSubclassOf<UDamageType> DamageType;
+    TWeakObjectPtr<AActor> Causer;
+    TWeakObjectPtr<AController> Instigator;
+};
+
+// The new linger timer to keep visuals alive
+struct LingerTimer { float TimeRemaining; };
+
+// ---------------------------------------------------------
+// FLECS TAGS
+// ---------------------------------------------------------
 struct ProjectileTag {};
 struct CanPenetrate {};
 struct CanRicochet {};
@@ -41,6 +56,9 @@ enum class ETeamAffiliation : uint8
 };
 struct Affiliation { ETeamAffiliation Team; };
 
+// ---------------------------------------------------------
+// SUBSYSTEM CLASS
+// ---------------------------------------------------------
 UCLASS()
 class SOLDRIFT_API UFlecsSubsystem : public UGameInstanceSubsystem
 {
@@ -56,8 +74,9 @@ public:
     // Gather Niagara data at the end of the frame (0 latency)
     void UpdatePresentation(UWorld* World, ELevelTick TickType, float DeltaTime);
 
+    // Expanded Spawn Function
     UFUNCTION(BlueprintCallable, Category = "FLECS|Projectiles")
-    void SpawnFlecsProjectile(FVector SpawnLocation, FVector StartVelocity, float Damage, ETeamAffiliation Team, bool bPenetrates, bool bRicochets);
+    void SpawnFlecsProjectile(FVector SpawnLocation, FVector StartVelocity, float Damage, ETeamAffiliation Team, bool bPenetrates, bool bRicochets, TSubclassOf<UDamageType> DamageType, AActor* DamageCauser, AController* Instigator);
 
     UPROPERTY(BlueprintReadWrite, Category = "FLECS|Rendering")
     UNiagaraComponent* ProjectileNiagaraComponent;
@@ -67,7 +86,6 @@ private:
     FDelegateHandle TickDelegateHandle;
     FDelegateHandle PresentationDelegateHandle;
 
-    // FIX: This is now a pointer so we can safely delete it before EcsWorld is destroyed
     flecs::query<const Position, const Velocity, const RibbonID>* RenderQuery = nullptr;
 
     UPROPERTY()
