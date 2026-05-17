@@ -4,6 +4,9 @@
 #include "Components/ActorComponent.h"
 #include "MissileTrackingComponent.generated.h"
 
+// 1. Declare the Delegate (Event) Signature
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTerminalFlightTimeExpired);
+
 UENUM(BlueprintType)
 enum class EMissileState : uint8
 {
@@ -29,6 +32,10 @@ public:
 	/** Call this when spawning the missile to give it a target */
 	UFUNCTION(BlueprintCallable, Category = "Missile|Targeting")
 	void SetTarget(AActor* NewTarget);
+
+	// 2. Expose the Event to Blueprints
+	UPROPERTY(BlueprintAssignable, Category = "Missile|Events")
+	FOnTerminalFlightTimeExpired OnFlightTimeExpired;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Missile|Targeting")
 	AActor* TargetActor;

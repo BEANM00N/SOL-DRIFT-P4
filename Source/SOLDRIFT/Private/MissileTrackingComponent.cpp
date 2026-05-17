@@ -3,7 +3,6 @@
 
 UMissileTrackingComponent::UMissileTrackingComponent()
 {
-    // Enable ticking so we can move the owner every frame
     PrimaryComponentTick.bCanEverTick = true;
 }
 
@@ -14,7 +13,6 @@ void UMissileTrackingComponent::BeginPlay()
     CurrentState = EMissileState::Coasting;
     StateTimer = 0.0f;
 
-    // Initialize velocity to shoot straight forward out of the barrel
     if (AActor* Owner = GetOwner())
     {
         CurrentVelocity = Owner->GetActorForwardVector() * CoastSpeed;
@@ -44,7 +42,7 @@ void UMissileTrackingComponent::TickComponent(float DeltaTime, ELevelTick TickTy
         if (StateTimer >= ActivationDelay)
         {
             CurrentState = EMissileState::Tracking;
-            StateTimer = 0.0f; // Reset timer in case we want to use it later
+            StateTimer = 0.0f; 
         }
     }
     // ==========================================
@@ -52,21 +50,18 @@ void UMissileTrackingComponent::TickComponent(float DeltaTime, ELevelTick TickTy
     // ==========================================
     else if (CurrentState == EMissileState::Tracking)
     {
-        // If the target still exists, chase it
         if (TargetActor)
         {
             FVector CurrentLocation = Owner->GetActorLocation();
             FVector TargetLocation = TargetActor->GetActorLocation();
 
-            // Check if we have entered the Terminal Radius
             if (FVector::DistSquared(CurrentLocation, TargetLocation) <= FMath::Square(TerminalRadius))
             {
                 CurrentState = EMissileState::Terminal;
-                StateTimer = 0.0f; // Reset the timer for the final countdown
+                StateTimer = 0.0f; 
             }
             else
             {
-                // Not close enough yet, keep steering
                 FRotator DesiredRotation = UKismetMathLibrary::FindLookAtRotation(CurrentLocation, TargetLocation);
                 FRotator NewRotation = FMath::RInterpTo(Owner->GetActorRotation(), DesiredRotation, DeltaTime, TurnRate);
                 Owner->SetActorRotation(NewRotation);
@@ -74,7 +69,6 @@ void UMissileTrackingComponent::TickComponent(float DeltaTime, ELevelTick TickTy
         }
         else 
         {
-            // Failsafe: If the target died or was destroyed while we were tracking it, go dumb!
             CurrentState = EMissileState::Terminal;
             StateTimer = 0.0f; 
         }
@@ -88,15 +82,18 @@ void UMissileTrackingComponent::TickComponent(float DeltaTime, ELevelTick TickTy
     {
         StateTimer += DeltaTime;
         
-        // Maintain our top tracking speed, but stop rotating the nose
         CurrentVelocity = Owner->GetActorForwardVector() * TrackingSpeed; 
 
         // Check if our air-time has run out
         if (StateTimer >= TerminalFlightTime)
         {
-            // Destroy the missile actor completely
-            Owner->Destroy();
-            return; // Exit the tick immediately so we don't try to move a dead actor below
+            // 1. Broadcast to Blueprints that the timer is up!
+            OnFlightTimeExpired.Broadcast();
+
+            // 2. Disable ticking so we don't spam the broadcast or keep moving
+            SetComponentTickEnabled(false);
+            
+            return; 
         }
     }
 
@@ -106,7 +103,5 @@ void UMissileTrackingComponent::TickComponent(float DeltaTime, ELevelTick TickTy
     FHitResult HitResult;
     FVector MoveDelta = CurrentVelocity * DeltaTime;
 
-    // AddActorWorldOffset with "true" enables Sweeping. 
-    // This physically pushes the collision box through the world, stopping at walls/enemies!
     Owner->AddActorWorldOffset(MoveDelta, true, &HitResult);
 }

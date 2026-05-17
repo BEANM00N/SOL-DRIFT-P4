@@ -9,9 +9,7 @@ void UFlecsSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 
     if (UWorld* World = GetWorld())
     {
-       // Bind Physics to start of frame
        TickDelegateHandle = FWorldDelegates::OnWorldTickStart.AddUObject(this, &UFlecsSubsystem::TickSimulation);
-       // Bind Rendering to end of frame (Post-Actor tick)
        PresentationDelegateHandle = FWorldDelegates::OnWorldPostActorTick.AddUObject(this, &UFlecsSubsystem::UpdatePresentation);
     }
 
@@ -21,71 +19,101 @@ void UFlecsSubsystem::Initialize(FSubsystemCollectionBase& Collection)
     EcsWorld->system<Position, const Velocity>("Movement")
        .each([](flecs::iter& it, size_t i, Position& p, const Velocity& v) 
        {
+          // Do not move if the bullet has hit something and is lingering for visuals
+          if (it.entity(i).has<LingerTimer>()) return;
+
           p.Value += v.Value * it.delta_time();
        });
 
+	// ---------------------------------------------------------
+	// SYSTEM 2: RAYCAST COLLISION
+	// ---------------------------------------------------------
+	// 1. Add 'const DamagePayload' to the system query so we can read who fired it
+	EcsWorld->system<Position, const Velocity, const DamagePayload>("Collision")
+	   .each([this](flecs::iter& it, size_t i, Position& p, const Velocity& v, const DamagePayload& damage) 
+	   {
+		  // Do not trace if the bullet has already hit its final target
+		  if (it.entity(i).has<LingerTimer>()) return;
+
+		  UWorld* CurrentWorld = this->GetWorld();
+		  if (!CurrentWorld) return;
+
+		  float dt = it.delta_time();
+		  FVector Start = p.Value - (v.Value * dt); 
+		  FVector End = p.Value;
+
+		  FHitResult Hit;
+		  FCollisionQueryParams Params;
+
+		  // 2. Add the Damage Causer to the ignore list!
+		  if (damage.Causer.IsValid())
+		  {
+			  Params.AddIgnoredActor(damage.Causer.Get());
+		  }
+
+		  if (CurrentWorld->LineTraceSingleByChannel(Hit, Start, End, ECC_Visibility, Params))
+		  {
+			 p.Value = Hit.ImpactPoint; // Snap to the exact surface
+			 it.entity(i).set<HitEvent>({ Hit });
+		  }
+	   });
+
+	// ---------------------------------------------------------
+	// SYSTEM 3: PROCESS HITS
+	// ---------------------------------------------------------
+	EcsWorld->system<const HitEvent, const DamagePayload, const Affiliation>("ProcessHits")
+	   .each([](flecs::iter& it, size_t i, const HitEvent& hitEvent, const DamagePayload& damage, const Affiliation& affil) 
+	   {
+		  flecs::entity e = it.entity(i);
+		  AActor* HitActor = hitEvent.Hit.GetActor();
+
+		  if (HitActor) 
+		  {
+			 // 1. Resolve the Damage Type cleanly before the function call
+			 TSubclassOf<UDamageType> FinalDamageType = damage.DamageType != nullptr 
+				 ? damage.DamageType 
+				 : TSubclassOf<UDamageType>(UDamageType::StaticClass());
+
+			 // 2. Pass the clean variable in
+			 UGameplayStatics::ApplyPointDamage(
+				 HitActor, 
+				 damage.Amount, 
+				 hitEvent.Hit.ImpactNormal, 
+				 hitEvent.Hit,              
+				 damage.Instigator.Get(), 
+				 damage.Causer.Get(),     
+				 FinalDamageType          // <--- No more ambiguous ternary operators here!
+			 );
+		  }
+
+		  if (e.has<CanPenetrate>()) {
+			 e.remove<HitEvent>();
+		  } 
+		  else if (e.has<CanRicochet>()) {
+			 e.remove<HitEvent>();
+		  } 
+		  else {
+			 e.remove<HitEvent>();
+			 e.set<LingerTimer>({ 0.15f }); 
+		  }
+	   });
+
    // ---------------------------------------------------------
-   // SYSTEM 2: RAYCAST COLLISION
+   // SYSTEM 4: PROCESS LINGERING VISUALS
    // ---------------------------------------------------------
-   EcsWorld->system<Position, const Velocity>("Collision")
-      .each([this](flecs::iter& it, size_t i, Position& p, const Velocity& v) 
+   EcsWorld->system<LingerTimer>("ProcessLinger")
+      .each([](flecs::iter& it, size_t i, LingerTimer& linger) 
       {
-         // 1. Dynamically fetch the current, valid World
-         UWorld* CurrentWorld = this->GetWorld();
-         if (!CurrentWorld) return;
-
-         float dt = it.delta_time();
-
-         FVector Start = p.Value - (v.Value * dt); 
-         FVector End = p.Value;
-
-         FHitResult Hit;
-         FCollisionQueryParams Params;
-
-         // 2. Safely trace against the living world
-         if (CurrentWorld->LineTraceSingleByChannel(Hit, Start, End, ECC_Visibility, Params))
+         linger.TimeRemaining -= it.delta_time();
+         if (linger.TimeRemaining <= 0.0f)
          {
-            p.Value = Hit.ImpactPoint;
-            it.entity(i).set<HitEvent>({ Hit });
-         }
-      });
-
-   // ---------------------------------------------------------
-   // SYSTEM 3: PROCESS HITS
-   // ---------------------------------------------------------
-   EcsWorld->system<const HitEvent, const DamagePayload, const Affiliation>("ProcessHits")
-      .each([](flecs::iter& it, size_t i, const HitEvent& hitEvent, const DamagePayload& damage, const Affiliation& affil) 
-      {
-         flecs::entity e = it.entity(i);
-         AActor* HitActor = hitEvent.Hit.GetActor();
-
-         if (HitActor) 
-         {
-            // Use Epic's native ApplyPointDamage instead of the custom library
-            UGameplayStatics::ApplyPointDamage(
-                HitActor, 
-                damage.Amount, 
-                hitEvent.Hit.ImpactNormal, // The direction the hit came from
-                hitEvent.Hit,              // The full Hit Result!
-                nullptr,                   // Instigator
-                nullptr,                   // Damage Causer
-                UDamageType::StaticClass()
-            );
-         }
-
-         if (e.has<CanPenetrate>()) {
-            e.remove<HitEvent>();
-         } else if (e.has<CanRicochet>()) {
-            e.remove<HitEvent>();
-         } else {
-            e.destruct();
+             it.entity(i).destruct();
          }
       });
 
     // ---------------------------------------------------------
     // INIT RENDER QUERY
     // ---------------------------------------------------------
-    // FIX: We allocate the query to our pointer so it's safely tracked
     RenderQuery = new flecs::query<const Position, const Velocity, const RibbonID>(
         EcsWorld->query<const Position, const Velocity, const RibbonID>()
     );
@@ -96,7 +124,6 @@ void UFlecsSubsystem::Deinitialize()
     FWorldDelegates::OnWorldTickStart.Remove(TickDelegateHandle);
     FWorldDelegates::OnWorldPostActorTick.Remove(PresentationDelegateHandle);
     
-    // FIX: Explicitly delete the query before the ECS World dies!
     if (RenderQuery) 
     { 
         delete RenderQuery; 
@@ -112,20 +139,11 @@ void UFlecsSubsystem::Deinitialize()
     Super::Deinitialize();
 }
 
-// ---------------------------------------------------------
-// TICK SIMULATION (Runs before Blueprints / Movement happens here)
-// ---------------------------------------------------------
 void UFlecsSubsystem::TickSimulation(UWorld* World, ELevelTick TickType, float DeltaTime)
 {
-    if (EcsWorld) 
-    { 
-       EcsWorld->progress(DeltaTime); 
-    }
+    if (EcsWorld) EcsWorld->progress(DeltaTime); 
 }
 
-// ---------------------------------------------------------
-// UPDATE PRESENTATION (Runs after Blueprints / Rendering happens here)
-// ---------------------------------------------------------
 void UFlecsSubsystem::UpdatePresentation(UWorld* World, ELevelTick TickType, float DeltaTime)
 {
 	if (!EcsWorld || !ProjectileNiagaraComponent || !RenderQuery) return;
@@ -134,6 +152,8 @@ void UFlecsSubsystem::UpdatePresentation(UWorld* World, ELevelTick TickType, flo
 	NiagaraRotations.Reset();
 	NiagaraIDs.Reset();
 
+    // Even if lingering, the entity still has Position and Velocity, 
+    // so it perfectly maintains its alignment and location for Niagara!
 	RenderQuery->each([this](flecs::iter& it, size_t i, const Position& p, const Velocity& v, const RibbonID& ribbon) 
 	{
 		NiagaraPositions.Add(p.Value);
@@ -141,14 +161,12 @@ void UFlecsSubsystem::UpdatePresentation(UWorld* World, ELevelTick TickType, flo
 		NiagaraIDs.Add(ribbon.Value);
 	});
 
-	// FIX: Removed the `if > 0` check. 
-	// We MUST push the empty arrays so Niagara knows to clear the screen!
 	UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayVector(ProjectileNiagaraComponent, FName("MassParticlePositions"), NiagaraPositions);
 	UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayQuat(ProjectileNiagaraComponent, FName("MassParticleOrientations"), NiagaraRotations);
 	UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayInt32(ProjectileNiagaraComponent, FName("MassParticleIDs"), NiagaraIDs);
 }
 
-void UFlecsSubsystem::SpawnFlecsProjectile(FVector SpawnLocation, FVector StartVelocity, float Damage, ETeamAffiliation Team, bool bPenetrates, bool bRicochets)
+void UFlecsSubsystem::SpawnFlecsProjectile(FVector SpawnLocation, FVector StartVelocity, float Damage, ETeamAffiliation Team, bool bPenetrates, bool bRicochets, TSubclassOf<UDamageType> DamageType, AActor* DamageCauser, AController* Instigator)
 {
     if (!EcsWorld) return;
 
@@ -157,7 +175,7 @@ void UFlecsSubsystem::SpawnFlecsProjectile(FVector SpawnLocation, FVector StartV
     flecs::entity e = EcsWorld->entity()
        .set<Position>({ SpawnLocation })
        .set<Velocity>({ StartVelocity })
-       .set<DamagePayload>({ Damage })
+       .set<DamagePayload>({ Damage, DamageType, DamageCauser, Instigator })
        .set<Affiliation>({ Team })
        .set<RibbonID>({ RibbonIDVal })
        .add<ProjectileTag>();
