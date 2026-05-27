@@ -10,13 +10,8 @@ void UMissileTrackingComponent::BeginPlay()
 {
     Super::BeginPlay();
 
-    CurrentState = EMissileState::Coasting;
-    StateTimer = 0.0f;
-
-    if (AActor* Owner = GetOwner())
-    {
-        CurrentVelocity = Owner->GetActorForwardVector() * CoastSpeed;
-    }
+    // Initialize the component using our new reset function
+    StartTracking();
 }
 
 void UMissileTrackingComponent::SetTarget(AActor* NewTarget)
@@ -104,4 +99,29 @@ void UMissileTrackingComponent::TickComponent(float DeltaTime, ELevelTick TickTy
     FVector MoveDelta = CurrentVelocity * DeltaTime;
 
     Owner->AddActorWorldOffset(MoveDelta, true, &HitResult);
+}
+void UMissileTrackingComponent::StartTracking()
+{
+    // 1. Reset the state machine back to phase 1
+    CurrentState = EMissileState::Coasting;
+    StateTimer = 0.0f;
+
+    // 2. Reset the velocity based on the owner's current direction
+    if (AActor* Owner = GetOwner())
+    {
+        CurrentVelocity = Owner->GetActorForwardVector() * CoastSpeed;
+    }
+
+    // 3. Turn the engine back on
+    SetComponentTickEnabled(true);
+}
+
+void UMissileTrackingComponent::StopTracking()
+{
+    // Shut off the engine
+    SetComponentTickEnabled(false);
+}
+FVector UMissileTrackingComponent::GetCurrentVelocity() const
+{
+    return CurrentVelocity;
 }

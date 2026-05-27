@@ -33,6 +33,18 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Missile|Targeting")
 	void SetTarget(AActor* NewTarget);
 
+	/** Resets the state machine and activates the component */
+	UFUNCTION(BlueprintCallable, Category = "Missile|State")
+	void StartTracking();
+
+	/** Instantly stops the component from moving and tracking */
+	UFUNCTION(BlueprintCallable, Category = "Missile|State")
+	void StopTracking();
+	
+	/** Returns the current world-space velocity of the component */
+	UFUNCTION(BlueprintPure, Category = "Missile|Movement")
+	FVector GetCurrentVelocity() const;
+	
 	// 2. Expose the Event to Blueprints
 	UPROPERTY(BlueprintAssignable, Category = "Missile|Events")
 	FOnTerminalFlightTimeExpired OnFlightTimeExpired;
