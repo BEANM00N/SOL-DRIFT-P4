@@ -88,5 +88,5 @@
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_NAME=SOLDRIFT
 /DPROJECT_PRODUCT_IDENTIFIER=SOLDRIFT
-/fo "C:/Users/joshm/Desktop/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Default.rc2.res"
+/fo "D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Default.rc2.res"
 "../Build/Windows/Resources/Default.rc2"

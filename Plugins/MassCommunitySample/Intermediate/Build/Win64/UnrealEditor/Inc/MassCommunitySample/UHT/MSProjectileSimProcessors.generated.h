@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UMSProjectileSimProcessors ***********************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UMSProjectileSimProcessors_NoRegister();
 
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMSProjectileSimProcessors(); \
 	friend struct Z_Construct_UClass_UMSProjectileSimProcessors_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UMSProjectileSimProcessors)
 
 
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMSProjectileSimProcessors(UMSProjectileSimProcessors&&) = delete; \
 	UMSProjectileSimProcessors(const UMSProjectileSimProcessors&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~UMSProjectileSimProcessors();
 
 
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_12_PROLOG
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_GENERATED_BODY \
+#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_12_PROLOG
+#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_INCLASS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class UMSProjectileSimProcessors;
 // ********** End Class UMSProjectileSimProcessors *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h
+#define CURRENT_FILE_ID FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_ProjectileSim_Processors_MSProjectileSimProcessors_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -44,6 +44,8 @@ void UFlecsSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 
 		  FHitResult Hit;
 		  FCollisionQueryParams Params;
+	   	
+	   	Params.bReturnPhysicalMaterial = true; // Tells the engine to extract the armor type
 
 		  // 2. Add the Damage Causer to the ignore list!
 		  if (damage.Causer.IsValid())

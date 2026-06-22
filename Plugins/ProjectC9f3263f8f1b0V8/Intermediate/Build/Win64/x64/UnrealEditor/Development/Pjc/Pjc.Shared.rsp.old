@@ -317,7 +317,7 @@
 /I "D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/UnrealEditor/Inc/Pjc/UHT"
 /I "D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Source"
 /I "D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Source/Pjc/Public"
-/I "../Intermediate/Build/Win64/x64/UnrealEditor/Development/UnrealEd"
+/I "D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd"
 /external:W0
 /external:I "ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"
 /external:I "ThirdParty/AtomicQueue"

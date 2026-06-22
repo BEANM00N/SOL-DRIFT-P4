@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UMSActorMassTrait ********************************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UMSActorMassTrait_NoRegister();
 
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMSActorMassTrait(); \
 	friend struct Z_Construct_UClass_UMSActorMassTrait_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UMSActorMassTrait)
 
 
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMSActorMassTrait(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~UMSActorMassTrait();
 
 
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_14_PROLOG
-#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_GENERATED_BODY \
+#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_14_PROLOG
+#define FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_INCLASS_NO_PURE_DECLS \
-	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,6 +57,6 @@ class UMSActorMassTrait;
 // ********** End Class UMSActorMassTrait **********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h
+#define CURRENT_FILE_ID FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSActorMassTrait_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

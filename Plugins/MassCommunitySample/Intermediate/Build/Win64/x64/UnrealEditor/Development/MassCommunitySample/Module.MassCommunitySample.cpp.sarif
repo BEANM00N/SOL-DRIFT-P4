@@ -10,13 +10,13 @@
                         "text": "'Chaos::DebugDraw::DrawShape': Pass in the ShapeInstance or call DrawParticleShapes - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
+                        "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/Experimental/Physics/MSMassPhysics.cpp"
+                                    "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/Experimental/Physics/MSMassPhysics.cpp"
                                 },
                                 "region": {
                                     "startLine": 320,
@@ -35,13 +35,13 @@
                         "text": "'FMassEntityManager::GetOrCreateSharedFragmentByHash': This method will no longer be exposed. Use GetOrCreateSharedFragment instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
+                        "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/Experimental/Physics/MSPhysicsBody.cpp"
+                                    "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/Experimental/Physics/MSPhysicsBody.cpp"
                                 },
                                 "region": {
                                     "startLine": 54,
@@ -60,13 +60,13 @@
                         "text": "'FCollisionQueryParams::ClearIgnoredActors': Use ClearIgnoredSourceObjects instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
+                        "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/ProjectileSim/Processors/MSProjectileSimProcessors.cpp"
+                                    "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/ProjectileSim/Processors/MSProjectileSimProcessors.cpp"
                                 },
                                 "region": {
                                     "startLine": 83,
@@ -85,13 +85,13 @@
                         "text": "'FMassEntityManager::GetOrCreateSharedFragmentByHash': This method will no longer be exposed. Use GetOrCreateSharedFragment instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
+                        "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/Representation/MSNiagaraSubsystem.cpp"
+                                    "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/Representation/MSNiagaraSubsystem.cpp"
                                 },
                                 "region": {
                                     "startLine": 42,
@@ -110,13 +110,13 @@
                         "text": "'FMassEntityManager::GetOrCreateSharedFragmentByHash': This method will no longer be exposed. Use GetOrCreateSharedFragment instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
+                        "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Intermediate/Build/Win64/x64/UnrealEditor/Development/MassCommunitySample/Module.MassCommunitySample.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///D:/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/Representation/MSNiagaraSubsystem.cpp"
+                                    "uri": "file:///C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/MassCommunitySample/Source/MassCommunitySample/Representation/MSNiagaraSubsystem.cpp"
                                 },
                                 "region": {
                                     "startLine": 73,
