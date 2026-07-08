@@ -17,11 +17,11 @@
 			"CPathDynamicObstacle.cpp.obj",
 			"CPathfinding.cpp.obj",
 			"CPathfindingThread.cpp.obj",
+			"CPathFindPath.cpp.obj",
 			"CPathNode.cpp.obj",
 			"CPathOctree.cpp.obj",
 			"CPathVolume.cpp.obj",
-			"CPathVolumeGroundPrio.cpp.obj",
-			"CPathFindPath.cpp.obj"
+			"CPathVolumeGroundPrio.cpp.obj"
 		]
 	}
 }

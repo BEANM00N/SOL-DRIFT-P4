@@ -6,7 +6,9 @@
 /NAME:"UnrealEditor-FMODStudioNiagara.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
-"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/Module.FMODStudioNiagara.cpp.obj"
-"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/Default.rc2.res"
-/OUT:"C:/Users/joshm/Documents/GitHub/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/UnrealEditor-FMODStudioNiagara.lib"
+"D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"D:/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/Module.FMODStudioNiagara.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/FMODNiagaraEventPlayer.gen.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/FMODStudioNiagara.init.gen.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/Default.rc2.res"
+/OUT:"D:/SOL-DRIFT-P4/Plugins/FMODStudioNiagara/Intermediate/Build/Win64/x64/UnrealEditor/Development/FMODStudioNiagara/UnrealEditor-FMODStudioNiagara.lib"

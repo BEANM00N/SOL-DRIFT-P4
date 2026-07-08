@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "ProcTex Plugin",
+	"Description": "A Procedural Texture Pixelizer. Add any texture you like and preview your changes live on any mesh!",
+	"Category": "Tech Art",
+	"CreatedBy": "Josh McCamley",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.6.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "ProcTexPlugin",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}

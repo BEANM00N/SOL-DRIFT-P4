@@ -1,0 +1,43 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\sol-drift-p4\\plugins\\proctexplugin\\source\\proctexplugin\\private\\modelpreviewwidget.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\sol-drift-p4\\intermediate\\build\\win64\\x64\\soldrifteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\sol-drift-p4\\plugins\\proctexplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\proctexplugin\\definitions.proctexplugin.h",
+            "d:\\sol-drift-p4\\plugins\\proctexplugin\\source\\proctexplugin\\public\\modelpreviewwidget.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\umg\\public\\components\\widget.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\umg\\public\\binding\\states\\widgetstatebitfield.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetstatebitfield.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\fieldnotification\\public\\fieldnotificationdeclaration.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\fieldnotification\\public\\ifieldnotificationclassdescriptor.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\fieldnotification\\public\\inotifyfieldvaluechanged.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\fieldnotification\\uht\\inotifyfieldvaluechanged.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\umg\\public\\components\\visual.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\visual.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\umg\\public\\components\\slatewrappertypes.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\slatewrappertypes.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\umg\\public\\slate\\widgettransform.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgettransform.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\umg\\public\\blueprint\\widgetnavigation.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\slatecore\\public\\types\\navigationmetadata.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetnavigation.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widget.generated.h",
+            "d:\\sol-drift-p4\\plugins\\proctexplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\proctexplugin\\uht\\modelpreviewwidget.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\postprocesscomponent.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\postprocesscomponent.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\editor\\advancedpreviewscene\\public\\advancedpreviewscene.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\editor\\advancedpreviewscene\\public\\assetviewersettings.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\engine\\texturecube.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\texturecube.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\advancedpreviewscene\\uht\\assetviewersettings.generated.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\editor\\unrealed\\public\\seditorviewport.h",
+            "d:\\epic\\ue_5.6\\engine\\source\\runtime\\slate\\public\\widgets\\sviewport.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

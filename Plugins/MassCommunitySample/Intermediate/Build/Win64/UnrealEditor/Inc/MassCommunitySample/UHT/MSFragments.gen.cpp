@@ -657,7 +657,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FMSAngularVelocity()
 // ********** End ScriptStruct FMSAngularVelocity **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_Statics
+struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FSampleColorFragment::StaticStruct, Z_Construct_UScriptStruct_FSampleColorFragment_Statics::NewStructOps, TEXT("SampleColorFragment"), &Z_Registration_Info_UScriptStruct_FSampleColorFragment, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSampleColorFragment), 2574972118U) },
@@ -673,9 +673,9 @@ struct Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugi
 		{ FMSAngularVelocity::StaticStruct, Z_Construct_UScriptStruct_FMSAngularVelocity_Statics::NewStructOps, TEXT("MSAngularVelocity"), &Z_Registration_Info_UScriptStruct_FMSAngularVelocity, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMSAngularVelocity), 2973283123U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_3837618177(TEXT("/Script/MassCommunitySample"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_3837618177(TEXT("/Script/MassCommunitySample"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Documents_GitHub_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Fragments_MSFragments_h__Script_MassCommunitySample_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

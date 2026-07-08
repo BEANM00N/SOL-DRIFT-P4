@@ -8,7 +8,7 @@ public class SOLDRIFT : ModuleRules
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
     
         // Standard game modules go here
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "Slate", "SlateCore","CPathfinding", "Niagara" });
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "Slate", "SlateCore","CPathfinding", "Niagara", "PropertyEditor", "AssetRegistry", "UnrealEd", "GameplayTags" });
 
         PrivateDependencyModuleNames.AddRange(new string[] {  });
 
@@ -17,8 +17,17 @@ public class SOLDRIFT : ModuleRules
 
 		// Only include Editor modules if we are actually building the Editor
 		if (Target.bBuildEditor)
-        {
-            PublicDependencyModuleNames.AddRange(new string[] { "UnrealEd", "AdvancedPreviewScene" });
-        }
+		{
+			PublicDependencyModuleNames.AddRange(new string[] { 
+				"UnrealEd", 
+				"AssetRegistry", 
+				"PropertyEditor", 
+				"ToolMenus", 
+				"Blutility",
+				"UMG",
+				"UMGEditor",
+				"AdvancedPreviewScene"
+			});
+		}
     }
 }
