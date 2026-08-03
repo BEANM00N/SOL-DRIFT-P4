@@ -7,12 +7,6 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
-"D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/ModelPreviewWidget.cpp.obj"
-"D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/ProcTexPlugin.cpp.obj"
-"D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/ProcTexPluginCommands.cpp.obj"
-"D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/ProcTexPluginStyle.cpp.obj"
-"D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/PerModuleInline.gen.cpp.obj"
-"D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/ModelPreviewWidget.gen.cpp.obj"
-"D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/ProcTexPlugin.init.gen.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/Module.ProcTexPlugin.cpp.obj"
 "D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/Default.rc2.res"
 /OUT:"D:/SOL-DRIFT-P4/Plugins/ProcTexPlugin/Intermediate/Build/Win64/x64/UnrealEditor/Development/ProcTexPlugin/UnrealEditor-ProcTexPlugin.lib"
