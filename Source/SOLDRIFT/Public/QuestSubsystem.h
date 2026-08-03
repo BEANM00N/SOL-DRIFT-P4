@@ -1,42 +1,98 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "flecs.h"
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "GameplayTagContainer.h"
+#include "Engine/DataTable.h"
 #include "QuestSubsystem.generated.h"
 
-// Global event signature
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnGlobalGameplayEvent, FGameplayTag, EventTag, int32, Amount);
+// Event Dispathcers
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnQuestStepStarted, FGameplayTag, QuestTag);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnGlobalQuestEvent, FGameplayTag, EventTag, int32, Amount);
 
-// 1. Added Blueprintable and BlueprintType so this can be a Blueprint parent
-UCLASS(Blueprintable, BlueprintType)
-class SOLDRIFT_API UQuestSubsystem : public UGameInstanceSubsystem
+USTRUCT(BlueprintType)
+struct FRewardStruct
 {
-    GENERATED_BODY()
+	GENERATED_BODY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Reward")
+	UPrimaryDataAsset* Item;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Reward")
+	int32 Amount;
+};
 
+UENUM(BlueprintType)
+enum class EObjectiveType : uint8
+{
+	Interact UMETA(DisplayName = "Interact"),
+	Kill UMETA(DisplayName = "Kill"),
+	Collect UMETA(DisplayName = "Collect"),
+	};
+
+USTRUCT(BlueprintType)
+struct FQuestDatabase : public FTableRowBase
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	FText StepDescription;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	EObjectiveType ObjectiveType;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	FGameplayTag CurrentStepTag;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	FGameplayTag TargetTag;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	int32 RequiredAmount;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	FGameplayTag NextStepTag;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	FGameplayTag QuestLineTag;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	TArray<FRewardStruct> Rewards;
+	
+};
+
+USTRUCT(BlueprintType)
+struct FActiveQuestTracker
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	FGameplayTag ActiveQuestTag;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Quest Data")
+	int32 CurrentAmount;
+};
+
+UCLASS()
+
+class UQuestSubsystem : public UGameInstanceSubsystem
+{
+	GENERATED_BODY()
 public:
-    // Called once when the game boots up
-    virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Quests|Active")
+	TArray<FActiveQuestTracker> ActiveQuests;
 
-    // Called when the game shuts down
-    virtual void Deinitialize() override;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Quests|Active")
+	FGameplayTagContainer CompletedQuests;
 
-    // 2. The event that will trigger your Blueprint startup logic
-    UFUNCTION(BlueprintImplementableEvent, Category = "Quests")
-    void ReceiveInitialize();
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Quests|Active")
+	UDataTable* QuestDataTableAsset;
 
-    // 3. The event that will trigger your Blueprint shutdown/cleanup logic
-    UFUNCTION(BlueprintImplementableEvent, Category = "Quests")
-    void ReceiveDeinitialize();
+	UFUNCTION(BlueprintCallable, Category = "Quests")
+	void StartQuestStep(FGameplayTag StartingTag);
 
-    // Global dispatcher exposed to Blueprints
-    UPROPERTY(BlueprintAssignable, Category = "Quests")
-    FOnGlobalGameplayEvent OnGlobalGameplayEvent;
+	UFUNCTION(BlueprintCallable, Category = "Quests")
+	void GlobalQuestEvent(FGameplayTag EventTag,int32 Amount);
 
-    // A helper function so Actors can send events
-    UFUNCTION(BlueprintCallable, Category = "Quests")
-    void BroadcastGameplayEvent(FGameplayTag EventTag, int32 Amount);
+	UFUNCTION(BlueprintCallable, Category = "Quests|Setup")
+	void InitializeQuestSystem(UDataTable* InDataTable);
+	
+	// Event Dispatchers
+	UPROPERTY(BlueprintAssignable, Category = "Quests|Events")
+	FOnQuestStepStarted OnQuestStepStarted;
 
-    UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Quest System")
-    void StartQuestStep(FGameplayTag StartingTag);
+	UPROPERTY(BlueprintAssignable, Category = "Quests|Events")
+	FOnGlobalQuestEvent OnGlobalQuestEvent;
+	
 };
