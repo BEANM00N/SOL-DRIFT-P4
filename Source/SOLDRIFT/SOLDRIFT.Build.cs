@@ -1,16 +1,28 @@
 using UnrealBuildTool;
-using System.IO; // Add this
+using System.IO;
 
 public class SOLDRIFT : ModuleRules
 {
-    public SOLDRIFT(ReadOnlyTargetRules Target) : base(Target)
-    {
-        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+	public SOLDRIFT(ReadOnlyTargetRules Target) : base(Target)
+	{
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
     
-        // Standard game modules go here
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "Slate", "SlateCore","CPathfinding", "Niagara", "PropertyEditor", "AssetRegistry", "UnrealEd", "GameplayTags" });
+		// Standard runtime modules (Safe for packaged games)
+		PublicDependencyModuleNames.AddRange(new string[] { 
+			"Core", 
+			"CoreUObject", 
+			"Engine", 
+			"InputCore", 
+			"UMG", 
+			"Slate", 
+			"SlateCore",
+			"CPathfinding", 
+			"Niagara", 
+			"AssetRegistry", 
+			"GameplayTags" 
+		});
 
-        PrivateDependencyModuleNames.AddRange(new string[] {  });
+		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
 		// Add Flecs Include Path
 		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "Flecs"));
@@ -20,14 +32,12 @@ public class SOLDRIFT : ModuleRules
 		{
 			PublicDependencyModuleNames.AddRange(new string[] { 
 				"UnrealEd", 
-				"AssetRegistry", 
 				"PropertyEditor", 
 				"ToolMenus", 
 				"Blutility",
-				"UMG",
 				"UMGEditor",
 				"AdvancedPreviewScene"
 			});
 		}
-    }
+	}
 }

@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FBasicVisualizationTag ********************************************
-#define FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_13_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_13_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBasicVisualizationTag_Statics; \
 	MASSCOMMUNITYSAMPLE_API static class UScriptStruct* StaticStruct(); \
 	typedef FMassTag Super;
@@ -29,7 +29,7 @@ struct FBasicVisualizationTag;
 // ********** Begin Class UMSBasicVisualizationTrait ***********************************************
 MASSCOMMUNITYSAMPLE_API UClass* Z_Construct_UClass_UMSBasicVisualizationTrait_NoRegister();
 
-#define FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMSBasicVisualizationTrait(); \
 	friend struct Z_Construct_UClass_UMSBasicVisualizationTrait_Statics; \
@@ -40,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(UMSBasicVisualizationTrait)
 
 
-#define FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMSBasicVisualizationTrait(UMSBasicVisualizationTrait&&) = delete; \
 	UMSBasicVisualizationTrait(const UMSBasicVisualizationTrait&) = delete; \
@@ -50,12 +50,12 @@ public: \
 	NO_API virtual ~UMSBasicVisualizationTrait();
 
 
-#define FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_18_PROLOG
-#define FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_GENERATED_BODY \
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_18_PROLOG
+#define FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_INCLASS_NO_PURE_DECLS \
-	FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_ENHANCED_CONSTRUCTORS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_INCLASS_NO_PURE_DECLS \
+	FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -65,6 +65,6 @@ class UMSBasicVisualizationTrait;
 // ********** End Class UMSBasicVisualizationTrait *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h
+#define CURRENT_FILE_ID FID_SOL_DRIFT_P4_Plugins_MassCommunitySample_Source_MassCommunitySample_Common_Traits_MSBasicVisualizationTrait_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

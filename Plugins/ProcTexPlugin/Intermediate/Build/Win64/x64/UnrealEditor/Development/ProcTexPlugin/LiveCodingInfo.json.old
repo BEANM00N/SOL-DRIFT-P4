@@ -1,5 +1,14 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.ProcTexPlugin.cpp.obj": [
+			"ModelPreviewWidget.gen.cpp.obj",
+			"ProcTexPlugin.init.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"ModelPreviewWidget.cpp.obj",
+			"ProcTexPlugin.cpp.obj",
+			"ProcTexPluginCommands.cpp.obj",
+			"ProcTexPluginStyle.cpp.obj"
+		]
 	}
 }

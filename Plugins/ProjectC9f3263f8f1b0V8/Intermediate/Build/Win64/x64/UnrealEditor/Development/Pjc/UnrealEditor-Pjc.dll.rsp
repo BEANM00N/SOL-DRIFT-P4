@@ -37,9 +37,13 @@
 /NOIMPLIB
 /NOEXP
 /NATVIS:"../Intermediate/Build/Win64/x64/UnrealEditor/Development/RenderCore/RenderCore.natvis"
-"C:/Users/joshm/Desktop/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
-"C:/Users/joshm/Desktop/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Module.Pjc.cpp.obj"
-"C:/Users/joshm/Desktop/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Default.rc2.res"
+"D:/SOL-DRIFT-P4/Intermediate/Build/Win64/x64/SOLDRIFTEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Module.Pjc.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Pjc.init.gen.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcCommandlet.gen.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcSubsystem.gen.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/PjcTypes.gen.cpp.obj"
+"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Intermediate/Build/Win64/x64/UnrealEditor/Development/Pjc/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Engine/UnrealEditor-Engine.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/CoreUObject/UnrealEditor-CoreUObject.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Slate/UnrealEditor-Slate.lib"
@@ -89,6 +93,6 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:/Users/joshm/Desktop/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Binaries/Win64/UnrealEditor-Pjc.dll"
-/PDB:"C:/Users/joshm/Desktop/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Binaries/Win64/UnrealEditor-Pjc.pdb"
+/OUT:"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Binaries/Win64/UnrealEditor-Pjc.dll"
+/PDB:"D:/SOL-DRIFT-P4/Plugins/ProjectC9f3263f8f1b0V8/Binaries/Win64/UnrealEditor-Pjc.pdb"
 /ignore:4078
