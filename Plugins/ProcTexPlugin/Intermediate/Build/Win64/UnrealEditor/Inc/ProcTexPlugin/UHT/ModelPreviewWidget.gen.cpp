@@ -292,14 +292,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR(UModelPreviewWidget);
 // ********** End Class UModelPreviewWidget ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_ProcTexPlugin_Source_ProcTexPlugin_Public_ModelPreviewWidget_h__Script_ProcTexPlugin_Statics
+struct Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_ProcTexPlugin_Source_ProcTexPlugin_Public_ModelPreviewWidget_h__Script_ProcTexPlugin_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UModelPreviewWidget, UModelPreviewWidget::StaticClass, TEXT("UModelPreviewWidget"), &Z_Registration_Info_UClass_UModelPreviewWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UModelPreviewWidget), 1213051998U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_ProcTexPlugin_Source_ProcTexPlugin_Public_ModelPreviewWidget_h__Script_ProcTexPlugin_800648922(TEXT("/Script/ProcTexPlugin"),
-	Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_ProcTexPlugin_Source_ProcTexPlugin_Public_ModelPreviewWidget_h__Script_ProcTexPlugin_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_SOL_DRIFT_P4_Plugins_ProcTexPlugin_Source_ProcTexPlugin_Public_ModelPreviewWidget_h__Script_ProcTexPlugin_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_ProcTexPlugin_Source_ProcTexPlugin_Public_ModelPreviewWidget_h__Script_ProcTexPlugin_800648922(TEXT("/Script/ProcTexPlugin"),
+	Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_ProcTexPlugin_Source_ProcTexPlugin_Public_ModelPreviewWidget_h__Script_ProcTexPlugin_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joshm_Desktop_SOL_DRIFT_P4_Plugins_ProcTexPlugin_Source_ProcTexPlugin_Public_ModelPreviewWidget_h__Script_ProcTexPlugin_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
